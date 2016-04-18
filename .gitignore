@@ -1,3 +1,6 @@
+# Platformio
+.pioenvs
+
 # Compiled Object files
 *.slo
 *.lo
