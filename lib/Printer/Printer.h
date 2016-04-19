@@ -3,13 +3,14 @@
 #endif
 
 #include <Arduino.h>
+#include <Adafruit_GFX.h>
 #include <Adafruit_IS31FL3731.h>
 #include <string.h>
 
 
 //#include <string>
 
-class Printer{
+class Printer /*: Adafruit_GFX*/{
 public:
   Printer(Adafruit_IS31FL3731 printermatrix);
   void printText(String text, uint8_t lednum);
