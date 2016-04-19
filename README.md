@@ -9,7 +9,7 @@ The hardware for which this code was written specifically is as listed. Porting 
    * 1 x Arduino Uno R3 (Atmega328 - assembled)
 
 #### Presentation suggestions:
-The hardware that doesn't have to be user-facing is hidden in a box that is appropriate. The user-facing hardware is
+The hardware that doesn't have to be user-facing is hidden in a box that is of an appropriate size. The user-facing hardware is mounted on top or through the top of the box.
 
 
 Created for a final project in the IB Computer Science SL course at Berkeley High School, Berkeley, CA.
