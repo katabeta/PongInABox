@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <Button.h>
 
-Button::Button(){
+Button::Button(uint8_t port){
 
 }

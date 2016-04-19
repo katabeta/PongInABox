@@ -6,6 +6,6 @@
 
 class Button{
 public:
-  Button(void);
+  Button(uint8_t port);
 private:
 };

@@ -30,7 +30,7 @@ void setup(){
 }
 
 void loop(){
-  if(){
+  if(true /*both users are readu*/){
     game.start();
   }
 }
