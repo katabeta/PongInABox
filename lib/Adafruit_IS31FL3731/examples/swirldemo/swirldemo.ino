@@ -1,6 +1,8 @@
+#include "Arduino.h"
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_IS31FL3731.h>
+
 
 Adafruit_IS31FL3731 ledmatrix = Adafruit_IS31FL3731();
 
