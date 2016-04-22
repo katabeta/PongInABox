@@ -4,8 +4,8 @@
 #include <Adafruit_IS31FL3731.h>
 
 
-Adafruit_IS31FL3731 ledmatrix = Adafruit_IS31FL3731();
-Adafruit_IS31FL3731 ledmatrix2 = Adafruit_IS31FL3731();
+Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
+Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
 
 // The lookup table to make the brightness changes be more visible
 uint8_t sweep[] = {1, 2, 3, 4, 6, 8, 10, 15, 20, 30, 40, 60, 60, 40, 30, 20, 15, 10, 8, 6, 4, 3, 2, 1};
@@ -26,8 +26,8 @@ void loop() {
   for (uint8_t incr = 0; incr < 24; incr++)
     for (uint8_t x = 0; x < 16; x++)
       for (uint8_t y = 0; y < 9; y++){
-        ledmatrix.drawPixel(x, y, sweep[(x+y+incr)%24]);
-        ledmatrix2.drawPixel(x, y, sweep[(x+y+incr)%24]);
+        ledmatrix.drawPixel74(x, y, sweep[(x+y+incr)%24]);
+        ledmatrix2.drawPixel75(x, y, sweep[(x+y+incr)%24]);
       }
   delay(20);
   
