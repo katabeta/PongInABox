@@ -45,6 +45,15 @@ boolean Adafruit_IS31FL3731::begin(uint8_t addr) {
   return true;
 }
 
+
+/*custom method*/
+void Adafruit_IS31FL3731::printText(String text, uint8_t x, uint8_t y, uint8_t brightness){
+  for(uint8_t i = 0; i < text.length(); i++){
+    Adafruit_GFX::drawChar(x, y, text[i], brightness, 0, 1);
+  }
+}
+
+
 void Adafruit_IS31FL3731::clear(void) {
   // all LEDs on & 0 PWM
 
