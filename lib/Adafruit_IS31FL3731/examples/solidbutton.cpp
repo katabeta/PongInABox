@@ -36,7 +36,7 @@ void loop(){
     turn75 ^= true;
   }
 
-  
+
   if(turn74){
     for(uint8_t x = 0; x < 16; x++){
       for(uint8_t y = 0; y < 9; y++){
