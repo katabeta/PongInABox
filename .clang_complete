@@ -2,14 +2,14 @@
 -IC:\Users\katabeta\.platformio\packages\framework-arduinoavr\cores\arduino
 -IC:\Users\katabeta\.platformio\packages\framework-arduinoavr\libraries\Wire\src
 -IC:\Users\katabeta\.platformio\packages\framework-arduinoavr\libraries\Wire\src\utility
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\Adafruit-GFX
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\Adafruit-GFX\Fonts
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\Adafruit-GFX\fontconvert
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\Adafruit_IS31FL3731
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\SoftPot
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\Button
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\Pong
--ID:\Google Drive\Projects\Current\Box Pong\BoxPongProjFolder\lib\Printer
+-IC:\Users\katabeta\Documents\GitHub\PongInABox\lib\Adafruit-GFX
+-IC:\Users\katabeta\Documents\GitHub\PongInABox\lib\Adafruit-GFX\Fonts
+-IC:\Users\katabeta\Documents\GitHub\PongInABox\lib\Adafruit_IS31FL3731
+-IC:\Users\katabeta\Documents\GitHub\PongInABox\lib\SoftPot
+-IC:\Users\katabeta\Documents\GitHub\PongInABox\lib\Pong
+-IC:\Users\katabeta\Documents\GitHub\PongInABox\lib\Button
+-IC:\Users\katabeta\Documents\GitHub\PongInABox\lib\Printer
+-IC:\Users\katabeta\.platformio\lib\Adafruit_GFX_ID13
 -IC:\Users\katabeta\.platformio\packages\framework-arduinoavr\libraries\Bridge\src
 -IC:\Users\katabeta\.platformio\packages\framework-arduinoavr\libraries\EEPROM\src
 -IC:\Users\katabeta\.platformio\packages\framework-arduinoavr\libraries\Esplora\src
