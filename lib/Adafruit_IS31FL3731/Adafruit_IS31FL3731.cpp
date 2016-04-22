@@ -35,7 +35,7 @@ boolean Adafruit_IS31FL3731::begin(uint8_t addr) {
   // all LEDs on & 0 PWM
   clear(); // set each led to 0 PWM
 
-  for (uint8_t f=0; f<8; f++) {  
+  for (uint8_t f=0; f<8; f++) {
     for (uint8_t i=0; i<=0x11; i++)
       writeRegister8(f, i, 0xff);     // each 8 LEDs on
   }
