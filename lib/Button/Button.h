@@ -6,6 +6,7 @@
 
 class Button{
 public:
-  Button(uint8_t port);
+  Button(uint8_t pin);
+  bool isPressed(void);
 private:
 };
