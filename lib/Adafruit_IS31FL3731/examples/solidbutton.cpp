@@ -20,8 +20,6 @@ void setup(){
   pinMode(pin75, INPUT);
   digitalWrite(pin74, HIGH);
   digitalWrite(pin75, HIGH);
-  // turn74 = false;
-  // turn75 = false;
 
   if(!ledmatrix74.begin(0x74) || !ledmatrix75.begin(0x75)){
     Serial.println("Error! Display not found!");
@@ -38,7 +36,7 @@ void loop(){
     turn75 ^= true;
   }
 
-
+  
   if(turn74){
     for(uint8_t x = 0; x < 16; x++){
       for(uint8_t y = 0; y < 9; y++){
