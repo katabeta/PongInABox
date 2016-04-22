@@ -9,7 +9,6 @@ Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
 
 const int pin74 = 7;
 const int pin75 = 8;
-uint8_t sweep[] = {1, 2, 3, 4, 6, 8, 10, 15, 20, 30, 40, 60, 60, 40, 30, 20, 15, 10, 8, 6, 4, 3, 2, 1};
 
 bool turn75 = false;
 bool turn74 = false;
