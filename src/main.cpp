@@ -14,13 +14,13 @@ Button pb1 = Button(7); //DO NOT USE PINS 0, 1, 13. THEY WILL NOT WORK!!!
 Button pb2 = Button(8);
 
 void setup(){
-  if(!ledMat1.begin(/*address*/)){
+  if(!ledMat1.begin(0x74)){
     Serial.println("ERROR: IS31_1 not found!");
     while(1);
   } else {
     Serial.println("IS31_1 found");
   }
-  if(!ledMat2.begin(/*address*/)){
+  if(!ledMat2.begin(0x75)){
     Serial.println("ERROR: IS31_2 no found!");
     while(1);
   } else {
