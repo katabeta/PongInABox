@@ -10,8 +10,8 @@ Adafruit_IS31FL3731 ledMat2 = Adafruit_IS31FL3731();
 SoftPot p1 = SoftPot(1);
 SoftPot p2 = SoftPot(2);
 Pong game = Pong();
-Button pb1 = Button(1);
-Button pb2 = Button(2);
+Button pb1 = Button(7); //DO NOT USE PINS 0, 1, 13. THEY WILL NOT WORK!!!
+Button pb2 = Button(8);
 
 void setup(){
   if(!ledMat1.begin(/*address*/)){
