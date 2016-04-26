@@ -14,7 +14,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("ISSI swirl test");
 
-  if (! ledmatrix.begin() || !ledmatrix2.begin(0x75)) {
+  if (!ledmatrix74.begin(0x74) || !ledmatrix75.begin(0x75)) {
     Serial.println("IS31 not found");
     while (1);
   }
@@ -26,9 +26,9 @@ void loop() {
   for (uint8_t incr = 0; incr < 24; incr++)
     for (uint8_t x = 0; x < 16; x++)
       for (uint8_t y = 0; y < 9; y++){
-        ledmatrix.drawPixel74(x, y, sweep[(x+y+incr)%24]);
-        ledmatrix2.drawPixel75(x, y, sweep[(x+y+incr)%24]);
+        ledmatrix74.drawPixel(x, y, sweep[(x+y+incr)%24]);
+        ledmatrix75.drawPixel(x, y, sweep[(x+y+incr)%24]);
       }
   delay(20);
-  
+
 }
