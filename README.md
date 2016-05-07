@@ -1,6 +1,6 @@
 # PongInABox
 
-This branch is for miscellaneous development.
+*This branch is for miscellaneous development.*
 
 Programs an Arduino pong game for two people.
 The hardware for which this code was written specifically is as listed. Porting to different hardware, though not guaranteed, should not be terribly hard.
