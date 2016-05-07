@@ -3,18 +3,19 @@
 #include <Adafruit_IS31FL3731.h>
 #include <Arduino.h>
 #include <string.h>
+#include <Pot.h>
 
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
-const int pin = 0;
-const int pin1 = 5;
+const int pin0 = 0;
+const int pin5 = 5;
 
-const int max = 15;
-const int min = 8;
+const int max0 = 15;
+const int min0 = 8;
 
-const int max1 = 16;
-const int min1 = 10;
+const int max5 = 16;
+const int min5 = 10;
 
 double const constant = 0.0216;
 
@@ -32,18 +33,18 @@ void setup(){
 
 //TODO create a calibration method
 void loop(){
-  double lednum = analogRead(pin)*constant;
-  double lednum1 = analogRead(pin1)*constant;
-  Serial.println("Pin 0: " + String(lednum) + " Pin 5: " + String(lednum1));
-  if(lednum <=16){
-    lednum = 15*(lednum-min)/(max-min);
-    ledmatrix74.setLEDPWM(lednum, 20, 0);
+  double lednum0 = analogRead(pin0)*constant;
+  double lednum5 = analogRead(pin5)*constant;
+  Serial.println("Pin 0: " + String(lednum0) + " Pin 5: " + String(lednum5));
+  if(lednum0 <=16){
+    lednum0 = 15*(lednum0-min0)/(max0-min0);
+    ledmatrix74.setLEDPWM(lednum0, 20, 0);
     ledmatrix74.clear();
   }
 
-  if(lednum1 <=16){
-    lednum1 = 15*(lednum1-min1)/(max1-min1);
-    ledmatrix75.setLEDPWM(lednum1, 20, 0);
+  if(lednum5 <=16){
+    lednum5 = 15*(lednum5-min5)/(max5-min5);
+    ledmatrix75.setLEDPWM(lednum5, 20, 0);
     ledmatrix75.clear();
   }
 }
