@@ -46,27 +46,6 @@ boolean Adafruit_IS31FL3731::begin(uint8_t addr) {
 }
 
 
-/*custom method*/
-void Adafruit_IS31FL3731::printText(uint8_t x, uint8_t y, String text, uint8_t brightness,
-  bool clearAfter, bool scroll, uint8_t multiplier, uint8_t spacing){
-  if(scroll){
-    for(uint8_t s = 0; s < text.length() * multiplier; s++){
-      for(uint8_t i = 0; i < text.length(); i++){
-        Adafruit_GFX::drawChar(x + i*spacing - s * multiplier, y, text[i], brightness, 0, 1);
-        
-      }
-      clear();
-    }
-    delay(50);
-  } else{
-    for(uint8_t i = 0; i < text.length(); i++){
-      Adafruit_GFX::drawChar(x + i*spacing, y, text[i], brightness, 0, 1);
-    }
-  }
-  if(clearAfter){
-    clear();
-  }
-}
 
 
 void Adafruit_IS31FL3731::clear(void) {
