@@ -1,0 +1,1 @@
+The files in this folder are all main files containing examples of usage of the various elements of this project. To upload an Arduino, move or copy the desired file into the src folder. This should all that you would have to do to upload.
