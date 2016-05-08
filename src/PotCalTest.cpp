@@ -1,25 +1,19 @@
-#include <Wire.h>
-#include <Adafruit_GFX.h>
 #include <Adafruit_IS31FL3731.h>
 #include <Arduino.h>
 #include <string.h>
 #include <Pot.h>
 
+Pot pot = Pot(0);
+Pot pot1 = Pot(5);
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
-const int pin0 = 0;
-const int pin5 = 5;
 
-const int max0 = 15;
-const int min0 = 8;
+Adafruit_IS31FL3731 displays[] = {ledmatrix74, ledmatrix75};
 
-const int max5 = 16;
-const int min5 = 10;
+uint8_t calButtonPin = 7;
 
-double const constant = 0.0216;
-
-void setup(){
+void setup() {
   Serial.begin(9600);
   Serial.println("On/Off");
 
@@ -29,21 +23,22 @@ void setup(){
   }
   Serial.println("Display found");
   ledmatrix74.setRotation(0);
+
+  pot.calibrate(ledmatrix74, 2, calButtonPin);
+  pot1.calibrate(ledmatrix75, 2, calButtonPin);
+
 }
 
-//TODO create a calibration method
-void loop(){
-  double lednum0 = analogRead(pin0)*constant;
-  double lednum5 = analogRead(pin5)*constant;
+void loop() {
+  double lednum0 = pot.getLEDNumRead();
+  double lednum5 = pot1.getLEDNumRead();
   Serial.println("Pin 0: " + String(lednum0) + " Pin 5: " + String(lednum5));
   if(lednum0 <=16){
-    lednum0 = 15*(lednum0-min0)/(max0-min0);
     ledmatrix74.setLEDPWM(lednum0, 20, 0);
     ledmatrix74.clear();
   }
 
   if(lednum5 <=16){
-    lednum5 = 15*(lednum5-min5)/(max5-min5);
     ledmatrix75.setLEDPWM(lednum5, 20, 0);
     ledmatrix75.clear();
   }
