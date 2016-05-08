@@ -1,5 +1,6 @@
-#ifndef _ADAFRUIT_IS31FL3731_H_
-#define _ADAFRUIT_IS31Fl3731_H_
+// #ifndef _ADAFRUIT_IS31FL3731_H_
+// #define _ADAFRUIT_IS31Fl3731_H_
+#pragma once
 
 #include <Wire.h>
 #include <Arduino.h>
@@ -33,7 +34,8 @@ class Adafruit_IS31FL3731 : public Adafruit_GFX {
   void drawPixel(int16_t x, int16_t y, uint16_t color);
   void clear(void);
 
-  void printText(String text, uint8_t x, uint8_t y, uint8_t brightness);
+  void printText(uint8_t x, uint8_t y, String text, uint8_t brightness,
+    bool clearAfter, bool scroll, uint8_t multiplier, uint8_t spacing);
 
   void setLEDPWM(uint8_t lednum, uint8_t pwm, uint8_t bank = 0);
   void audioSync(boolean sync);
@@ -47,6 +49,4 @@ class Adafruit_IS31FL3731 : public Adafruit_GFX {
   uint8_t _i2caddr, _frame;
 };
 
-
-
-#endif
+//#endif
