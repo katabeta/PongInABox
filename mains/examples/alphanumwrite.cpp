@@ -1,12 +1,12 @@
 #include <Adafruit_IS31FL3731.h>
 #include <Arduino.h>
+#include <Hardware.h>
 
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
 
-const int pin74 = 7;
-const int pin75 = 8;
+Hardware hardware = Hardware();
 
 bool turn75 = false;
 bool turn74 = false;
@@ -16,12 +16,12 @@ uint8_t startpos = 5;
 void setup(){
   Serial.begin(9600);
   Serial.println("On/Off");
-  pinMode(pin74, INPUT);
-  pinMode(pin75, INPUT);
-  digitalWrite(pin74, HIGH);
-  digitalWrite(pin75, HIGH);
+  pinMode(hardware.dPin74, INPUT);
+  pinMode(hardware.dPin75, INPUT);
+  digitalWrite(hardware.dPin74, HIGH);
+  digitalWrite(hardware.dPin75, HIGH);
 
-  if(!ledmatrix74.begin(0x74) || !ledmatrix75.begin(0x75)){
+  if(!ledmatrix74.begin(hardware.address74) || !ledmatrix75.begin(hardware.address75)){
     Serial.println("Error! Display not found!");
     while(1);
   }

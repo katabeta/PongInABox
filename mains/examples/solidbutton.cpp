@@ -1,13 +1,12 @@
-#include <Wire.h>
-#include <Adafruit_GFX.h>
 #include <Adafruit_IS31FL3731.h>
 #include <Arduino.h>
+#include <Hardware.h>
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
 
-const int pin74 = 7;
-const int pin75 = 8;
+Hardware hardware = Hardware();
+
 uint8_t sweep[] = {1, 2, 3, 4, 6, 8, 10, 15, 20, 30, 40, 60, 60, 40, 30, 20, 15, 10, 8, 6, 4, 3, 2, 1};
 
 bool turn75 = false;
@@ -16,12 +15,12 @@ bool turn74 = false;
 void setup(){
   Serial.begin(9600);
   Serial.println("On/Off");
-  pinMode(pin74, INPUT);
-  pinMode(pin75, INPUT);
-  digitalWrite(pin74, HIGH);
-  digitalWrite(pin75, HIGH);
+  pinMode(hardware.dPin74, INPUT);
+  pinMode(hardware.dPin75, INPUT);
+  digitalWrite(hardware.dPin74, HIGH);
+  digitalWrite(hardware.dPin75, HIGH);
 
-  if(!ledmatrix74.begin(0x74) || !ledmatrix75.begin(0x75)){
+  if(!ledmatrix74.begin(hardware.address74) || !ledmatrix75.begin(hardware.address75)){
     Serial.println("Error! Display not found!");
     while(1);
   }
@@ -30,9 +29,9 @@ void setup(){
 
 
 void loop(){
-  if(digitalRead(pin74) == LOW){
+  if(digitalRead(hardware.dPin74) == LOW){
     turn74 ^= true;
-  } if(digitalRead(pin75) == LOW){
+  } if(digitalRead(hardware.dPin75) == LOW){
     turn75 ^= true;
   }
 
