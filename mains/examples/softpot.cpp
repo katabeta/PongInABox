@@ -1,26 +1,22 @@
 #include <Adafruit_IS31FL3731.h>
 #include <Arduino.h>
 #include <string.h>
+#include <Hardware.h>
+#include <Pot.h>
 
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
-const int pin0 = 0;
-const int pin5 = 5;
 
-const int max0 = 15;
-const int min0 = 8;
+Hardware hardware = Hardware();
 
-const int max5 = 16;
-const int min5 = 10;
-
-double const constant = 0.0216;
+Pot pots[] = {Pot(hardware.aPin74, &ledmatrix74), Pot(hardware.aPin75, &ledmatrix75)};
 
 void setup(){
   Serial.begin(9600);
   Serial.println("On/Off");
 
-  if(!ledmatrix74.begin(0x74) || !ledmatrix75.begin(0x75)){
+  if(!ledmatrix74.begin(hardware.address74) || !ledmatrix75.begin(hardware.address75)){
     Serial.println("Error! Display not found!");
     while(1);
   }
@@ -30,18 +26,10 @@ void setup(){
 
 //TODO create a calibration method
 void loop(){
-  double lednum0 = analogRead(pin0)*constant;
-  double lednum5 = analogRead(pin5)*constant;
-  Serial.println("Pin 0: " + String(lednum0) + " Pin 5: " + String(lednum5));
-  if(lednum0 <=16){
-    lednum0 = 15*(lednum0-min0)/(max0-min0);
-    ledmatrix74.setLEDPWM(lednum0, 20, 0);
-    ledmatrix74.clear();
-  }
+  ledmatrix74.setLEDPWM(pots[0].getLEDNumRead(hardware.potMin, hardware.potMax), 2); //TODO this display is dimmer for some reason
+  ledmatrix75.setLEDPWM(pots[1].getLEDNumRead(hardware.potMin, hardware.potMax), 2);
+  ledmatrix74.clear();
+  ledmatrix75.clear();
 
-  if(lednum5 <=16){
-    lednum5 = 15*(lednum5-min5)/(max5-min5);
-    ledmatrix75.setLEDPWM(lednum5, 20, 0);
-    ledmatrix75.clear();
-  }
+  //Serial.println(String(analogRead(hardware.aPin75)));
 }
