@@ -46,6 +46,8 @@ boolean Adafruit_IS31FL3731::begin(uint8_t addr) {
 }
 
 /*custom method*/
+//TODO can only print to one display at a time. Make it so that the update can be alternated
+//TODO might need to update the whole display at once, not scroll
 void Adafruit_IS31FL3731::printText(uint8_t x, uint8_t y, String text, uint8_t brightness,
   bool clearAfter, bool scroll, uint8_t scrollSpeed, uint8_t spacing){
   if(scroll){
