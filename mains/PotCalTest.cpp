@@ -2,14 +2,14 @@
 #include <Arduino.h>
 #include <string.h>
 #include <Pot.h>
-#include <Hardware.h>
+#include <Reference.h>
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
 
-Hardware hardware = Hardware();
+Reference reference = Reference();
 
-Pot pots[] = {Pot(hardware.dPin74, &ledmatrix74), Pot(hardware.dPin75, &ledmatrix75)};
+Pot pots[] = {Pot(reference.dPin74, &ledmatrix74), Pot(reference.dPin75, &ledmatrix75)};
 
 uint8_t calButtonPin = 7;
 
@@ -17,7 +17,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("On/Off");
 
-  if(!ledmatrix74.begin(hardware.address74) || !ledmatrix75.begin(hardware.address75)){
+  if(!ledmatrix74.begin(reference.address74) || !ledmatrix75.begin(reference.address75)){
     Serial.println("Error! Display not found!");
     while(1);
   }
