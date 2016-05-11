@@ -65,7 +65,7 @@ bool Pot::test(){
 Normalizes the raw reading from the potentiometer. It ranges the output from 0 to 1,
 effectively giving the percentage.
 See: http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range for more details.
-Feeds the getLEDNumRead method.
+Feeds the getLEDNumRead() method.
 Private.
 @return normalized reading
 */
@@ -76,7 +76,7 @@ double Pot::getNormalizedRead(){
 Normalizes the raw reading from the potentiometer. It ranges the output from 0 to 1,
 effectively giving the percentage.
 See: http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range for more details.
-Feeds the getLEDNumRead method.
+Feeds the getLEDNumRead() method.
 Private.
 @param min the minimum raw value possible for the pot, some margin acceptable
 @param max the maximum raw value possible for the pot, some margin acceptable
