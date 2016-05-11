@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['selectbank',['selectBank',['../class_adafruit___i_s31_f_l3731.html#a15d6443f671de8e208078862649d92f7',1,'Adafruit_IS31FL3731']]],
   ['setcursor',['setCursor',['../class_adafruit___g_f_x.html#aaf96a40cad0f34dd8ec73494b3866c33',1,'Adafruit_GFX']]],
   ['setfont',['setFont',['../class_adafruit___g_f_x.html#ab0479a2bb4e09e7c39c35e35c55d6ed1',1,'Adafruit_GFX']]],
   ['setframe',['setFrame',['../class_adafruit___i_s31_f_l3731.html#a313fc55e90d4bcc59c7465c2b7218dfe',1,'Adafruit_IS31FL3731']]],

@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -111,12 +110,7 @@ $(document).ready(function(){initNavTree('_printer_test_8cpp.html','');});
 <div class="title">PrinterTest.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html">Adafruit_IS31FL3731.h</a>&gt;</code><br />
-<code>#include &lt;Arduino.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="_error_codes_8h_source.html">ErrorCodes.h</a>&gt;</code><br />
-<code>#include &lt;Hardware.h&gt;</code><br />
-</div>
+
 <p><a href="_printer_test_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -144,25 +138,6 @@ Variables</h2></td></tr>
 <tr class="separator:a5093efd1555f2389ac66fc427d267ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_printer_test_8cpp_source.html#l00035">35</a> of file <a class="el" href="_printer_test_8cpp_source.html">PrinterTest.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00051">Adafruit_IS31FL3731::printText()</a>, and <a class="el" href="_printer_test_8cpp_source.html#l00015">testString</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a4fc01d736fe50cf5b977f755b675f11d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,37 +157,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_printer_test_8cpp_source.html#l00035">35</a> of file <a class="el" href="_printer_test_8cpp_source.html">PrinterTest.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00051">Adafruit_IS31FL3731::printText()</a>, and <a class="el" href="_printer_test_8cpp_source.html#l00015">testString</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a702222fe2c5cbdc54c0090269ca7f9b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_error_codes.html">ErrorCodes</a> errorCodes = <a class="el" href="class_error_codes.html">ErrorCodes</a>()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_printer_test_8cpp_source.html#l00012">12</a> of file <a class="el" href="_printer_test_8cpp_source.html">PrinterTest.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5093efd1555f2389ac66fc427d267ab8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Hardware hardware = Hardware()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_printer_test_8cpp_source.html#l00017">17</a> of file <a class="el" href="_printer_test_8cpp_source.html">PrinterTest.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="_printer_test_8cpp_source.html#l00019">setup()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a0aa96b426ecbc4873049545794472d0a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -255,6 +219,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a702222fe2c5cbdc54c0090269ca7f9b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_error_codes.html">ErrorCodes</a> errorCodes = <a class="el" href="class_error_codes.html">ErrorCodes</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_printer_test_8cpp_source.html#l00012">12</a> of file <a class="el" href="_printer_test_8cpp_source.html">PrinterTest.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1c9376cdc5e467bb714d0cf35d9bdc80"></a>
 <div class="memitem">
 <div class="memproto">
@@ -282,6 +260,22 @@ Variables</h2></td></tr>
 <p>Definition at line <a class="el" href="_printer_test_8cpp_source.html#l00015">15</a> of file <a class="el" href="_printer_test_8cpp_source.html">PrinterTest.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="_printer_test_8cpp_source.html#l00035">loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5093efd1555f2389ac66fc427d267ab8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Hardware hardware = Hardware()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_printer_test_8cpp_source.html#l00017">17</a> of file <a class="el" href="_printer_test_8cpp_source.html">PrinterTest.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="_printer_test_8cpp_source.html#l00019">setup()</a>.</p>
 
 </div>
 </div>

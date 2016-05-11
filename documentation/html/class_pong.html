@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,13 +107,12 @@ $(document).ready(function(){initNavTree('class_pong.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_pong-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Pong Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_pong_8h_source.html">Pong.h</a>&gt;</code></p>
 
 <p>Inherits <a class="el" href="class_game.html">Game</a>.</p>
 <table class="memberdecls">
@@ -124,6 +122,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acea7a68d93b5d406eda087dc45a4ae2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5beb40ef5119709e2bc8d21d788f4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pong.html#ac5beb40ef5119709e2bc8d21d788f4b8">start</a> (void)</td></tr>
 <tr class="separator:ac5beb40ef5119709e2bc8d21d788f4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abf32272789abfd67bb1907039f755772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pong.html#abf32272789abfd67bb1907039f755772">drawField</a> (void)</td></tr>
+<tr class="separator:abf32272789abfd67bb1907039f755772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_game"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="class_game.html">Game</a></td></tr>
+<tr class="memitem:ae0bfcc14ea064fe3a9d2b5017994f07d inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ae0bfcc14ea064fe3a9d2b5017994f07d">Game</a> (<a class="el" href="class_player.html">Player</a> *player1, <a class="el" href="class_player.html">Player</a> *player2, <a class="el" href="class_button.html">Button</a> *button)</td></tr>
+<tr class="separator:ae0bfcc14ea064fe3a9d2b5017994f07d inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064eea8b5856233f5295dc3addacaa16 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a064eea8b5856233f5295dc3addacaa16">ready</a> (void)</td></tr>
+<tr class="separator:a064eea8b5856233f5295dc3addacaa16 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeced353f6de645e7a2a25381dec5b94 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#adeced353f6de645e7a2a25381dec5b94">chooseDifficulty</a> (void)</td></tr>
+<tr class="separator:adeced353f6de645e7a2a25381dec5b94 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3d7a47ec8617cd939760d7a67af8bf inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aaf3d7a47ec8617cd939760d7a67af8bf">countdown</a> (void)</td></tr>
+<tr class="separator:aaf3d7a47ec8617cd939760d7a67af8bf inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a0f92b9c351bf67f1d1dac02afe69f inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ab3a0f92b9c351bf67f1d1dac02afe69f">displayScore</a> (void)</td></tr>
+<tr class="separator:ab3a0f92b9c351bf67f1d1dac02afe69f inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8d9c9bd785f59069eb8e9b39069657 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a4f8d9c9bd785f59069eb8e9b39069657">drawWinAnim</a> (void)</td></tr>
+<tr class="separator:a4f8d9c9bd785f59069eb8e9b39069657 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefeaee28c1bf6fff6fd52ec49d7937df inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aefeaee28c1bf6fff6fd52ec49d7937df">drawLoseAnim</a> (void)</td></tr>
+<tr class="separator:aefeaee28c1bf6fff6fd52ec49d7937df inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dda354dd033559189f920deb39ec588 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a6dda354dd033559189f920deb39ec588">playAgain</a> (void)</td></tr>
+<tr class="separator:a6dda354dd033559189f920deb39ec588 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -164,6 +184,30 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abf32272789abfd67bb1907039f755772"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pong::drawField </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac5beb40ef5119709e2bc8d21d788f4b8"></a>
 <div class="memitem">
 <div class="memproto">

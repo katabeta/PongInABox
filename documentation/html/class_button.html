@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,20 +107,34 @@ $(document).ready(function(){initNavTree('class_button.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_button-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Button Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_button_8h_source.html">Button.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a62bf06885bb7e8e8e10320394469142e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a62bf06885bb7e8e8e10320394469142e">Button</a> (uint8_t pin)</td></tr>
+<tr class="memitem:a62bf06885bb7e8e8e10320394469142e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a62bf06885bb7e8e8e10320394469142e">Button</a> (uint8_t <a class="el" href="class_button.html#afa35b942d0c1e8f55585310538157986">pin</a>)</td></tr>
 <tr class="separator:a62bf06885bb7e8e8e10320394469142e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f53313d84584c1ade71eb993f98986"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#af0f53313d84584c1ade71eb993f98986">get</a> (void)</td></tr>
 <tr class="separator:af0f53313d84584c1ade71eb993f98986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afa35b942d0c1e8f55585310538157986"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#afa35b942d0c1e8f55585310538157986">pin</a></td></tr>
+<tr class="separator:afa35b942d0c1e8f55585310538157986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d1c789d14f06889a45a9dd45fa48d8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ad6d1c789d14f06889a45a9dd45fa48d8">lastDebounceTime</a></td></tr>
+<tr class="separator:ad6d1c789d14f06889a45a9dd45fa48d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd40663a0a1f5cf5c2ae795704bfe525"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#acd40663a0a1f5cf5c2ae795704bfe525">lastButtonState</a></td></tr>
+<tr class="separator:acd40663a0a1f5cf5c2ae795704bfe525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622389e2dfcee821bdd38573260575c6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a622389e2dfcee821bdd38573260575c6">debounceDelay</a></td></tr>
+<tr class="separator:a622389e2dfcee821bdd38573260575c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdecfd5b0c7df95bd066d9bd07e0fa3a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#abdecfd5b0c7df95bd066d9bd07e0fa3a">buttonState</a></td></tr>
+<tr class="separator:abdecfd5b0c7df95bd066d9bd07e0fa3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4">state</a></td></tr>
+<tr class="separator:a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -143,6 +156,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_button_8cpp_source.html#l00003">3</a> of file <a class="el" href="_button_8cpp_source.html">Button.cpp</a>.</p>
 
+<p>References <a class="el" href="_button_8h_source.html#l00010">debounceDelay</a>, <a class="el" href="_button_8h_source.html#l00009">lastButtonState</a>, <a class="el" href="_button_8h_source.html#l00008">lastDebounceTime</a>, <a class="el" href="_button_8h_source.html#l00007">pin</a>, and <a class="el" href="_button_8h_source.html#l00012">state</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -162,7 +177,154 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_button_8cpp_source.html#l00015">15</a> of file <a class="el" href="_button_8cpp_source.html">Button.cpp</a>.</p>
 
+<p>References <a class="el" href="_button_8h_source.html#l00011">buttonState</a>, <a class="el" href="_button_8h_source.html#l00010">debounceDelay</a>, <a class="el" href="_button_8h_source.html#l00009">lastButtonState</a>, <a class="el" href="_button_8h_source.html#l00008">lastDebounceTime</a>, <a class="el" href="_button_8h_source.html#l00007">pin</a>, and <a class="el" href="_button_8h_source.html#l00012">state</a>.</p>
+
 <p>Referenced by <a class="el" href="_game_8cpp_source.html#l00020">Game::chooseDifficulty()</a>, <a class="el" href="solidbutton_8cpp_source.html#l00035">loop()</a>, and <a class="el" href="_game_8cpp_source.html#l00047">Game::playAgain()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="afa35b942d0c1e8f55585310538157986"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Button::pin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_button_8h_source.html#l00007">7</a> of file <a class="el" href="_button_8h_source.html">Button.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_button_8cpp_source.html#l00003">Button()</a>, and <a class="el" href="_button_8cpp_source.html#l00015">get()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6d1c789d14f06889a45a9dd45fa48d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Button::lastDebounceTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_button_8h_source.html#l00008">8</a> of file <a class="el" href="_button_8h_source.html">Button.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_button_8cpp_source.html#l00003">Button()</a>, and <a class="el" href="_button_8cpp_source.html#l00015">get()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd40663a0a1f5cf5c2ae795704bfe525"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Button::lastButtonState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_button_8h_source.html#l00009">9</a> of file <a class="el" href="_button_8h_source.html">Button.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_button_8cpp_source.html#l00003">Button()</a>, and <a class="el" href="_button_8cpp_source.html#l00015">get()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a622389e2dfcee821bdd38573260575c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Button::debounceDelay</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_button_8h_source.html#l00010">10</a> of file <a class="el" href="_button_8h_source.html">Button.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_button_8cpp_source.html#l00003">Button()</a>, and <a class="el" href="_button_8cpp_source.html#l00015">get()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdecfd5b0c7df95bd066d9bd07e0fa3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Button::buttonState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_button_8h_source.html#l00011">11</a> of file <a class="el" href="_button_8h_source.html">Button.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_button_8cpp_source.html#l00015">get()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Button::state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_button_8h_source.html#l00012">12</a> of file <a class="el" href="_button_8h_source.html">Button.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_button_8cpp_source.html#l00003">Button()</a>, and <a class="el" href="_button_8cpp_source.html#l00015">get()</a>.</p>
 
 </div>
 </div>

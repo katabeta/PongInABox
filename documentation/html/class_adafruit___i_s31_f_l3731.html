@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -108,13 +107,13 @@ $(document).ready(function(){initNavTree('class_adafruit___i_s31_f_l3731.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_adafruit___i_s31_f_l3731-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Adafruit_IS31FL3731 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html">Adafruit_IS31FL3731.h</a>&gt;</code></p>
 
 <p>Inherits <a class="el" href="class_adafruit___g_f_x.html">Adafruit_GFX</a>.</p>
 <table class="memberdecls">
@@ -216,6 +215,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34a63c8c32a8c57f77c9efb50db1c20b inherit pub_methods_class_adafruit___g_f_x"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___g_f_x.html#a34a63c8c32a8c57f77c9efb50db1c20b">getCursorY</a> (void) const </td></tr>
 <tr class="separator:a34a63c8c32a8c57f77c9efb50db1c20b inherit pub_methods_class_adafruit___g_f_x"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a15d6443f671de8e208078862649d92f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___i_s31_f_l3731.html#a15d6443f671de8e208078862649d92f7">selectBank</a> (uint8_t bank)</td></tr>
+<tr class="separator:a15d6443f671de8e208078862649d92f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea8fa63cc0ac34692a1527552587dff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___i_s31_f_l3731.html#a0ea8fa63cc0ac34692a1527552587dff">writeRegister8</a> (uint8_t bank, uint8_t reg, uint8_t data)</td></tr>
+<tr class="separator:a0ea8fa63cc0ac34692a1527552587dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e620414f079c02572504439d9b1f93"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___i_s31_f_l3731.html#a95e620414f079c02572504439d9b1f93">readRegister8</a> (uint8_t bank, uint8_t reg)</td></tr>
+<tr class="separator:a95e620414f079c02572504439d9b1f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a54e8469b57b21c0333de7ab0c207f369"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___i_s31_f_l3731.html#a54e8469b57b21c0333de7ab0c207f369">_i2caddr</a></td></tr>
+<tr class="separator:a54e8469b57b21c0333de7ab0c207f369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958ac7b7ebca8dbe6a47a481681b96d9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___i_s31_f_l3731.html#a958ac7b7ebca8dbe6a47a481681b96d9">_frame</a></td></tr>
+<tr class="separator:a958ac7b7ebca8dbe6a47a481681b96d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_adafruit___g_f_x"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_adafruit___g_f_x')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_adafruit___g_f_x.html">Adafruit_GFX</a></td></tr>
@@ -269,28 +284,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a80acec24f1c83e062123b4cbc0ffd538"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_IS31FL3731::audioSync </td>
-          <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>sync</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00136">136</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00026">ISSI_BANK_FUNCTIONREG</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00023">ISSI_REG_AUDIOSYNC</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a05752d5a88521e05c309a30f860125ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -307,51 +300,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">16</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
 
-<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00136">audioSync()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">clear()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00123">displayFrame()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00026">ISSI_BANK_FUNCTIONREG</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00011">ISSI_REG_CONFIG</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00012">ISSI_REG_CONFIG_PICTUREMODE</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00022">ISSI_REG_SHUTDOWN</a>.</p>
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_frame</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_i2caddr</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00136">audioSync()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">clear()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00123">displayFrame()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00026">ISSI_BANK_FUNCTIONREG</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00011">ISSI_REG_CONFIG</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00012">ISSI_REG_CONFIG_PICTUREMODE</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00022">ISSI_REG_SHUTDOWN</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00145">writeRegister8()</a>.</p>
 
 <p>Referenced by <a class="el" href="alphanumwrite_8cpp_source.html#l00016">setup()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5d7d810fcb7202ac57ffc88fc4fe63a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_IS31FL3731::clear </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">72</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>, <a class="el" href="_game_8cpp_source.html#l00020">Game::chooseDifficulty()</a>, <a class="el" href="softpot_8cpp_source.html#l00028">loop()</a>, <a class="el" href="_game_8cpp_source.html#l00047">Game::playAgain()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00051">printText()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a151e6da05fa427e7e285344dd569633e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_IS31FL3731::displayFrame </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00123">123</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00026">ISSI_BANK_FUNCTIONREG</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00025">ISSI_COMMANDREGISTER</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00020">ISSI_REG_PICTUREFRAME</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>.</p>
 
 </div>
 </div>
@@ -397,9 +348,31 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00094">94</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
 
-<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00007">_swap_int16_t</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00646">Adafruit_GFX::getRotation()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00088">setLEDPWM()</a>.</p>
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_frame</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00007">_swap_int16_t</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00646">Adafruit_GFX::getRotation()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00088">setLEDPWM()</a>.</p>
 
 <p>Referenced by <a class="el" href="solidbutton_8cpp_source.html#l00035">loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d7d810fcb7202ac57ffc88fc4fe63a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_IS31FL3731::clear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">72</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_frame</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_i2caddr</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00129">selectBank()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>, <a class="el" href="_game_8cpp_source.html#l00020">Game::chooseDifficulty()</a>, <a class="el" href="softpot_8cpp_source.html#l00028">loop()</a>, <a class="el" href="_game_8cpp_source.html#l00047">Game::playAgain()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00051">printText()</a>.</p>
 
 </div>
 </div>
@@ -467,25 +440,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">clear()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">Adafruit_GFX::drawChar()</a>.</p>
 
-<p>Referenced by <a class="el" href="_game_8cpp_source.html#l00020">Game::chooseDifficulty()</a>, <a class="el" href="_player_8cpp_source.html#l00013">Player::displayNumber()</a>, <a class="el" href="_game_8cpp_source.html#l00071">Game::displayScore()</a>, <a class="el" href="_printer_test_8cpp_source.html#l00035">loop()</a>, <a class="el" href="_game_8cpp_source.html#l00047">Game::playAgain()</a>, and <a class="el" href="_pot_8cpp_source.html#l00047">Pot::test()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a313fc55e90d4bcc59c7465c2b7218dfe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_IS31FL3731::setFrame </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00119">119</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+<p>Referenced by <a class="el" href="_game_8cpp_source.html#l00020">Game::chooseDifficulty()</a>, <a class="el" href="_player_8cpp_source.html#l00013">Player::displayNumber()</a>, <a class="el" href="_game_8cpp_source.html#l00071">Game::displayScore()</a>, <a class="el" href="_printer_test_8cpp_source.html#l00035">loop()</a>, <a class="el" href="_game_8cpp_source.html#l00047">Game::playAgain()</a>, and <a class="el" href="_pot_8cpp_source.html#l00048">Pot::test()</a>.</p>
 
 </div>
 </div>
@@ -521,7 +476,236 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00088">88</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00094">drawPixel()</a>, <a class="el" href="softpot_8cpp_source.html#l00028">loop()</a>, and <a class="el" href="_pot_8cpp_source.html#l00047">Pot::test()</a>.</p>
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00145">writeRegister8()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00094">drawPixel()</a>, <a class="el" href="softpot_8cpp_source.html#l00028">loop()</a>, and <a class="el" href="_pot_8cpp_source.html#l00048">Pot::test()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80acec24f1c83e062123b4cbc0ffd538"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_IS31FL3731::audioSync </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>sync</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00136">136</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00026">ISSI_BANK_FUNCTIONREG</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00023">ISSI_REG_AUDIOSYNC</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00145">writeRegister8()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a313fc55e90d4bcc59c7465c2b7218dfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_IS31FL3731::setFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00119">119</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_frame</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a151e6da05fa427e7e285344dd569633e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_IS31FL3731::displayFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00123">123</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00026">ISSI_BANK_FUNCTIONREG</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00020">ISSI_REG_PICTUREFRAME</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00145">writeRegister8()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15d6443f671de8e208078862649d92f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_IS31FL3731::selectBank </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bank</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00129">129</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_i2caddr</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00025">ISSI_COMMANDREGISTER</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">clear()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00156">readRegister8()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00145">writeRegister8()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ea8fa63cc0ac34692a1527552587dff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_IS31FL3731::writeRegister8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00145">145</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_i2caddr</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00129">selectBank()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00136">audioSync()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00123">displayFrame()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00088">setLEDPWM()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a95e620414f079c02572504439d9b1f93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Adafruit_IS31FL3731::readRegister8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00156">156</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html">Adafruit_IS31FL3731.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">_i2caddr</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00129">selectBank()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a54e8469b57b21c0333de7ab0c207f369"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Adafruit_IS31FL3731::_i2caddr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">49</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html">Adafruit_IS31FL3731.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">clear()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00156">readRegister8()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00129">selectBank()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00145">writeRegister8()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a958ac7b7ebca8dbe6a47a481681b96d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Adafruit_IS31FL3731::_frame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html#l00049">49</a> of file <a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html">Adafruit_IS31FL3731.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">begin()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">clear()</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00094">drawPixel()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00119">setFrame()</a>.</p>
 
 </div>
 </div>

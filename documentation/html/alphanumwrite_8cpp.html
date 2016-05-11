@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -111,10 +110,7 @@ $(document).ready(function(){initNavTree('alphanumwrite_8cpp.html','');});
 <div class="title">alphanumwrite.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html">Adafruit_IS31FL3731.h</a>&gt;</code><br />
-<code>#include &lt;Arduino.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="_reference_8h_source.html">Reference.h</a>&gt;</code><br />
-</div>
+
 <p><a href="alphanumwrite_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -140,25 +136,6 @@ Variables</h2></td></tr>
 <tr class="separator:a2d1a934d5a7b94e1e1951b02b61d0f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="alphanumwrite_8cpp_source.html#l00033">33</a> of file <a class="el" href="alphanumwrite_8cpp_source.html">alphanumwrite.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">Adafruit_GFX::drawChar()</a>, and <a class="el" href="alphanumwrite_8cpp_source.html#l00014">startpos</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a4fc01d736fe50cf5b977f755b675f11d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,6 +152,25 @@ Variables</h2></td></tr>
 <p>Definition at line <a class="el" href="alphanumwrite_8cpp_source.html#l00016">16</a> of file <a class="el" href="alphanumwrite_8cpp_source.html">alphanumwrite.cpp</a>.</p>
 
 <p>References <a class="el" href="_reference_8h_source.html#l00016">Reference::address74</a>, <a class="el" href="_reference_8h_source.html#l00017">Reference::address75</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00016">Adafruit_IS31FL3731::begin()</a>, <a class="el" href="_reference_8h_source.html#l00009">Reference::dPin74</a>, <a class="el" href="_reference_8h_source.html#l00010">Reference::dPin75</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">Adafruit_GFX::setRotation()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="alphanumwrite_8cpp_source.html#l00033">33</a> of file <a class="el" href="alphanumwrite_8cpp_source.html">alphanumwrite.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">Adafruit_GFX::drawChar()</a>, and <a class="el" href="alphanumwrite_8cpp_source.html#l00014">startpos</a>.</p>
 
 </div>
 </div>
@@ -221,19 +217,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2d1a934d5a7b94e1e1951b02b61d0f9b"></a>
+<a class="anchor" id="afb68deda3796e26c8bc78b8471c9d8fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t startpos = 5</td>
+          <td class="memname">bool turn75 = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="alphanumwrite_8cpp_source.html#l00014">14</a> of file <a class="el" href="alphanumwrite_8cpp_source.html">alphanumwrite.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="alphanumwrite_8cpp_source.html#l00033">loop()</a>.</p>
+<p>Definition at line <a class="el" href="alphanumwrite_8cpp_source.html#l00011">11</a> of file <a class="el" href="alphanumwrite_8cpp_source.html">alphanumwrite.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,17 +245,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb68deda3796e26c8bc78b8471c9d8fd"></a>
+<a class="anchor" id="a2d1a934d5a7b94e1e1951b02b61d0f9b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool turn75 = false</td>
+          <td class="memname">uint8_t startpos = 5</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="alphanumwrite_8cpp_source.html#l00011">11</a> of file <a class="el" href="alphanumwrite_8cpp_source.html">alphanumwrite.cpp</a>.</p>
+<p>Definition at line <a class="el" href="alphanumwrite_8cpp_source.html#l00014">14</a> of file <a class="el" href="alphanumwrite_8cpp_source.html">alphanumwrite.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="alphanumwrite_8cpp_source.html#l00033">loop()</a>.</p>
 
 </div>
 </div>

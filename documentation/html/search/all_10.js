@@ -1,6 +1,7 @@
 var searchData=
 [
   ['score',['score',['../class_player.html#a8f977208d1212bf7dbd7c590017d9eb4',1,'Player']]],
+  ['selectbank',['selectBank',['../class_adafruit___i_s31_f_l3731.html#a15d6443f671de8e208078862649d92f7',1,'Adafruit_IS31FL3731']]],
   ['setcursor',['setCursor',['../class_adafruit___g_f_x.html#aaf96a40cad0f34dd8ec73494b3866c33',1,'Adafruit_GFX']]],
   ['setfont',['setFont',['../class_adafruit___g_f_x.html#ab0479a2bb4e09e7c39c35e35c55d6ed1',1,'Adafruit_GFX']]],
   ['setframe',['setFrame',['../class_adafruit___i_s31_f_l3731.html#a313fc55e90d4bcc59c7465c2b7218dfe',1,'Adafruit_IS31FL3731']]],
@@ -15,5 +16,6 @@ var searchData=
   ['solidbutton_2ecpp',['solidbutton.cpp',['../solidbutton_8cpp.html',1,'']]],
   ['start',['start',['../class_pong.html#ac5beb40ef5119709e2bc8d21d788f4b8',1,'Pong']]],
   ['startpos',['startpos',['../alphanumwrite_8cpp.html#a2d1a934d5a7b94e1e1951b02b61d0f9b',1,'alphanumwrite.cpp']]],
+  ['state',['state',['../class_button.html#a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4',1,'Button']]],
   ['sweep',['sweep',['../solidbutton_8cpp.html#acdfdb804c256d34e85eac2ba43b43c9e',1,'solidbutton.cpp']]]
 ];

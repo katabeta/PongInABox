@@ -1,11 +1,6 @@
 var NAVTREE =
 [
   [ "Pong In A Box", "index.html", [
-    [ "Adafruit GFX Library", "md_C:_Users_katabeta_Documents_GitHub_PongInABox_lib_Adafruit-GFX_README.html", null ],
-    [ "Adafruit_IS31FL3731", "md_C:_Users_katabeta_Documents_GitHub_PongInABox_lib_Adafruit_IS31FL3731_README.html", null ],
-    [ "README", "md_C:_Users_katabeta_Documents_GitHub_PongInABox_mains_README.html", null ],
-    [ "Packages", "md_C:_Users_katabeta_Documents_GitHub_PongInABox_packages_Readme.html", null ],
-    [ "PongInABox", "md_C:_Users_katabeta_Documents_GitHub_PongInABox_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -33,7 +28,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_adafruit___g_f_x_8cpp.html",
-"softpot_8cpp_source.html"
+"class_reference.html#a9b6accea6984563c2607ad29e96a224b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

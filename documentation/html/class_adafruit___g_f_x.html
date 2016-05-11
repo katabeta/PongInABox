@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -114,8 +113,6 @@ $(document).ready(function(){initNavTree('class_adafruit___g_f_x.html','');});
 <div class="title">Adafruit_GFX Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>&gt;</code></p>
 
 <p>Inherits Print.</p>
 
@@ -263,28 +260,750 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">_cp437</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_height</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_width</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_x</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_y</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00103">gfxFont</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">HEIGHT</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">rotation</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textbgcolor</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textcolor</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">textsize</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">WIDTH</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">wrap</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6d447fe274e3f0ff12f12afa538d0afe"></a>
+<a class="anchor" id="ab7fbf72885c873266f9c7eb53b5c8896"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Adafruit_GFX::drawPixel </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_g_f_xcanvas16.html#ade30ed51e7dd07be0436b4f9407b6fd8">GFXcanvas16</a>, <a class="el" href="class_g_f_xcanvas1.html#a0859d124c8dcaa147ef22a54d6e843a8">GFXcanvas1</a>, and <a class="el" href="class_adafruit___i_s31_f_l3731.html#a504930deeff9d517fe100a4ed7e45fe6">Adafruit_IS31FL3731</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00384">drawBitmap()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00088">drawCircle()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00122">drawCircleHelper()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00454">drawXBitmap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0ff662c2b2b48c3bac51f98c777776d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawLine </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">196</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00070">_swap_int16_t</a>, and <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00296">drawTriangle()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cffbb1d69c5faf49cd0cff27686a837"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Adafruit_GFX::cp437 </td>
+          <td class="memname">void Adafruit_GFX::drawFastVLine </td>
           <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>x</em> = <code>true</code></td><td>)</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">245</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00237">drawRect()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">drawRoundRect()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00158">fillCircle()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">fillCircleHelper()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">fillRect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d42e7cc577c1eb5b06fe656786c9c79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawFastHLine </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">251</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00237">drawRect()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">drawRoundRect()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00304">fillTriangle()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ec2c2ab426503e4f7deddb93bb916f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawRect </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00237">237</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa43cf1dfe6c17d040a0f1fd5ffbe9d69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::fillRect </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">257</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00285">fillRoundRect()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">fillScreen()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b2730aaf2208990928f9c0f85558527"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::fillScreen </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00673">673</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">265</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">_cp437</a>.</p>
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_height</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_width</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">fillRect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fa315803f39a5e73b1841874daf0483"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::invertDisplay </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00879">879</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a648d2d6765e488b4556e802167d885fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawCircle </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00088">88</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f2dd7b698e7b95ebf9fecf992ff802e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawCircleHelper </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cornername</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00122">122</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">drawRoundRect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a623e031e58492fb41e9fde6a05d97c12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::fillCircle </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00158">158</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">fillCircleHelper()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2242d3560b08c6480084152b6660052a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::fillCircleHelper </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cornername</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">165</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00158">fillCircle()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00285">fillRoundRect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49284b9cea16ecf8c15dfd0b51a841e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawTriangle </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00296">296</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4cd646a3d9c9d5b3ee50010d0aa387cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::fillTriangle </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00304">304</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00070">_swap_int16_t</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab496b247abec724ef80e17a30257972b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawRoundRect </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">270</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00122">drawCircleHelper()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78dc59f6a508bcd3d5ac7af957b8b1ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::fillRoundRect </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00285">285</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">fillCircleHelper()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">fillRect()</a>.</p>
 
 </div>
 </div>
@@ -516,6 +1235,60 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acec26bcf41c15ac6826c67e1f5e4cde6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::drawXBitmap </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00454">454</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00047">pgm_read_byte</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab7f5a29b3a3dffe30c6a3f4c1f604a5a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -572,33 +1345,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a648d2d6765e488b4556e802167d885fb"></a>
+<a class="anchor" id="aaf96a40cad0f34dd8ec73494b3866c33"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Adafruit_GFX::drawCircle </td>
+          <td class="memname">void Adafruit_GFX::setCursor </td>
           <td>(</td>
           <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -608,809 +1369,161 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00088">88</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00614">614</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>References <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>.</p>
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_x</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_y</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3f2dd7b698e7b95ebf9fecf992ff802e"></a>
+<a class="anchor" id="a59178a0e0c845a14a39b457c43567dd9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Adafruit_GFX::drawCircleHelper </td>
+          <td class="memname">void Adafruit_GFX::setTextColor </td>
           <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00631">631</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textbgcolor</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textcolor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6e88c585d3ab6b4f95199361f224fc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_GFX::setTextColor </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>bg</em>&#160;</td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00637">637</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textbgcolor</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textcolor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39eb4a8a2c9fa4ab7d58ceffd19535d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
+          <td class="memname">void Adafruit_GFX::setTextSize </td>
+          <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>cornername</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00122">122</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00627">627</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>References <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">drawRoundRect()</a>.</p>
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">textsize</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4d42e7cc577c1eb5b06fe656786c9c79"></a>
+<a class="anchor" id="aeeacd62bf26f3e7abbdc4b5b50faa6fa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Adafruit_GFX::drawFastHLine </td>
+          <td class="memname">void Adafruit_GFX::setTextWrap </td>
           <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">251</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00642">642</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00237">drawRect()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">drawRoundRect()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00304">fillTriangle()</a>.</p>
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">wrap</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1cffbb1d69c5faf49cd0cff27686a837"></a>
+<a class="anchor" id="a6ac337c49876cee23ed062a928724675"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Adafruit_GFX::drawFastVLine </td>
+          <td class="memname">void Adafruit_GFX::setRotation </td>
           <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">245</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00237">drawRect()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">drawRoundRect()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00158">fillCircle()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">fillCircleHelper()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">fillRect()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa0ff662c2b2b48c3bac51f98c777776d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::drawLine </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">196</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00070">_swap_int16_t</a>, and <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00296">drawTriangle()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab7fbf72885c873266f9c7eb53b5c8896"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Adafruit_GFX::drawPixel </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_g_f_xcanvas1.html#a0859d124c8dcaa147ef22a54d6e843a8">GFXcanvas1</a>, and <a class="el" href="class_adafruit___i_s31_f_l3731.html#a504930deeff9d517fe100a4ed7e45fe6">Adafruit_IS31FL3731</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00384">drawBitmap()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00088">drawCircle()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00122">drawCircleHelper()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00454">drawXBitmap()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9ec2c2ab426503e4f7deddb93bb916f6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::drawRect </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00237">237</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab496b247abec724ef80e17a30257972b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::drawRoundRect </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00270">270</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00122">drawCircleHelper()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a49284b9cea16ecf8c15dfd0b51a841e6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::drawTriangle </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00296">296</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">drawLine()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acec26bcf41c15ac6826c67e1f5e4cde6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::drawXBitmap </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>bitmap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00454">454</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896">drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00047">pgm_read_byte</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a623e031e58492fb41e9fde6a05d97c12"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::fillCircle </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00158">158</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">fillCircleHelper()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2242d3560b08c6480084152b6660052a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::fillCircleHelper </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>cornername</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>r</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>delta</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">165</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">650</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_height</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_width</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">HEIGHT</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">rotation</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">WIDTH</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00158">fillCircle()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00285">fillRoundRect()</a>.</p>
+<p>Referenced by <a class="el" href="alphanumwrite_8cpp_source.html#l00016">setup()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa43cf1dfe6c17d040a0f1fd5ffbe9d69"></a>
+<a class="anchor" id="a6d447fe274e3f0ff12f12afa538d0afe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Adafruit_GFX::fillRect </td>
+          <td class="memname">void Adafruit_GFX::cp437 </td>
           <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>x</em> = <code>true</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">257</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00673">673</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00245">drawFastVLine()</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00285">fillRoundRect()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">fillScreen()</a>.</p>
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">_cp437</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a78dc59f6a508bcd3d5ac7af957b8b1ac"></a>
+<a class="anchor" id="ab0479a2bb4e09e7c39c35e35c55d6ed1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Adafruit_GFX::fillRoundRect </td>
+          <td class="memname">void Adafruit_GFX::setFont </td>
           <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00285">285</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00165">fillCircleHelper()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">fillRect()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2b2730aaf2208990928f9c0f85558527"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::fillScreen </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramtype">const GFXfont *&#160;</td>
+          <td class="paramname"><em>f</em> = <code>NULL</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">265</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00677">677</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_height</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_width</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00257">fillRect()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4cd646a3d9c9d5b3ee50010d0aa387cd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::fillTriangle </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00304">304</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00070">_swap_int16_t</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00251">drawFastHLine()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0423f175d3ac47e28beae1dc593bc24f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t Adafruit_GFX::getCursorX </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00619">619</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_x</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a34a63c8c32a8c57f77c9efb50db1c20b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t Adafruit_GFX::getCursorY </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00623">623</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_y</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1956ad03632c73f25b4d8d240a40d7c9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Adafruit_GFX::getRotation </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00646">646</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">rotation</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00094">Adafruit_IS31FL3731::drawPixel()</a>.</p>
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_y</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00103">gfxFont</a>.</p>
 
 </div>
 </div>
@@ -1534,226 +1647,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac3dea6208d543a50f89b8e81bcaf9f09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t Adafruit_GFX::height </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00875">875</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_height</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2fa315803f39a5e73b1841874daf0483"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::invertDisplay </td>
-          <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00879">879</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaf96a40cad0f34dd8ec73494b3866c33"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::setCursor </td>
-          <td>(</td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00614">614</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_x</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_y</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab0479a2bb4e09e7c39c35e35c55d6ed1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::setFont </td>
-          <td>(</td>
-          <td class="paramtype">const GFXfont *&#160;</td>
-          <td class="paramname"><em>f</em> = <code>NULL</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00677">677</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_y</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00103">gfxFont</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6ac337c49876cee23ed062a928724675"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::setRotation </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>r</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">650</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_height</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_width</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">HEIGHT</a>, <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">rotation</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">WIDTH</a>.</p>
-
-<p>Referenced by <a class="el" href="alphanumwrite_8cpp_source.html#l00016">setup()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a59178a0e0c845a14a39b457c43567dd9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::setTextColor </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00631">631</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textbgcolor</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textcolor</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab6e88c585d3ab6b4f95199361f224fc6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::setTextColor </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>bg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00637">637</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textbgcolor</a>, and <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">textcolor</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a39eb4a8a2c9fa4ab7d58ceffd19535d5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::setTextSize </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00627">627</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">textsize</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aeeacd62bf26f3e7abbdc4b5b50faa6fa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_GFX::setTextWrap </td>
-          <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>w</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00642">642</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">wrap</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a32dadc6651cedc5e6426322c8a922cd6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t Adafruit_GFX::width </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00871">871</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_width</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="af4978ea0cf0c0b0540567e82d8fa9900"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1784,8 +1677,110 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac3dea6208d543a50f89b8e81bcaf9f09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Adafruit_GFX::height </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00875">875</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_height</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32dadc6651cedc5e6426322c8a922cd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Adafruit_GFX::width </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00871">871</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">_width</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1956ad03632c73f25b4d8d240a40d7c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Adafruit_GFX::getRotation </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00646">646</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">rotation</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00094">Adafruit_IS31FL3731::drawPixel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0423f175d3ac47e28beae1dc593bc24f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Adafruit_GFX::getCursorX </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00619">619</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_x</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34a63c8c32a8c57f77c9efb50db1c20b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Adafruit_GFX::getCursorY </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00623">623</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">cursor_y</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aaef3d4d239641084cd3825a8b1042e01"></a>
+<a class="anchor" id="ab693a8ac5d94c50c2558b5a3795ddde4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1793,7 +1788,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean Adafruit_GFX::_cp437</td>
+          <td class="memname">const int16_t Adafruit_GFX::WIDTH</td>
         </tr>
       </table>
   </td>
@@ -1803,13 +1798,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">100</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">90</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00673">cp437()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>.</p>
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01032">GFXcanvas16::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01058">GFXcanvas16::fillScreen()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab9bb0cbc2455f64dce2a5ec36307aa94"></a>
+<a class="anchor" id="a6b3665babcb73df381563016e9f71bdb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1817,7 +1812,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t Adafruit_GFX::_height</td>
+          <td class="memname">const int16_t Adafruit_GFX::HEIGHT</td>
         </tr>
       </table>
   </td>
@@ -1827,9 +1822,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">92</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">90</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">getTextBounds()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00875">height()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01032">GFXcanvas16::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01058">GFXcanvas16::fillScreen()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
 
 </div>
 </div>
@@ -1853,7 +1848,31 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">92</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">getTextBounds()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00871">width()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01032">GFXcanvas16::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">getTextBounds()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00871">width()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9bb0cbc2455f64dce2a5ec36307aa94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Adafruit_GFX::_height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00092">92</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01032">GFXcanvas16::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00265">fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">getTextBounds()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00875">height()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
 
 </div>
 </div>
@@ -1905,7 +1924,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afeb94c3253f43dada05e1270e322fa06"></a>
+<a class="anchor" id="a8c6d23a386651136fd9530a5b7046591"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1913,7 +1932,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GFXfont* Adafruit_GFX::gfxFont</td>
+          <td class="memname">uint16_t Adafruit_GFX::textcolor</td>
         </tr>
       </table>
   </td>
@@ -1923,57 +1942,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00103">103</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">95</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">getTextBounds()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00677">setFont()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6b3665babcb73df381563016e9f71bdb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int16_t Adafruit_GFX::HEIGHT</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">90</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a37a479d28fb11906ce516e983b1af926"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Adafruit_GFX::rotation</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">97</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00646">getRotation()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00890">Adafruit_GFX_Button::initButton()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00631">setTextColor()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
 
 </div>
 </div>
@@ -2001,30 +1972,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8c6d23a386651136fd9530a5b7046591"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t Adafruit_GFX::textcolor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00095">95</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00890">Adafruit_GFX_Button::initButton()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00631">setTextColor()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac293848b8fe8c46107d1a491f6a5168d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2049,7 +1996,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab693a8ac5d94c50c2558b5a3795ddde4"></a>
+<a class="anchor" id="a37a479d28fb11906ce516e983b1af926"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2057,7 +2004,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int16_t Adafruit_GFX::WIDTH</td>
+          <td class="memname">uint8_t Adafruit_GFX::rotation</td>
         </tr>
       </table>
   </td>
@@ -2067,9 +2014,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00090">90</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00097">97</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01010">GFXcanvas1::fillScreen()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l01032">GFXcanvas16::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00646">getRotation()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00650">setRotation()</a>.</p>
 
 </div>
 </div>
@@ -2094,6 +2041,54 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">100</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
 
 <p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">getTextBounds()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00642">setTextWrap()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaef3d4d239641084cd3825a8b1042e01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Adafruit_GFX::_cp437</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00100">100</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00673">cp437()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afeb94c3253f43dada05e1270e322fa06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFXfont* Adafruit_GFX::gfxFont</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8h_source.html#l00103">103</a> of file <a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00073">Adafruit_GFX()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">getTextBounds()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00677">setFont()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">write()</a>.</p>
 
 </div>
 </div>

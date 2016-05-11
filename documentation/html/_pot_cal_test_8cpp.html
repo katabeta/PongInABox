@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -111,12 +110,7 @@ $(document).ready(function(){initNavTree('_pot_cal_test_8cpp.html','');});
 <div class="title">PotCalTest.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_adafruit___i_s31_f_l3731_8h_source.html">Adafruit_IS31FL3731.h</a>&gt;</code><br />
-<code>#include &lt;Arduino.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="_pot_8h_source.html">Pot.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_reference_8h_source.html">Reference.h</a>&gt;</code><br />
-</div>
+
 <p><a href="_pot_cal_test_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -140,25 +134,6 @@ Variables</h2></td></tr>
 <tr class="separator:a36276369ec2a201527439b4b775e3350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_pot_cal_test_8cpp_source.html#l00032">32</a> of file <a class="el" href="_pot_cal_test_8cpp_source.html">PotCalTest.cpp</a>.</p>
-
-<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">Adafruit_IS31FL3731::clear()</a>, <a class="el" href="_pot_8cpp_source.html#l00024">Pot::getLEDNumRead()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00088">Adafruit_IS31FL3731::setLEDPWM()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a4fc01d736fe50cf5b977f755b675f11d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -178,21 +153,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a36276369ec2a201527439b4b775e3350"></a>
+<a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t calButtonPin = 7</td>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pot_cal_test_8cpp_source.html#l00014">14</a> of file <a class="el" href="_pot_cal_test_8cpp_source.html">PotCalTest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_cal_test_8cpp_source.html#l00032">32</a> of file <a class="el" href="_pot_cal_test_8cpp_source.html">PotCalTest.cpp</a>.</p>
+
+<p>References <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00072">Adafruit_IS31FL3731::clear()</a>, <a class="el" href="_pot_8cpp_source.html#l00025">Pot::getLEDNumRead()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00088">Adafruit_IS31FL3731::setLEDPWM()</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a0aa96b426ecbc4873049545794472d0a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -221,6 +201,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5a963265d9630f699ae4106f34002ac5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_reference.html">Reference</a> reference = <a class="el" href="class_reference.html">Reference</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_pot_cal_test_8cpp_source.html#l00010">10</a> of file <a class="el" href="_pot_cal_test_8cpp_source.html">PotCalTest.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7d3a4abccbd351c8029a9c53ec0e85f7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -235,17 +229,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5a963265d9630f699ae4106f34002ac5"></a>
+<a class="anchor" id="a36276369ec2a201527439b4b775e3350"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_reference.html">Reference</a> reference = <a class="el" href="class_reference.html">Reference</a>()</td>
+          <td class="memname">uint8_t calButtonPin = 7</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_pot_cal_test_8cpp_source.html#l00010">10</a> of file <a class="el" href="_pot_cal_test_8cpp_source.html">PotCalTest.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_cal_test_8cpp_source.html#l00014">14</a> of file <a class="el" href="_pot_cal_test_8cpp_source.html">PotCalTest.cpp</a>.</p>
 
 </div>
 </div>

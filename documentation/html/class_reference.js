@@ -1,13 +1,13 @@
 var class_reference =
 [
     [ "Reference", "class_reference.html#a9b6accea6984563c2607ad29e96a224b", null ],
-    [ "address74", "class_reference.html#aabc09df88eea7581f8271455c1c1a765", null ],
-    [ "address75", "class_reference.html#a032a2b639ea44f986f0c40230e4e6c8a", null ],
-    [ "aPin74", "class_reference.html#aec27aaaa7ec1d2c3798e734505c8069b", null ],
-    [ "aPin75", "class_reference.html#a7e1e5fdea08c2fdc0ff8a249c97bb171", null ],
-    [ "dPin0", "class_reference.html#af1b6e86d689f94c781beabb82d1b5903", null ],
-    [ "dPin74", "class_reference.html#aa82ce4f3bb9ee09595710a8f0aded5ab", null ],
-    [ "dPin75", "class_reference.html#a16cc1efb17b7abdda54d2534285d584c", null ],
-    [ "potMax", "class_reference.html#a16c4de5821b89905abcc9f0d90972ae4", null ],
-    [ "potMin", "class_reference.html#a1e0bc79bccf3452fc4a6db1317aea773", null ]
+    [ "dPin74", "class_reference.html#a2705af92540bb4ab0b9f8eeed07be9d1", null ],
+    [ "dPin75", "class_reference.html#a345f8930a1f628cc95029ee113b7397b", null ],
+    [ "dPin0", "class_reference.html#ae1c47b74884c7d3c5929ed9a23206f4a", null ],
+    [ "aPin74", "class_reference.html#aa8c0fd3c9f93df705596888c1e3003a6", null ],
+    [ "aPin75", "class_reference.html#a7e9a70cf279c7cd24155bea7b897c40c", null ],
+    [ "address74", "class_reference.html#a7c6099f7dc4aa5b273a9488784261b1c", null ],
+    [ "address75", "class_reference.html#a0b83f7194e936c544d9d064787cf2b61", null ],
+    [ "potMin", "class_reference.html#ab67c28fa5a4b3239a115f71760d752cb", null ],
+    [ "potMax", "class_reference.html#a1547870ee84871fefbbcbae3f60fb8b9", null ]
 ];

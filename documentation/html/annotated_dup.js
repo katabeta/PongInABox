@@ -7,7 +7,7 @@ var annotated_dup =
     [ "ErrorCodes", "class_error_codes.html", "class_error_codes" ],
     [ "Game", "class_game.html", "class_game" ],
     [ "GFXcanvas1", "class_g_f_xcanvas1.html", "class_g_f_xcanvas1" ],
-    [ "GFXcanvas16", "class_g_f_xcanvas16.html", null ],
+    [ "GFXcanvas16", "class_g_f_xcanvas16.html", "class_g_f_xcanvas16" ],
     [ "Player", "class_player.html", "class_player" ],
     [ "Pong", "class_pong.html", "class_pong" ],
     [ "Pot", "class_pot.html", "class_pot" ],

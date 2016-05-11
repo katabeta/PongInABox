@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -110,9 +109,7 @@ $(document).ready(function(){initNavTree('_adafruit___g_f_x_8cpp.html','');});
 <div class="title">Adafruit_GFX.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_adafruit___g_f_x_8h_source.html">Adafruit_GFX.h</a>&quot;</code><br />
-<code>#include &quot;glcdfont.c&quot;</code><br />
-</div>
+
 <p><a href="_adafruit___g_f_x_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -131,66 +128,6 @@ Macros</h2></td></tr>
 <tr class="separator:a4e000513b9464b4b8a13b6ac95f87f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a4e000513b9464b4b8a13b6ac95f87f80"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _swap_int16_t</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ int16_t t = a; a = b; b = t; }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00070">70</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">Adafruit_GFX::drawLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00304">Adafruit_GFX::fillTriangle()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac6afabdc09a49a433ee19d8a9486056d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define min</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00066">66</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00908">Adafruit_GFX_Button::drawButton()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a48c60b057902adf805797f183286728d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -208,6 +145,26 @@ Macros</h2></td></tr>
 <p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00047">47</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00384">Adafruit_GFX::drawBitmap()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">Adafruit_GFX::drawChar()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00977">GFXcanvas1::drawPixel()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00454">Adafruit_GFX::drawXBitmap()</a>, <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00693">Adafruit_GFX::getTextBounds()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00472">Adafruit_GFX::write()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a910fb5f01313d339d3b835d45e1e5ad0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define pgm_read_word</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr</td><td>)</td>
+          <td>&#160;&#160;&#160;(*(const unsigned short *)(addr))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00050">50</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">Adafruit_GFX::drawChar()</a>.</p>
 
 </div>
 </div>
@@ -249,23 +206,63 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a910fb5f01313d339d3b835d45e1e5ad0"></a>
+<a class="anchor" id="ac6afabdc09a49a433ee19d8a9486056d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define pgm_read_word</td>
+          <td class="memname">#define min</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">addr</td><td>)</td>
-          <td>&#160;&#160;&#160;(*(const unsigned short *)(addr))</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00050">50</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00066">66</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00525">Adafruit_GFX::drawChar()</a>.</p>
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00908">Adafruit_GFX_Button::drawButton()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e000513b9464b4b8a13b6ac95f87f80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _swap_int16_t</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;{ int16_t t = a; a = b; b = t; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00070">70</a> of file <a class="el" href="_adafruit___g_f_x_8cpp_source.html">Adafruit_GFX.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00196">Adafruit_GFX::drawLine()</a>, and <a class="el" href="_adafruit___g_f_x_8cpp_source.html#l00304">Adafruit_GFX::fillTriangle()</a>.</p>
 
 </div>
 </div>
