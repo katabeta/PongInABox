@@ -8,7 +8,8 @@
 ErrorCodes::ErrorCodes(){}
 
 /**
-prints the error that corresponds to the passed code
+prints the error that corresponds to the passed code to the Serial bus
+Use Putty to read printouts
 
 @param code
     the ErrorCode enum that corresponds to your error
