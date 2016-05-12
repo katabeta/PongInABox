@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['playagain',['playAgain',['../class_game.html#a6dda354dd033559189f920deb39ec588',1,'Game']]],
-  ['player',['Player',['../class_player.html#a0b196d0fee87963e39c5f34709e07fd0',1,'Player']]],
-  ['pong',['Pong',['../class_pong.html#acea7a68d93b5d406eda087dc45a4ae2b',1,'Pong']]],
-  ['pot',['Pot',['../class_pot.html#a2a5f7ef6270c47f00f4aebde7cbce434',1,'Pot']]],
-  ['press',['press',['../class_adafruit___g_f_x___button.html#a221d9753f7d8e8f7f9c1ebbee69d02bd',1,'Adafruit_GFX_Button']]],
-  ['printtext',['printText',['../class_adafruit___i_s31_f_l3731.html#a9246db6dde11b6b259a6fdef300923c3',1,'Adafruit_IS31FL3731']]]
+  ['readregister8',['readRegister8',['../class_adafruit___i_s31_f_l3731.html#a95e620414f079c02572504439d9b1f93',1,'Adafruit_IS31FL3731']]],
+  ['ready',['ready',['../class_game.html#a064eea8b5856233f5295dc3addacaa16',1,'Game']]],
+  ['reference',['Reference',['../class_reference.html#a9b6accea6984563c2607ad29e96a224b',1,'Reference']]]
 ];

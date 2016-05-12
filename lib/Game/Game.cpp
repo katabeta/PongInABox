@@ -1,8 +1,19 @@
 #include <Game.h>
 
 
-//TODO UNTESTED
+/**
+@class Game
+    defines general methods for all or most games.
 
+@param player1
+    the *pointer* to the first player of the game (P1, player whose number variable is 1).
+@param player2
+    the *pointer* to the second player of the game (P2, player whose number variable is 2).
+@param cofirmbutton
+    the *pointer* to the button that isn't assigned to either of the players.
+
+@test
+*/
 Game::Game(Player* player1, Player* player2, Button* confirmButton){
   this->p1 = player1;
   this->p2 = player2;
@@ -14,9 +25,26 @@ Game::Game(Player* player1, Player* player2, Button* confirmButton){
   difficulty = 1;
 }
 
+/**
+prompts the both of the players if they are ready.
+
+@return true if both players press their button at prompt, false otherwise.
+
+@todo if in a while loop, may need to put the return in a timeout to allow for a responce time
+or alternatively have the confimation button be the decline button. However, that would muddle
+its meaning.
+
+@test
+*/
 bool Game::ready(){
   return p1->pot->test() && p2->pot->test();
 }
+
+/**
+Prompts the players to select a setting.
+
+@test
+*/
 uint8_t Game::chooseDifficulty(){
   p1->display->printText(0, 0, "Press confirm button when yes", 125, true, false, 0, 5);
   p2->display->printText(0, 0, "Press confirm button when yes", 125, true, false, 0, 5);
@@ -44,6 +72,13 @@ uint8_t Game::chooseDifficulty(){
   return difficulty;
 }
 
+/**
+Prompts the players if they want to play again.
+
+@return true if both players want to play again, false otherwise.
+
+@test
+*/
 bool Game::playAgain(){
   bool p1PlayAgain = false;
   bool p2PlayAgain = false;
@@ -68,20 +103,48 @@ bool Game::playAgain(){
 
   return p1PlayAgain && p2PlayAgain; //true only if both are true
 }
+
+/**
+displays the score of both players on both of the displays,
+with the first player's score first and the second player's score
+second. Make sure to Player::displayNumber() at some point before
+this so that the player knows which score is theirs.
+
+@test
+*/
 void Game::displayScore(){
   p1->display->printText(0, 0, p1->score + ":" + p2->score, 125, true, true, 1, 5);
   p2->display->printText(0, 0, p1->score + ":" + p2->score, 125, true, true, 1, 5);
 }
+
+/**
+counts down from 3 to 0 on both of the screen to signal that the game is about to start
+and the players should be ready.
+
+@test
+*/
 void Game::countdown(){
   for(int i = 3; i >= 0; i++){
     p1->display->drawChar(0, 0, i, 125, 0, 1);
     p2->display->drawChar(0, 0, i, 125, 0, 1);
   }
 }
+
+/**
+draws the losing animation on the losing player's display
+
+@todo UNIMPLEMENTED
+*/
 void Game::drawLoseAnim(){
 
 }
+
+/**
+draws the winning animation on the winning player's display
+
+@todo UNIMPLEMENTED
+*/
 void Game::drawWinAnim(){
-  
+
 }
 /*private*/

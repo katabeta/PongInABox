@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['width',['width',['../class_adafruit___g_f_x.html#a32dadc6651cedc5e6426322c8a922cd6',1,'Adafruit_GFX']]],
-  ['write',['write',['../class_adafruit___g_f_x.html#af4978ea0cf0c0b0540567e82d8fa9900',1,'Adafruit_GFX']]],
-  ['writeerrorcode',['writeErrorCode',['../class_error_codes.html#add983c7ef452dd833361f9bf0ad9ea6b',1,'ErrorCodes']]],
-  ['writeregister8',['writeRegister8',['../class_adafruit___i_s31_f_l3731.html#a0ea8fa63cc0ac34692a1527552587dff',1,'Adafruit_IS31FL3731']]]
+  ['_7egfxcanvas1',['~GFXcanvas1',['../class_g_f_xcanvas1.html#a5c6dad65db4c9a99544f3b5bad4c86e8',1,'GFXcanvas1']]],
+  ['_7egfxcanvas16',['~GFXcanvas16',['../class_g_f_xcanvas16.html#a15a79ebb2f3d86cb6a6bdc4ab1f3e9b7',1,'GFXcanvas16']]]
 ];

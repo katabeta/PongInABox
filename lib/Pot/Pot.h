@@ -12,9 +12,9 @@ public:
   int getLEDNumRead(double min, double max);
   bool test(void);
 private:
-  int pin; /**< Holds the pin of the pot */
-  int max; /**< Holds the maximum possible raw value of the pot */
-  int min; /**< Holds the minimum possible raw value of the pot */
+  int pin; /**< Holds the pin of the pot. If you are setting this value, please use Reference */
+  int max; /**< Holds the maximum possible raw value of the pot. If you are setting this value, please use Reference */
+  int min; /**< Holds the minimum possible raw value of the pot. If you are setting this value, please use Reference */
 
   Reference reference = Reference(); /**< Initializes the constants library */
 

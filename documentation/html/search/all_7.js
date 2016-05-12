@@ -1,8 +1,6 @@
 var searchData=
 [
   ['game',['Game',['../class_game.html',1,'Game'],['../class_game.html#ae0bfcc14ea064fe3a9d2b5017994f07d',1,'Game::Game()']]],
-  ['game_2ecpp',['Game.cpp',['../_game_8cpp.html',1,'']]],
-  ['game_2eh',['Game.h',['../_game_8h.html',1,'']]],
   ['get',['get',['../class_button.html#af0f53313d84584c1ade71eb993f98986',1,'Button']]],
   ['getbuffer',['getBuffer',['../class_g_f_xcanvas1.html#a008d7c6d8db9f641cef9d345959f732b',1,'GFXcanvas1::getBuffer()'],['../class_g_f_xcanvas16.html#adff0802df78d18dcc6834d6ad68c7619',1,'GFXcanvas16::getBuffer()']]],
   ['getcursorx',['getCursorX',['../class_adafruit___g_f_x.html#a0423f175d3ac47e28beae1dc593bc24f',1,'Adafruit_GFX']]],

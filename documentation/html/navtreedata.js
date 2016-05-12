@@ -1,6 +1,8 @@
 var NAVTREE =
 [
   [ "Pong In A Box", "index.html", [
+    [ "Test List", "test.html", null ],
+    [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -12,23 +14,13 @@ var NAVTREE =
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
-    ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_adafruit___g_f_x_8cpp.html",
-"class_reference.html#a9b6accea6984563c2607ad29e96a224b"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

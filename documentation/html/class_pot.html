@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -114,62 +114,47 @@ $(document).ready(function(){initNavTree('class_pot.html','');});
 <div class="title">Pot Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>The soft potentiometer.  
- <a href="class_pot.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a5f7ef6270c47f00f4aebde7cbce434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a2a5f7ef6270c47f00f4aebde7cbce434">Pot</a> (uint8_t <a class="el" href="class_pot.html#a48279648d3b58f2560a8c8b0edeb669d">pin</a>, <a class="el" href="class_adafruit___i_s31_f_l3731.html">Adafruit_IS31FL3731</a> *<a class="el" href="class_pot.html#a7d44356ded4908241ad48ac3ea5cd3dc">display</a>)</td></tr>
-<tr class="memdesc:a2a5f7ef6270c47f00f4aebde7cbce434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the class.  <a href="#a2a5f7ef6270c47f00f4aebde7cbce434">More...</a><br /></td></tr>
-<tr class="separator:a2a5f7ef6270c47f00f4aebde7cbce434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af184fcaad64db79bea0cb78bcaa57f67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#af184fcaad64db79bea0cb78bcaa57f67">getLEDNumRead</a> (void)</td></tr>
-<tr class="memdesc:af184fcaad64db79bea0cb78bcaa57f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the LED number along the bottom of the display the status of this pot would like up Public.  <a href="#af184fcaad64db79bea0cb78bcaa57f67">More...</a><br /></td></tr>
 <tr class="separator:af184fcaad64db79bea0cb78bcaa57f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98244f7de3c027259d4e409234a440e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a98244f7de3c027259d4e409234a440e2">getLEDNumRead</a> (double <a class="el" href="class_pot.html#a454874e3e4a20addf16a04e492e1e1de">min</a>, double <a class="el" href="class_pot.html#a2855fb4580377cb637a9369ef5997d80">max</a>)</td></tr>
-<tr class="memdesc:a98244f7de3c027259d4e409234a440e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the LED number along the bottom of the display the status of this pot would like up Public.  <a href="#a98244f7de3c027259d4e409234a440e2">More...</a><br /></td></tr>
 <tr class="separator:a98244f7de3c027259d4e409234a440e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5f7ef6270c47f00f4aebde7cbce434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a2a5f7ef6270c47f00f4aebde7cbce434">Pot</a> (uint8_t <a class="el" href="class_pot.html#a48279648d3b58f2560a8c8b0edeb669d">pin</a>, <a class="el" href="class_adafruit___i_s31_f_l3731.html">Adafruit_IS31FL3731</a> *<a class="el" href="class_pot.html#a7d44356ded4908241ad48ac3ea5cd3dc">display</a>)</td></tr>
+<tr class="separator:a2a5f7ef6270c47f00f4aebde7cbce434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae86a6a686f0eda9fd01a4f9da9559d27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#ae86a6a686f0eda9fd01a4f9da9559d27">test</a> (void)</td></tr>
-<tr class="memdesc:ae86a6a686f0eda9fd01a4f9da9559d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the player to test that the pot is working as expected.  <a href="#ae86a6a686f0eda9fd01a4f9da9559d27">More...</a><br /></td></tr>
 <tr class="separator:ae86a6a686f0eda9fd01a4f9da9559d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af2ae4f2a139ce8ecd0df39215cf9d9d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#af2ae4f2a139ce8ecd0df39215cf9d9d1">getNormalizedRead</a> (void)</td></tr>
-<tr class="memdesc:af2ae4f2a139ce8ecd0df39215cf9d9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes the raw reading from the potentiometer.  <a href="#af2ae4f2a139ce8ecd0df39215cf9d9d1">More...</a><br /></td></tr>
 <tr class="separator:af2ae4f2a139ce8ecd0df39215cf9d9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc3b3979b21c6deaadfb5c9124f3ec6c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#adc3b3979b21c6deaadfb5c9124f3ec6c">getNormalizedRead</a> (double <a class="el" href="class_pot.html#a454874e3e4a20addf16a04e492e1e1de">min</a>, double <a class="el" href="class_pot.html#a2855fb4580377cb637a9369ef5997d80">max</a>)</td></tr>
-<tr class="memdesc:adc3b3979b21c6deaadfb5c9124f3ec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes the raw reading from the potentiometer.  <a href="#adc3b3979b21c6deaadfb5c9124f3ec6c">More...</a><br /></td></tr>
 <tr class="separator:adc3b3979b21c6deaadfb5c9124f3ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a48279648d3b58f2560a8c8b0edeb669d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a48279648d3b58f2560a8c8b0edeb669d">pin</a></td></tr>
-<tr class="memdesc:a48279648d3b58f2560a8c8b0edeb669d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the pin of the pot.  <a href="#a48279648d3b58f2560a8c8b0edeb669d">More...</a><br /></td></tr>
-<tr class="separator:a48279648d3b58f2560a8c8b0edeb669d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d44356ded4908241ad48ac3ea5cd3dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adafruit___i_s31_f_l3731.html">Adafruit_IS31FL3731</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a7d44356ded4908241ad48ac3ea5cd3dc">display</a></td></tr>
+<tr class="separator:a7d44356ded4908241ad48ac3ea5cd3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2855fb4580377cb637a9369ef5997d80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a2855fb4580377cb637a9369ef5997d80">max</a></td></tr>
-<tr class="memdesc:a2855fb4580377cb637a9369ef5997d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the maximum possible raw value of the pot.  <a href="#a2855fb4580377cb637a9369ef5997d80">More...</a><br /></td></tr>
 <tr class="separator:a2855fb4580377cb637a9369ef5997d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a454874e3e4a20addf16a04e492e1e1de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a454874e3e4a20addf16a04e492e1e1de">min</a></td></tr>
-<tr class="memdesc:a454874e3e4a20addf16a04e492e1e1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the minimum possible raw value of the pot.  <a href="#a454874e3e4a20addf16a04e492e1e1de">More...</a><br /></td></tr>
 <tr class="separator:a454874e3e4a20addf16a04e492e1e1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48279648d3b58f2560a8c8b0edeb669d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a48279648d3b58f2560a8c8b0edeb669d">pin</a></td></tr>
+<tr class="separator:a48279648d3b58f2560a8c8b0edeb669d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a9ac28ab6fa3a9a59e068c81a63c0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_reference.html">Reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#aa4a9ac28ab6fa3a9a59e068c81a63c0f">reference</a> = <a class="el" href="class_reference.html">Reference</a>()</td></tr>
-<tr class="memdesc:aa4a9ac28ab6fa3a9a59e068c81a63c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the constants library.  <a href="#aa4a9ac28ab6fa3a9a59e068c81a63c0f">More...</a><br /></td></tr>
 <tr class="separator:aa4a9ac28ab6fa3a9a59e068c81a63c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d44356ded4908241ad48ac3ea5cd3dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adafruit___i_s31_f_l3731.html">Adafruit_IS31FL3731</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html#a7d44356ded4908241ad48ac3ea5cd3dc">display</a></td></tr>
-<tr class="memdesc:a7d44356ded4908241ad48ac3ea5cd3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the pointer to the display that is associated with this pot.  <a href="#a7d44356ded4908241ad48ac3ea5cd3dc">More...</a><br /></td></tr>
-<tr class="separator:a7d44356ded4908241ad48ac3ea5cd3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The soft potentiometer. </p>
-<p>Defines all of the necessary methods </p><dl class="params"><dt>Parameters</dt><dd>
+<div class="textblock"><p>Defines all of the necessary methods.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pin</td><td>pin of the potentiometer </td></tr>
-    <tr><td class="paramname">display</td><td>the display that is associated with this potentiometer (make sure that the display, potentiometer and button all belong to the same player)</td></tr>
+    <tr><td class="paramname">pin</td><td>the pin of the potentiometer. Please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a>. </td></tr>
+    <tr><td class="paramname">display</td><td>the <em>pointer</em> to the display that is associated with this potentiometer (make sure that the display, potentiometer and button all belong to the same <a class="el" href="class_player.html" title="Stores individual variables of a player. ">Player</a>). </td></tr>
   </table>
   </dd>
 </dl>
-<p>Defines all of the necessary methods </p>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00008">8</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -199,7 +184,7 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor for the class. </p>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00014">14</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00017">17</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
 <p>References <a class="el" href="_pot_8h_source.html#l00021">display</a>, and <a class="el" href="_pot_8h_source.html#l00015">pin</a>.</p>
 
@@ -220,14 +205,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the LED number along the bottom of the display the status of this pot would like up Public. </p>
-<dl class="section return"><dt>Returns</dt><dd>the LED number (0-15) that the current status of the pot would like up </dd></dl>
+<p>returns the LED number along the bottom of the display that the current status of this pot would light up. </p>
+<dl class="section return"><dt>Returns</dt><dd>the LED number (0-15) that the current status of this pot would light up. </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00025">25</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00028">28</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
-<p>References <a class="el" href="_pot_8cpp_source.html#l00072">getNormalizedRead()</a>.</p>
+<p>References <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_cal_test_8cpp_source.html#l00032">loop()</a>, and <a class="el" href="_pot_8cpp_source.html#l00048">test()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00055">test()</a>.</p>
 
 </div>
 </div>
@@ -255,44 +240,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the LED number along the bottom of the display the status of this pot would like up Public. </p>
+<p>returns the LED number along the bottom of the display that the current status of this pot would light up. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">min</td><td>the minimum raw value possible for the pot, some margin acceptable </td></tr>
-    <tr><td class="paramname">max</td><td>the maximum raw value possible for the pot, some margin acceptable </td></tr>
+    <tr><td class="paramname">min</td><td>the minimum raw value possible for the pot, some margin acceptable. Please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a>. </td></tr>
+    <tr><td class="paramname">max</td><td>the maximum raw value possible for the pot, some margin acceptable. Please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the LED number (0-15) that the current status of the pot would like up </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the LED number (0-15) that the current status of this pot would light up. </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00036">36</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00042">42</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
-<p>References <a class="el" href="_pot_8cpp_source.html#l00072">getNormalizedRead()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae86a6a686f0eda9fd01a4f9da9559d27"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Pot::test </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allows the player to test that the pot is working as expected. </p>
-<p>When the player is done testing, they can press their button to stop. Public.  untested </p><dl class="section return"><dt>Returns</dt><dd>whether the test has finished </dd></dl>
-
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00048">48</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
-
-<p>References <a class="el" href="_pot_8h_source.html#l00021">display</a>, <a class="el" href="_pot_8cpp_source.html#l00025">getLEDNumRead()</a>, <a class="el" href="_pot_8h_source.html#l00015">pin</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00051">Adafruit_IS31FL3731::printText()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00088">Adafruit_IS31FL3731::setLEDPWM()</a>.</p>
-
-<p>Referenced by <a class="el" href="_game_8cpp_source.html#l00017">Game::ready()</a>.</p>
+<p>References <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>.</p>
 
 </div>
 </div>
@@ -318,14 +278,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Normalizes the raw reading from the potentiometer. </p>
-<p>It ranges the output from 0 to 1, effectively giving the percentage. See: <a href="http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range">http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range</a> for more details. Feeds the <a class="el" href="class_pot.html#af184fcaad64db79bea0cb78bcaa57f67" title="Returns the LED number along the bottom of the display the status of this pot would like up Public...">getLEDNumRead()</a> method. Private. </p><dl class="section return"><dt>Returns</dt><dd>normalized reading </dd></dl>
+<p>normalizes the raw reading from the potentiometer. </p>
+<p>It ranges the output from 0 to 1, effectively giving the percentage. See: <a href="http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range">http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range</a> for more details. Feeds the <a class="el" href="class_pot.html#af184fcaad64db79bea0cb78bcaa57f67" title="returns the LED number along the bottom of the display that the current status of this pot would ligh...">getLEDNumRead()</a> method.</p>
+<dl class="section return"><dt>Returns</dt><dd>normalized reading. </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00072">72</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00079">79</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
 <p>References <a class="el" href="_pot_8h_source.html#l00015">pin</a>, <a class="el" href="_reference_8h_source.html#l00020">Reference::potMax</a>, <a class="el" href="_reference_8h_source.html#l00019">Reference::potMin</a>, and <a class="el" href="_pot_8h_source.html#l00019">reference</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00025">getLEDNumRead()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00028">getLEDNumRead()</a>.</p>
 
 </div>
 </div>
@@ -361,24 +322,52 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Normalizes the raw reading from the potentiometer. </p>
-<p>It ranges the output from 0 to 1, effectively giving the percentage. See: <a href="http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range">http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range</a> for more details. Feeds the <a class="el" href="class_pot.html#af184fcaad64db79bea0cb78bcaa57f67" title="Returns the LED number along the bottom of the display the status of this pot would like up Public...">getLEDNumRead()</a> method. Private. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>normalizes the raw reading from the potentiometer. </p>
+<p>It ranges the output from 0 to 1, effectively giving the percentage. See: <a href="http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range">http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range</a> for more details. Feeds the <a class="el" href="class_pot.html#af184fcaad64db79bea0cb78bcaa57f67" title="returns the LED number along the bottom of the display that the current status of this pot would ligh...">getLEDNumRead()</a> method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">min</td><td>the minimum raw value possible for the pot, some margin acceptable </td></tr>
-    <tr><td class="paramname">max</td><td>the maximum raw value possible for the pot, some margin acceptable </td></tr>
+    <tr><td class="paramname">min</td><td>the minimum raw value possible for the pot, some margin acceptable. Please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a>. </td></tr>
+    <tr><td class="paramname">max</td><td>the maximum raw value possible for the pot, some margin acceptable. Please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>normalized reading </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00085">85</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00095">95</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
 <p>References <a class="el" href="_pot_8h_source.html#l00017">min</a>, and <a class="el" href="_pot_8h_source.html#l00015">pin</a>.</p>
 
 </div>
 </div>
+<a class="anchor" id="ae86a6a686f0eda9fd01a4f9da9559d27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pot::test </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>allows the player to test that the pot is working as expected. </p>
+<p>When the player is done testing, they can press their button to stop.</p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000011">Test:</a></b></dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true when test has finished </dd></dl>
+
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00055">55</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+
+<p>References <a class="el" href="_pot_8h_source.html#l00021">display</a>, <a class="el" href="_pot_8cpp_source.html#l00028">getLEDNumRead()</a>, <a class="el" href="_pot_8h_source.html#l00015">pin</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00092">Adafruit_IS31FL3731::printText()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00129">Adafruit_IS31FL3731::setLEDPWM()</a>.</p>
+
+<p>Referenced by <a class="el" href="_game_8cpp_source.html#l00039">Game::ready()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a48279648d3b58f2560a8c8b0edeb669d"></a>
+<a class="anchor" id="a7d44356ded4908241ad48ac3ea5cd3dc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -386,7 +375,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Pot::pin</td>
+          <td class="memname"><a class="el" href="class_adafruit___i_s31_f_l3731.html">Adafruit_IS31FL3731</a>* Pot::display</td>
         </tr>
       </table>
   </td>
@@ -396,11 +385,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Holds the pin of the pot. </p>
+<p>Holds the pointer to the display that is associated with this pot. </p>
 
-<p>Definition at line <a class="el" href="_pot_8h_source.html#l00015">15</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8h_source.html#l00021">21</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00072">getNormalizedRead()</a>, <a class="el" href="_pot_8cpp_source.html#l00014">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00048">test()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00017">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00055">test()</a>.</p>
 
 </div>
 </div>
@@ -423,6 +412,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Holds the maximum possible raw value of the pot. </p>
+<p>If you are setting this value, please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a> </p>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00016">16</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
@@ -447,10 +437,38 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Holds the minimum possible raw value of the pot. </p>
+<p>If you are setting this value, please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a> </p>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00017">17</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00085">getNormalizedRead()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00095">getNormalizedRead()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48279648d3b58f2560a8c8b0edeb669d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Pot::pin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds the pin of the pot. </p>
+<p>If you are setting this value, please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a> </p>
+
+<p>Definition at line <a class="el" href="_pot_8h_source.html#l00015">15</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
+
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>, <a class="el" href="_pot_8cpp_source.html#l00017">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00055">test()</a>.</p>
 
 </div>
 </div>
@@ -476,40 +494,10 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00019">19</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00072">getNormalizedRead()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7d44356ded4908241ad48ac3ea5cd3dc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_adafruit___i_s31_f_l3731.html">Adafruit_IS31FL3731</a>* Pot::display</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Holds the pointer to the display that is associated with this pot. </p>
-
-<p>Definition at line <a class="el" href="_pot_8h_source.html#l00021">21</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
-
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00014">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00048">test()</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/katabeta/Documents/GitHub/PongInABox/lib/Pot/<a class="el" href="_pot_8h_source.html">Pot.h</a></li>
-<li>C:/Users/katabeta/Documents/GitHub/PongInABox/lib/Pot/<a class="el" href="_pot_8cpp_source.html">Pot.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

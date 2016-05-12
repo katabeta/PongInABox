@@ -10,12 +10,7 @@ var searchData=
   ['settextcolor',['setTextColor',['../class_adafruit___g_f_x.html#a59178a0e0c845a14a39b457c43567dd9',1,'Adafruit_GFX::setTextColor(uint16_t c)'],['../class_adafruit___g_f_x.html#ab6e88c585d3ab6b4f95199361f224fc6',1,'Adafruit_GFX::setTextColor(uint16_t c, uint16_t bg)']]],
   ['settextsize',['setTextSize',['../class_adafruit___g_f_x.html#a39eb4a8a2c9fa4ab7d58ceffd19535d5',1,'Adafruit_GFX']]],
   ['settextwrap',['setTextWrap',['../class_adafruit___g_f_x.html#aeeacd62bf26f3e7abbdc4b5b50faa6fa',1,'Adafruit_GFX']]],
-  ['setup',['setup',['../alphanumwrite_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;alphanumwrite.cpp'],['../softpot_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;softpot.cpp'],['../solidbutton_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;solidbutton.cpp'],['../_pot_cal_test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;PotCalTest.cpp'],['../_printer_test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;PrinterTest.cpp']]],
   ['soft_5fpot_5fnot_5ffound',['SOFT_POT_NOT_FOUND',['../class_error_codes.html#a4531f9cf699b56eff4095c8a269278faa87ddb8c1f0a7aaf1f34afb0ce156acc3',1,'ErrorCodes']]],
-  ['softpot_2ecpp',['softpot.cpp',['../softpot_8cpp.html',1,'']]],
-  ['solidbutton_2ecpp',['solidbutton.cpp',['../solidbutton_8cpp.html',1,'']]],
   ['start',['start',['../class_pong.html#ac5beb40ef5119709e2bc8d21d788f4b8',1,'Pong']]],
-  ['startpos',['startpos',['../alphanumwrite_8cpp.html#a2d1a934d5a7b94e1e1951b02b61d0f9b',1,'alphanumwrite.cpp']]],
-  ['state',['state',['../class_button.html#a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4',1,'Button']]],
-  ['sweep',['sweep',['../solidbutton_8cpp.html#acdfdb804c256d34e85eac2ba43b43c9e',1,'solidbutton.cpp']]]
+  ['state',['state',['../class_button.html#a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4',1,'Button']]]
 ];

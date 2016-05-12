@@ -5,7 +5,7 @@
 
 class Reference{
 public:
-  Reference(void); 
+  Reference(void);
   const uint8_t dPin74 = 2; /**< pin number for the button associated with the display with the 74 address */
   const uint8_t dPin75 = 3; /**< pin number for the button associated with the display with the 75 address */
   const uint8_t dPin0 = 4; /**< pin number for the confirmation button */

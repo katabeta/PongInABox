@@ -1,7 +1,7 @@
 #include <Reference.h>
 
 /**
-@class Pot
-    The soft potentiometer. Defines all of the necessary methods
+@class Reference
+    contains constant variables.
 */
 Reference::Reference(void){}

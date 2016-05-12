@@ -6,10 +6,10 @@
 
 class Game{
 private:
-  Player* p1;
-  Player* p2;
-  Button* confirmButton;
-  uint8_t difficulty;
+  Player* p1; /**< stores the *pointer* to the first player. To call methods on it, instead of examplePlayer.printText(...); use examplePlayer->printText(...);. To call methods of its members, use examplePlayer->exampleDisplay->printText(...);*/
+  Player* p2; /**< stores the *pointer* to the second player. To call methods on it, instead of examplePlayer.printText(...); use examplePlayer->printText(...);. To call methods of its members, use examplePlayer->exampleDisplay->printText(...);*/
+  Button* confirmButton; /**< stores the *pointer* to the button that isn't assigned to either player. To call methods on it, instead of exampleButton.printText(...); use exampleButton->printText(...); */
+  uint8_t difficulty; /**< stores the settings difficulty*/
 
 public:
   Game(Player* player1, Player* player2, Button* button);

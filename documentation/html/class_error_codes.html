@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -143,8 +143,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a4531f9cf699b56eff4095c8a269278faaec48ff02d9d5aa5732b28b80edb817cd"></a>DISP_NOT_FOUND&#160;</td><td class="fielddoc">
+<p>Error code 1: displayed if the display has not been found. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a4531f9cf699b56eff4095c8a269278faa87ddb8c1f0a7aaf1f34afb0ce156acc3"></a>SOFT_POT_NOT_FOUND&#160;</td><td class="fielddoc">
+<p>Error code 2: displayed if the pot has not been found. </p>
 </td></tr>
 </table>
 
@@ -166,7 +168,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_error_codes_8cpp_source.html#l00004">4</a> of file <a class="el" href="_error_codes_8cpp_source.html">ErrorCodes.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_error_codes_8cpp_source.html#l00008">8</a> of file <a class="el" href="_error_codes_8cpp_source.html">ErrorCodes.cpp</a>.</p>
 
 </div>
 </div>
@@ -185,18 +187,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_error_codes_8cpp_source.html#l00007">7</a> of file <a class="el" href="_error_codes_8cpp_source.html">ErrorCodes.cpp</a>.</p>
+<p>prints the error that corresponds to the passed code </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>the ErrorCode enum that corresponds to your error</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>add more codes (buttons, players, etc) </dd></dl>
 
-<p>References <a class="el" href="_error_codes_8h_source.html#l00007">DISP_NOT_FOUND</a>, and <a class="el" href="_error_codes_8h_source.html#l00007">SOFT_POT_NOT_FOUND</a>.</p>
+<p>Definition at line <a class="el" href="_error_codes_8cpp_source.html#l00018">18</a> of file <a class="el" href="_error_codes_8cpp_source.html">ErrorCodes.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="_printer_test_8cpp_source.html#l00019">setup()</a>.</p>
+<p>References <a class="el" href="_error_codes_8h_source.html#l00008">DISP_NOT_FOUND</a>, and <a class="el" href="_error_codes_8h_source.html#l00009">SOFT_POT_NOT_FOUND</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/katabeta/Documents/GitHub/PongInABox/lib/ErrorCodes/<a class="el" href="_error_codes_8h_source.html">ErrorCodes.h</a></li>
-<li>C:/Users/katabeta/Documents/GitHub/PongInABox/lib/ErrorCodes/<a class="el" href="_error_codes_8cpp_source.html">ErrorCodes.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

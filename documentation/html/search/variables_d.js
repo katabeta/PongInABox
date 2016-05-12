@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['score',['score',['../class_player.html#a8f977208d1212bf7dbd7c590017d9eb4',1,'Player']]],
-  ['startpos',['startpos',['../alphanumwrite_8cpp.html#a2d1a934d5a7b94e1e1951b02b61d0f9b',1,'alphanumwrite.cpp']]],
-  ['state',['state',['../class_button.html#a94ca33a0ae5cbfefdc7b9d5d8cdaa5b4',1,'Button']]],
-  ['sweep',['sweep',['../solidbutton_8cpp.html#acdfdb804c256d34e85eac2ba43b43c9e',1,'solidbutton.cpp']]]
+  ['textbgcolor',['textbgcolor',['../class_adafruit___g_f_x.html#a23e7a4efcab0b1588dc0cafa14b1fac1',1,'Adafruit_GFX']]],
+  ['textcolor',['textcolor',['../class_adafruit___g_f_x.html#a8c6d23a386651136fd9530a5b7046591',1,'Adafruit_GFX']]],
+  ['textsize',['textsize',['../class_adafruit___g_f_x.html#ac293848b8fe8c46107d1a491f6a5168d',1,'Adafruit_GFX']]]
 ];
