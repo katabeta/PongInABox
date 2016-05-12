@@ -99,6 +99,7 @@ Display coordination system (x, y)
 @todo might need to update the whole display at once, not scroll
 @todo may need to scroll with blocks, not by pixel column to allow for update times of both displays and for an easy time of reading
 @todo is background brightness needed?
+@todo https://github.com/gragib/Adafruit_IS31FL3731/commit/59498f8dca9d06f3505ebd8a3831224d67e5059b examples/gfxdemo/gfxdemo.ino lines 84-104
 
 @author Irina Lavryonova (katabeta)
 */
