@@ -15,6 +15,8 @@ Use Putty to read printouts
     the ErrorCode enum that corresponds to your error
 
 @todo add more codes (buttons, players, etc)
+
+@author Irina Lavryonova (katabeta)
 */
 void ErrorCodes::writeErrorCode(Codes code){
   switch (code) {

@@ -14,6 +14,8 @@
     The *pointer* to the button that isn't assigned to either of the players.
 
 @test
+
+@author Irina Lavryonova (katabeta)
 */
 
 Pong::Pong(Player* player1, Player* player2, Button* confirmButton) : Game(player1, player2, confirmButton){

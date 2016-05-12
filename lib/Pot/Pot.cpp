@@ -13,6 +13,10 @@
     the pin of the potentiometer. Please use Reference.
 @param display
     the *pointer* to the display that is associated with this potentiometer (make sure that the display, potentiometer and button all belong to the same Player).
+
+@todo use Adafruit_IS31FL3731::drawPixel() instead of Adafruit_IS31FL3731::setLEDPWM();
+
+@author Irina Lavryonova (katabeta)
 */
 Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display){
   this->display = display;

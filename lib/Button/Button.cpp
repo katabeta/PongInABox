@@ -6,6 +6,8 @@
     defines a button and a sampling method
 @param pin
     the pin of this button. Please use Reference.
+
+@author Irina Lavryonova (katabeta)
 */
 Button::Button(uint8_t pin){
   this->pin = pin;
@@ -23,6 +25,8 @@ See https://www.arduino.cc/en/Tutorial/Debounce to learn about how this works.
 @return the current state of the button
 
 @test
+
+@author modified from Limor Fried
 */
 bool Button::get(){
   int reading = digitalRead(pin);

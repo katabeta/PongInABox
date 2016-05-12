@@ -13,6 +13,8 @@
     the *pointer* to the button that isn't assigned to either of the players.
 
 @test
+
+@author Irina Lavryonova (katabeta)
 */
 Game::Game(Player* player1, Player* player2, Button* confirmButton){
   this->p1 = player1;

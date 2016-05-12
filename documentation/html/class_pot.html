@@ -151,10 +151,12 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pin</td><td>the pin of the potentiometer. Please use <a class="el" href="class_reference.html" title="contains constant variables. ">Reference</a>. </td></tr>
-    <tr><td class="paramname">display</td><td>the <em>pointer</em> to the display that is associated with this potentiometer (make sure that the display, potentiometer and button all belong to the same <a class="el" href="class_player.html" title="Stores individual variables of a player. ">Player</a>). </td></tr>
+    <tr><td class="paramname">display</td><td>the <em>pointer</em> to the display that is associated with this potentiometer (make sure that the display, potentiometer and button all belong to the same <a class="el" href="class_player.html" title="Stores individual variables of a player. ">Player</a>).</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>use <a class="el" href="class_adafruit___i_s31_f_l3731.html#a504930deeff9d517fe100a4ed7e45fe6">Adafruit_IS31FL3731::drawPixel()</a> instead of <a class="el" href="class_adafruit___i_s31_f_l3731.html#ad7b208d17398bfd3f0c78c85b5cbae46">Adafruit_IS31FL3731::setLEDPWM()</a>;</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Irina Lavryonova (katabeta) </dd></dl>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00008">8</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -184,7 +186,7 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor for the class. </p>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00017">17</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00021">21</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
 <p>References <a class="el" href="_pot_8h_source.html#l00021">display</a>, and <a class="el" href="_pot_8h_source.html#l00015">pin</a>.</p>
 
@@ -208,11 +210,11 @@ Private Attributes</h2></td></tr>
 <p>returns the LED number along the bottom of the display that the current status of this pot would light up. </p>
 <dl class="section return"><dt>Returns</dt><dd>the LED number (0-15) that the current status of this pot would light up. </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00028">28</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00032">32</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
-<p>References <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>.</p>
+<p>References <a class="el" href="_pot_8cpp_source.html#l00083">getNormalizedRead()</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00055">test()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00059">test()</a>.</p>
 
 </div>
 </div>
@@ -250,9 +252,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the LED number (0-15) that the current status of this pot would light up. </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00042">42</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00046">46</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
-<p>References <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>.</p>
+<p>References <a class="el" href="_pot_8cpp_source.html#l00083">getNormalizedRead()</a>.</p>
 
 </div>
 </div>
@@ -282,11 +284,11 @@ Private Attributes</h2></td></tr>
 <p>It ranges the output from 0 to 1, effectively giving the percentage. See: <a href="http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range">http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range</a> for more details. Feeds the <a class="el" href="class_pot.html#af184fcaad64db79bea0cb78bcaa57f67" title="returns the LED number along the bottom of the display that the current status of this pot would ligh...">getLEDNumRead()</a> method.</p>
 <dl class="section return"><dt>Returns</dt><dd>normalized reading. </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00079">79</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00083">83</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
 <p>References <a class="el" href="_pot_8h_source.html#l00015">pin</a>, <a class="el" href="_reference_8h_source.html#l00020">Reference::potMax</a>, <a class="el" href="_reference_8h_source.html#l00019">Reference::potMin</a>, and <a class="el" href="_pot_8h_source.html#l00019">reference</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00028">getLEDNumRead()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00032">getLEDNumRead()</a>.</p>
 
 </div>
 </div>
@@ -333,7 +335,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>normalized reading </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00095">95</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00099">99</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
 <p>References <a class="el" href="_pot_8h_source.html#l00017">min</a>, and <a class="el" href="_pot_8h_source.html#l00015">pin</a>.</p>
 
@@ -358,11 +360,11 @@ Private Attributes</h2></td></tr>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000011">Test:</a></b></dt><dd></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true when test has finished </dd></dl>
 
-<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00055">55</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pot_8cpp_source.html#l00059">59</a> of file <a class="el" href="_pot_8cpp_source.html">Pot.cpp</a>.</p>
 
-<p>References <a class="el" href="_pot_8h_source.html#l00021">display</a>, <a class="el" href="_pot_8cpp_source.html#l00028">getLEDNumRead()</a>, <a class="el" href="_pot_8h_source.html#l00015">pin</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00092">Adafruit_IS31FL3731::printText()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00129">Adafruit_IS31FL3731::setLEDPWM()</a>.</p>
+<p>References <a class="el" href="_pot_8h_source.html#l00021">display</a>, <a class="el" href="_pot_8cpp_source.html#l00032">getLEDNumRead()</a>, <a class="el" href="_pot_8h_source.html#l00015">pin</a>, <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00105">Adafruit_IS31FL3731::printText()</a>, and <a class="el" href="_adafruit___i_s31_f_l3731_8cpp_source.html#l00142">Adafruit_IS31FL3731::setLEDPWM()</a>.</p>
 
-<p>Referenced by <a class="el" href="_game_8cpp_source.html#l00039">Game::ready()</a>.</p>
+<p>Referenced by <a class="el" href="_game_8cpp_source.html#l00041">Game::ready()</a>.</p>
 
 </div>
 </div>
@@ -389,7 +391,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00021">21</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00017">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00055">test()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00021">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00059">test()</a>.</p>
 
 </div>
 </div>
@@ -441,7 +443,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00017">17</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00095">getNormalizedRead()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00099">getNormalizedRead()</a>.</p>
 
 </div>
 </div>
@@ -468,7 +470,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00015">15</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>, <a class="el" href="_pot_8cpp_source.html#l00017">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00055">test()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00083">getNormalizedRead()</a>, <a class="el" href="_pot_8cpp_source.html#l00021">Pot()</a>, and <a class="el" href="_pot_8cpp_source.html#l00059">test()</a>.</p>
 
 </div>
 </div>
@@ -494,7 +496,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_pot_8h_source.html#l00019">19</a> of file <a class="el" href="_pot_8h_source.html">Pot.h</a>.</p>
 
-<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00079">getNormalizedRead()</a>.</p>
+<p>Referenced by <a class="el" href="_pot_8cpp_source.html#l00083">getNormalizedRead()</a>.</p>
 
 </div>
 </div>

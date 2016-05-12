@@ -102,24 +102,30 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_adafruit___i_s31_f_l3731.html#a9246db6dde11b6b259a6fdef300923c3">Adafruit_IS31FL3731::printText</a>  (uint8_t x, uint8_t y, String text, uint8_t brightness, bool clearAfter, bool scroll, uint8_t scrollSpeed, uint8_t spacing)</dt>
+<dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="class_adafruit___i_s31_f_l3731.html">Adafruit_IS31FL3731</a>  </dt>
+<dd>update to the most recent version on github </dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_adafruit___i_s31_f_l3731.html#a9246db6dde11b6b259a6fdef300923c3">Adafruit_IS31FL3731::printText</a>  (uint8_t x, uint8_t y, String text, uint8_t brightness, bool clearAfter, bool scroll, uint8_t scrollSpeed, uint8_t spacing)</dt>
 <dd><p class="startdd">can only print to one display at a time. Make it so that the update can be alternated </p>
 <p>might need to update the whole display at once, not scroll </p>
 <p>may need to scroll with blocks, not by pixel column to allow for update times of both displays and for an easy time of reading </p>
-<p class="enddd">is background brightness needed?  </p>
+<p class="enddd">is background brightness needed? </p>
 </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_button.html#abdecfd5b0c7df95bd066d9bd07e0fa3a">Button::buttonState</a>  </dt>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_button.html#abdecfd5b0c7df95bd066d9bd07e0fa3a">Button::buttonState</a>  </dt>
 <dd>might be null on the first run, so impossible to compare and it will never be set  </dd>
-<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_error_codes.html#add983c7ef452dd833361f9bf0ad9ea6b">ErrorCodes::writeErrorCode</a>  (Codes code)</dt>
-<dd>add more codes (buttons, players, etc)  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_game.html#aefeaee28c1bf6fff6fd52ec49d7937df">Game::drawLoseAnim</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_error_codes.html#add983c7ef452dd833361f9bf0ad9ea6b">ErrorCodes::writeErrorCode</a>  (Codes code)</dt>
+<dd>add more codes (buttons, players, etc) </dd>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_game.html#aefeaee28c1bf6fff6fd52ec49d7937df">Game::drawLoseAnim</a>  (void)</dt>
 <dd>UNIMPLEMENTED  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_game.html#a4f8d9c9bd785f59069eb8e9b39069657">Game::drawWinAnim</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_game.html#a4f8d9c9bd785f59069eb8e9b39069657">Game::drawWinAnim</a>  (void)</dt>
 <dd>UNIMPLEMENTED  </dd>
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_game.html#a064eea8b5856233f5295dc3addacaa16">Game::ready</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_game.html#a064eea8b5856233f5295dc3addacaa16">Game::ready</a>  (void)</dt>
 <dd>if in a while loop, may need to put the return in a timeout to allow for a responce time or alternatively have the confimation button be the decline button. However, that would muddle its meaning. </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_pong.html#ac5beb40ef5119709e2bc8d21d788f4b8">Pong::start</a>  (void)</dt>
-<dd>NOT FINISHED </dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_pong.html#ac5beb40ef5119709e2bc8d21d788f4b8">Pong::start</a>  (void)</dt>
+<dd>NOT FINISHED  </dd>
+<dt><a class="anchor" id="_todo000010"></a>Class <a class="el" href="class_pot.html">Pot</a>  </dt>
+<dd>use <a class="el" href="class_adafruit___i_s31_f_l3731.html#a504930deeff9d517fe100a4ed7e45fe6">Adafruit_IS31FL3731::drawPixel()</a> instead of <a class="el" href="class_adafruit___i_s31_f_l3731.html#ad7b208d17398bfd3f0c78c85b5cbae46">Adafruit_IS31FL3731::setLEDPWM()</a>; </dd>
+<dt><a class="anchor" id="_todo000011"></a>Class <a class="el" href="class_reference.html">Reference</a>  </dt>
+<dd>add #include &lt;___.h&gt; documentation to the mainpage to exaplain how to integrate everything into a main.cpp </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

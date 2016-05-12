@@ -15,6 +15,8 @@
     The number of this player (1 or 2).
 
 @test
+
+@author Irina Lavryonova (katabeta)
 */
 Player::Player(Button* button, Pot* pot, Adafruit_IS31FL3731* display, uint8_t number){
   this->button = button;

@@ -9,6 +9,17 @@
 
 
 /* Constructor */
+/**
+@class Adafruit_IS31FL3731
+    define the special methods for the display
+    product page for led matrix: https://www.adafruit.com/product/2974
+    product page for led driver: https://www.adafruit.com/products/2946
+
+@todo update to the most recent version on github
+
+@authors modified from Limor Fried (ladyada), Andy Doro (andydoro), and (gragib) https://github.com/adafruit/Adafruit_IS31FL3731
+
+*/
 Adafruit_IS31FL3731::Adafruit_IS31FL3731(void) : Adafruit_GFX(16, 9) {
 
 }
@@ -88,6 +99,8 @@ Display coordination system (x, y)
 @todo might need to update the whole display at once, not scroll
 @todo may need to scroll with blocks, not by pixel column to allow for update times of both displays and for an easy time of reading
 @todo is background brightness needed?
+
+@author Irina Lavryonova (katabeta)
 */
 void Adafruit_IS31FL3731::printText(uint8_t x, uint8_t y, String text, uint8_t brightness,
   bool clearAfter, bool scroll, uint8_t scrollSpeed, uint8_t spacing){
