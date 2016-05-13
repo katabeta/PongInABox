@@ -12,11 +12,11 @@ var searchData=
   ['drawfastvline',['drawFastVLine',['../class_adafruit___g_f_x.html#a1cffbb1d69c5faf49cd0cff27686a837',1,'Adafruit_GFX']]],
   ['drawfield',['drawField',['../class_pong.html#abf32272789abfd67bb1907039f755772',1,'Pong']]],
   ['drawline',['drawLine',['../class_adafruit___g_f_x.html#aa0ff662c2b2b48c3bac51f98c777776d',1,'Adafruit_GFX']]],
-  ['drawloseanim',['drawLoseAnim',['../class_game.html#aefeaee28c1bf6fff6fd52ec49d7937df',1,'Game']]],
+  ['drawloseanim',['drawLoseAnim',['../class_game.html#a666ddd4abc3d56fb6e55c3ffb4acfa91',1,'Game']]],
   ['drawpixel',['drawPixel',['../class_adafruit___g_f_x.html#ab7fbf72885c873266f9c7eb53b5c8896',1,'Adafruit_GFX::drawPixel()'],['../class_g_f_xcanvas1.html#a0859d124c8dcaa147ef22a54d6e843a8',1,'GFXcanvas1::drawPixel()'],['../class_g_f_xcanvas16.html#ade30ed51e7dd07be0436b4f9407b6fd8',1,'GFXcanvas16::drawPixel()'],['../class_adafruit___i_s31_f_l3731.html#a504930deeff9d517fe100a4ed7e45fe6',1,'Adafruit_IS31FL3731::drawPixel()']]],
   ['drawrect',['drawRect',['../class_adafruit___g_f_x.html#a9ec2c2ab426503e4f7deddb93bb916f6',1,'Adafruit_GFX']]],
   ['drawroundrect',['drawRoundRect',['../class_adafruit___g_f_x.html#ab496b247abec724ef80e17a30257972b',1,'Adafruit_GFX']]],
   ['drawtriangle',['drawTriangle',['../class_adafruit___g_f_x.html#a49284b9cea16ecf8c15dfd0b51a841e6',1,'Adafruit_GFX']]],
-  ['drawwinanim',['drawWinAnim',['../class_game.html#a4f8d9c9bd785f59069eb8e9b39069657',1,'Game']]],
+  ['drawwinanim',['drawWinAnim',['../class_game.html#a264246ed2b530e4dcd89e423abe905bf',1,'Game']]],
   ['drawxbitmap',['drawXBitmap',['../class_adafruit___g_f_x.html#acec26bcf41c15ac6826c67e1f5e4cde6',1,'Adafruit_GFX']]]
 ];

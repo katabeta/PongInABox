@@ -13,14 +13,17 @@
     the pin of the potentiometer. Please use Reference.
 @param display
     the *pointer* to the display that is associated with this potentiometer (make sure that the display, potentiometer and button all belong to the same Player).
+@param inverse
+    true if the output should be reverse, false otherwise
 
 @todo use Adafruit_IS31FL3731::drawPixel() instead of Adafruit_IS31FL3731::setLEDPWM();
 
 @author Irina Lavryonova (katabeta)
 */
-Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display){
+Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse){
   this->display = display;
   this->pin = pin;
+  this->inverse = inverse;
 }
 
 /*public*/
@@ -30,11 +33,12 @@ returns the LED number along the bottom of the display that the current status o
 @return the LED number (0-15) that the current status of this pot would light up.
 */
 int Pot::getLEDNumRead(){
-  int ledNum = 15 * getNormalizedRead();
+  int ledNum = inverse ? 15 - 15 * getNormalizedRead() : 15 * getNormalizedRead();
   return ledNum > 15 ? -1 : ledNum;
 }
 /**
 returns the LED number along the bottom of the display that the current status of this pot would light up.
+This method exists mainly for testing and you shouldn't have to use it.
 
 @param min
     the minimum raw value possible for the pot, some margin acceptable. Please use Reference.
@@ -44,7 +48,7 @@ returns the LED number along the bottom of the display that the current status o
 @return the LED number (0-15) that the current status of this pot would light up.
 */
 int Pot::getLEDNumRead(double min, double max){
-  int ledNum = 15 * getNormalizedRead(min, max);
+  int ledNum = inverse ? 15 - 15 * getNormalizedRead(min, max) : 15 * getNormalizedRead(min, max);
   return ledNum > 15 ? -1 : ledNum;
 }
 
@@ -88,6 +92,7 @@ normalizes the raw reading from the potentiometer. It ranges the output from 0 t
 effectively giving the percentage.
 See: http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range for more details.
 Feeds the getLEDNumRead() method.
+This method exists mainly for testing and you shouldn't have to use it.
 
 @param min
     the minimum raw value possible for the pot, some margin acceptable. Please use Reference.

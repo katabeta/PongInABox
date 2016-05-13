@@ -6,7 +6,7 @@ var searchData=
   ['playagain',['playAgain',['../class_game.html#a6dda354dd033559189f920deb39ec588',1,'Game']]],
   ['player',['Player',['../class_player.html',1,'Player'],['../class_player.html#a0b196d0fee87963e39c5f34709e07fd0',1,'Player::Player()']]],
   ['pong',['Pong',['../class_pong.html',1,'Pong'],['../class_pong.html#acea7a68d93b5d406eda087dc45a4ae2b',1,'Pong::Pong()']]],
-  ['pot',['Pot',['../class_pot.html',1,'Pot'],['../class_player.html#a4adef1b0061ed510718ee4e3a19309e0',1,'Player::pot()'],['../class_pot.html#a2a5f7ef6270c47f00f4aebde7cbce434',1,'Pot::Pot()']]],
+  ['pot',['Pot',['../class_pot.html',1,'Pot'],['../class_pot.html#aece7f5721d2d312fd96ff35b67c05f5e',1,'Pot::Pot()'],['../class_player.html#a4adef1b0061ed510718ee4e3a19309e0',1,'Player::pot()']]],
   ['potmax',['potMax',['../class_reference.html#a1547870ee84871fefbbcbae3f60fb8b9',1,'Reference']]],
   ['potmin',['potMin',['../class_reference.html#ab67c28fa5a4b3239a115f71760d752cb',1,'Reference']]],
   ['press',['press',['../class_adafruit___g_f_x___button.html#a221d9753f7d8e8f7f9c1ebbee69d02bd',1,'Adafruit_GFX_Button']]],

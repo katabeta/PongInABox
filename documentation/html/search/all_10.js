@@ -1,6 +1,7 @@
 var searchData=
 [
   ['score',['score',['../class_player.html#a8f977208d1212bf7dbd7c590017d9eb4',1,'Player']]],
+  ['scoreconstrant',['scoreConstrant',['../class_game.html#a43ad76cbb681e2c4c949036bfa00c926',1,'Game']]],
   ['selectbank',['selectBank',['../class_adafruit___i_s31_f_l3731.html#a15d6443f671de8e208078862649d92f7',1,'Adafruit_IS31FL3731']]],
   ['setcursor',['setCursor',['../class_adafruit___g_f_x.html#aaf96a40cad0f34dd8ec73494b3866c33',1,'Adafruit_GFX']]],
   ['setfont',['setFont',['../class_adafruit___g_f_x.html#ab0479a2bb4e09e7c39c35e35c55d6ed1',1,'Adafruit_GFX']]],

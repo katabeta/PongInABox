@@ -11,12 +11,16 @@
     the *pointer* to the second player of the game (P2, player whose number variable is 2).
 @param cofirmbutton
     the *pointer* to the button that isn't assigned to either of the players.
+@param winByLead
+    set to true if the winning condition of this game depends on one player leading the other by a certain amount. Give the winning lead amount in the scoreCostraint argument if set to true.
+@param scoreConstraint
+    top score that would serve as the winning condition (relative or absolute score)
 
 @test
 
 @author Irina Lavryonova (katabeta)
 */
-Game::Game(Player* player1, Player* player2, Button* confirmButton){
+Game::Game(Player* player1, Player* player2, Button* confirmButton, bool winByLead, int scoreConstraint){
   this->p1 = player1;
   this->p2 = player2;
   this->confirmButton = confirmButton;
@@ -135,18 +139,39 @@ void Game::countdown(){
 /**
 draws the losing animation on the losing player's display
 
+@param loser
+    the *pointer* to the player who lost the game
+
 @todo UNIMPLEMENTED
 */
-void Game::drawLoseAnim(){
-
+void Game::drawLoseAnim(Player* loser){
+  loser->display->drawChar(0, 0, 'L', 154, 0, 1);
 }
 
 /**
 draws the winning animation on the winning player's display
 
+@param winner
+    the *pointer* to the player who won the game
+
 @todo UNIMPLEMENTED
 */
-void Game::drawWinAnim(){
+void Game::drawWinAnim(Player* winner){
+  winner->display->drawChar(0, 0, 'W', 154, 0, 1);
+}
 
+/**
+checks whether the condition for a win has been reached
+
+@return true if the win condition has been reached, false otherwise
+
+@test
+*/
+bool Game::endGameReached(){
+  if(winByLead){
+    return abs(p1->score - p2->score) == scoreConstrant;
+  } else{
+    return (p1->score == scoreConstrant || p2->score == scoreConstrant);
+  }
 }
 /*private*/

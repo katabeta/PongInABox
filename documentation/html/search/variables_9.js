@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['number',['number',['../class_player.html#a6ab324d6fe2a2042ddd2a60c07f27e18',1,'Player']]]
+  ['max',['max',['../class_pot.html#a2855fb4580377cb637a9369ef5997d80',1,'Pot']]],
+  ['min',['min',['../class_pot.html#a454874e3e4a20addf16a04e492e1e1de',1,'Pot']]]
 ];
