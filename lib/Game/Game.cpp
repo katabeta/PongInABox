@@ -20,13 +20,15 @@
 
 @author Irina Lavryonova (katabeta)
 */
-Game::Game(Player* player1, Player* player2, Button* confirmButton, bool winByLead, int scoreConstraint){
+Game::Game(Player* player1, Player* player2, Button* confirmButton, Ball* ball, bool winByLead, int scoreConstraint){
   this->p1 = player1;
   this->p2 = player2;
+  this->ball = ball;
   this->confirmButton = confirmButton;
 
   p1->displayNumber();
   p2->displayNumber();
+
 
   difficulty = 1;
 }
