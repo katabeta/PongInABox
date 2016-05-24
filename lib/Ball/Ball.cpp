@@ -7,18 +7,21 @@ Ball::Ball(int x1, int y1, Adafruit_IS31FL3731* display)
   this->display = display;
 }
 void Ball::move(){
-  x1 = zx* x1;
-  y1 = zy*y1;
+  x1 =x1 + 1;
+  y1 = y1 + 1;
 }
 
 void Ball::collisions(){
   if (x1<=0)
   {
-    zx = -zx;
+    x1 = -x1;
   }
-  if
+if (y1>8)
+{
+  if(screenCheck)
+}
 }
 void Ball::drawBall(){
-
-  display->drawPixel(x1,y1);
+  
+  display->drawPixel(x1,y1,125);
 }

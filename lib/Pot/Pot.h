@@ -7,7 +7,7 @@ class Adafruit_IS31FL3731;
 
 class Pot{
 public:
-  Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse); /**< Constructor for the class */
+  Pot(uint8_t pin, Adafruit_IS31FL3731* display); /**< Constructor for the class */
   int getLEDNumRead(void);
   int getLEDNumRead(double min, double max);
   bool test(void);
