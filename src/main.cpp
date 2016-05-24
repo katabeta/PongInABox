@@ -8,7 +8,7 @@
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
-Ball ball = Ball(0,0,&ledmatrix74);
+Ball ball = Ball(0,0,&ledmatrix74,&ledmatrix75);
 
 Reference reference = Reference();
 
@@ -36,7 +36,7 @@ void loop(){
   //ledmatrix75.setLEDPWM(pots[1].getLEDNumRead(reference.potMin, reference.potMax), 254);
   //delay(05);
   ledmatrix74.clear();
+  ledmatrix75.clear();
   ball.drawBall();
-  ball.move();
     //Serial.println(String(analogRead(reference.aPin75)));
 }

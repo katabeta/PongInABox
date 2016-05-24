@@ -7,14 +7,17 @@ private:
 public:
   int x1;
   int y1;
-  bool screenCheck=true;
-  Ball(int x1, int y1, Adafruit_IS31FL3731* display);
+  int xz;
+  int yz;
+  Ball(int x1, int y1, Adafruit_IS31FL3731* display,Adafruit_IS31FL3731* display1);
   void move();
-  void collisions();
+  bool collisions();
   void drawBall();
+  bool screenCheck;
 
 
 
   Adafruit_IS31FL3731* display;
+  Adafruit_IS31FL3731* display1;
 
 };
