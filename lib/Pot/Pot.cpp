@@ -34,7 +34,11 @@ returns the LED number along the bottom of the display that the current status o
 */
 int Pot::getLEDNumRead(){
   int ledNum = inverse ? 15 - 15 * getNormalizedRead() : 15 * getNormalizedRead();
-  return ledNum > 15 ? -1 : ledNum;
+  //return ledNum > 15 ? -1 : ledNum;
+  int stuff = ledNum > 15 ? -1 : ledNum;
+  //Serial.println(stuff);
+  //return ledNum > 15 ? -1 : ledNum;
+  return stuff;
 }
 /**
 returns the LED number along the bottom of the display that the current status of this pot would light up.
@@ -55,13 +59,13 @@ int Pot::getLEDNumRead(double min, double max){
 /**
 Draws the paddle three pixels wide
 */
-// void Pot::drawPaddle(){
-//   int x0 = this->getLEDNumRead - 1;
-//   int y0 = 0;
-//   int x1 = this->getLEDNumRead + 1;
-//   int y1 = 0;
-//   display->drawLine(x0,y0,x1,y1);
-// }
+void Pot::drawPaddle(){
+  int x0 = this->getLEDNumRead() - 1;
+  int y0 = 0;
+  int x1 = this->getLEDNumRead() + 1;
+  int y1 = 0;
+  display->drawLine(x0,y0,x1,y1,125);
+}
 /**
 allows the player to test that the pot is working as expected. When
 the player is done testing, they can press their button to stop.
@@ -95,7 +99,10 @@ Feeds the getLEDNumRead() method.
 @return normalized reading.
 */
 double Pot::getNormalizedRead(){
-  return (analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
+  int stuff = (analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
+  Serial.println(stuff);
+  return stuff;
+  //return (analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
 }
 /**
 normalizes the raw reading from the potentiometer. It ranges the output from 0 to 1,

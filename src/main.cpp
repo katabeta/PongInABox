@@ -4,13 +4,18 @@
 #include <Reference.h>
 #include <Pot.h>
 #include <ball.h>
-
-
-Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
-Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
-Ball ball = Ball(0,0,&ledmatrix74,&ledmatrix75);
+#include <Player.h>
 
 Reference reference = Reference();
+Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
+Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
+Button button1 = Button(reference.dPin74R);
+Button button2 = Button(reference.dPin75R);
+Pot pot1 = Pot(reference.aPin74,&ledmatrix74);
+Pot pot2 = Pot(reference.aPin75,&ledmatrix75);
+Player player1 = Player(&button1, &pot1, &ledmatrix74, 1);
+Player player2 = Player(&button2, &pot2, &ledmatrix75, 2);
+Ball ball = Ball(0,0,&player1,&player2);
 
 Pot pots[] = {Pot(reference.aPin74, &ledmatrix74), Pot(reference.aPin75, &ledmatrix75)};
 
@@ -38,5 +43,8 @@ void loop(){
   ledmatrix74.clear();
   ledmatrix75.clear();
   ball.drawBall();
+  ledmatrix74.setLEDPWM(pot1.getLEDNumRead(), 254);
+  // player1.pot->drawPaddle();
+  // player2.pot->drawPaddle();
     //Serial.println(String(analogRead(reference.aPin75)));
 }

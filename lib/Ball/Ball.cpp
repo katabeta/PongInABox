@@ -1,27 +1,24 @@
 # include <Ball.h>
 
-Ball::Ball(int x1, int y1, Adafruit_IS31FL3731* display,Adafruit_IS31FL3731* display1)
+Ball::Ball(int x1, int y1, Player* player, Player* player1)
 {
   randomSeed(analogRead(2));
   this->x1 = random(15);
-  this->y1 = random(8);
-  this->display = display;
-  this->display1 = display1;
+  this->y1 = random(6,8);
+  this->player = player;
+  this->player1 = player1;
+  this->display = player->display;
+  this->display1 = player1->display;
   this->xz = 1;
   this->yz=1;
-  int screenInt = random(2);
-  if (screenInt == 0){
-    this->screenCheck = true;
-  }
-  else {
-    this->screenCheck = false;
-  }
+  this->screenInt = random(2);
+  screenCheck = screenInt ? 0 : 1;
 }
 void Ball::move(){
     x1 = xz+x1;
     y1 = yz+y1;
-
 }
+
 
 bool Ball::collisions(){
   if (x1<=0 || x1>=15)
@@ -37,8 +34,12 @@ bool Ball::collisions(){
   }
   if(y1<=0)
   {
+
     x1 = random(15);
-    y1 = random(8);
+    y1 = random(6,8);
+    screenInt = random(2);
+    screenCheck = screenInt ? 0 : 1;
+
   }
   return screenCheck;
 }

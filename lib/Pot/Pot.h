@@ -11,6 +11,7 @@ public:
   int getLEDNumRead(void);
   int getLEDNumRead(double min, double max);
   bool test(void);
+  void drawPaddle(void);
 private:
   int pin; /**< holds the pin of the pot. If you are setting this value, please use Reference */
   int max; /**< holds the maximum possible raw value of the pot. If you are setting this value, please use Reference */
