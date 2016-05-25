@@ -18,6 +18,6 @@ public:
   const uint8_t address74 = 0x74; /**< the address of the 74 display */
   const uint8_t address75 = 0x75; /**< the address of the 75 display */
 
-  const uint16_t potMin = 375; /**< established raw minimum output from the pots with a degree of margin, may be different for different projects */
-  const uint16_t potMax = 710; /**< established raw minimum output from the pots with a degree of margin, may be different for different projects */
+  const uint16_t potMin = 370; /**< established raw minimum output from the pots with a degree of margin, may be different for different projects */
+  const uint16_t potMax = 705; /**< established raw minimum output from the pots with a degree of margin, may be different for different projects */
 };
