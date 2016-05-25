@@ -99,7 +99,8 @@ Feeds the getLEDNumRead() method.
 @return normalized reading.
 */
 double Pot::getNormalizedRead(){
-  int stuff = (analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
+  //Serial.println(analogRead(pin));
+  double stuff = (double)(analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
   Serial.println(stuff);
   return stuff;
   //return (analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
