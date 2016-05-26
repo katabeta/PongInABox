@@ -66,6 +66,7 @@ void Pot::drawPaddle(){
   int y1 = 0;
   display->drawLine(x0,y0,x1,y1,125);
 }
+
 /**
 allows the player to test that the pot is working as expected. When
 the player is done testing, they can press their button to stop.
@@ -99,11 +100,7 @@ Feeds the getLEDNumRead() method.
 @return normalized reading.
 */
 double Pot::getNormalizedRead(){
-  //Serial.println(analogRead(pin));
-  double stuff = (double)(analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
-  Serial.println(stuff);
-  return stuff;
-  //return (analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
+  return (double)(analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
 }
 /**
 normalizes the raw reading from the potentiometer. It ranges the output from 0 to 1,
@@ -120,5 +117,5 @@ This method exists mainly for testing and you shouldn't have to use it.
 @return normalized reading
 */
 double Pot::getNormalizedRead(double min, double max){
-  return (analogRead(pin)-min)/(max-min);
+  return (double)(analogRead(pin)-min)/(max-min);
 }
