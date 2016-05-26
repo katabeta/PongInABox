@@ -19,6 +19,10 @@ void Ball::move(){
     y1 = yz+y1;
 }
 
+void Ball::clear(){
+  display->drawPixel(x1, y1, 0);
+  display1->drawPixel(x1, y1, 0);
+}
 
 bool Ball::collisions(){
   if (x1<=0 || x1>=15)
@@ -41,18 +45,23 @@ bool Ball::collisions(){
     screenCheck = screenInt ? 0 : 1;
 
   }
+  if((x1>player->pot->getCoord() && x1<player->pot->getCoord() +2) ||
+    (x1>player1->pot->getCoord() && x1<player1->pot->getCoord() +2)){
+      yz=-yz;
+  }
   return screenCheck;
 }
 
 void Ball::drawBall(){
+  clear();
   move();
   if(collisions())
   {
-    display->drawPixel(x1,y1,125);
+    display->drawPixel(x1,y1,1);
   }
   else
   {
-    display1->drawPixel(x1,y1,125);
+    display1->drawPixel(x1,y1,1);
   }
 
 }

@@ -19,6 +19,7 @@ public:
   bool collisions();
   void drawBall();
   bool screenCheck;
+  void clear();
 
 
 
