@@ -16,7 +16,7 @@ Pot pot2 = Pot(reference.aPin75,&ledmatrix75);
 Player player1 = Player(&button1, &pot1, &ledmatrix74, 1);
 Player player2 = Player(&button2, &pot2, &ledmatrix75, 2);
 Ball ball = Ball(0,0,&player1,&player2);
-int lastTime = 0;
+long lastTime = 0;
 
 Pot pots[] = {Pot(reference.aPin74, &ledmatrix74), Pot(reference.aPin75, &ledmatrix75)};
 
@@ -45,9 +45,12 @@ void loop(){
   // ledmatrix75.clear();
 
   if(millis() - lastTime > 100) {
+     lastTime = millis();
     ball.drawBall();
-    lastTime = millis();
   }
+
+
+
 
   // ledmatrix74.setLEDPWM(pot1.getLEDNumRead(), 254);
   player1.pot->drawPaddle();

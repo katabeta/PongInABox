@@ -1,5 +1,6 @@
 # include <Ball.h>
 
+
 Ball::Ball(int x1, int y1, Player* player, Player* player1)
 {
   randomSeed(analogRead(2));
@@ -38,15 +39,26 @@ bool Ball::collisions(){
   }
   if(y1<=0)
   {
+    if(screenCheck)
+    {
+      player1->score++;
+      Serial.println(player1->score);
+    }
+    else
+    {
+      player->score++;
+      Serial.println(player->score);
+    }
 
     x1 = random(15);
     y1 = random(6,8);
     screenInt = random(2);
     screenCheck = screenInt ? 0 : 1;
 
+
   }
-  if((x1>player->pot->getCoord() && x1<player->pot->getCoord() +2) ||
-    (x1>player1->pot->getCoord() && x1<player1->pot->getCoord() +2)){
+  if((x1>player->pot->getCoord() && x1<player->pot->getCoord() +2 && y1<=2 && screenCheck) ||
+    (x1>player1->pot->getCoord() && x1<player1->pot->getCoord() +2 && y1<=2 && !screenCheck)){
       yz=-yz;
   }
   return screenCheck;
@@ -57,11 +69,12 @@ void Ball::drawBall(){
   move();
   if(collisions())
   {
-    display->drawPixel(x1,y1,1);
+    display->drawPixel(x1,y1,10);
   }
   else
   {
-    display1->drawPixel(x1,y1,1);
+    display1->drawPixel(x1,y1,10);
   }
+
 
 }
