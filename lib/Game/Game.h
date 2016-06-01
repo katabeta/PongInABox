@@ -1,7 +1,8 @@
 #pragma once
 #include <Arduino.h>
 #include <Player.h>
-//#include <Button.h> ???
+#include <Ball.h>
+#include <Button.h>
 
 
 class Game{
@@ -16,7 +17,7 @@ private:
 
 
 public:
-  Game(Player* player1, Player* player2, Button* confirmButton, bool winByLead, int scoreConstraint);
+  Game(Player* player1, Player* player2, Button* confirmButton, Ball* ball, bool winByLead, int scoreConstraint);
   bool ready(void);
   uint8_t chooseDifficulty(void);
   void countdown(void);
@@ -25,4 +26,6 @@ public:
   void drawLoseAnim(Player* loser);
   bool playAgain(void);
   bool endGameReached(void);
+  bool gameEnd(void);
+
 };

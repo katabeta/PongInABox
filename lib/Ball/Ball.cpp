@@ -41,14 +41,15 @@ bool Ball::collisions(){
   {
     if(screenCheck)
     {
-      player1->score++;
-      Serial.println(player1->score);
+      player1->score= player1->score + 1;
+
     }
     else
     {
-      player->score++;
-      Serial.println(player->score);
+      player->score= player->score + 1;
+
     }
+
 
     x1 = random(15);
     y1 = random(6,8);
@@ -57,8 +58,8 @@ bool Ball::collisions(){
 
 
   }
-  if((x1>player->pot->getCoord() && x1<player->pot->getCoord() +2 && y1<=2 && screenCheck) ||
-    (x1>player1->pot->getCoord() && x1<player1->pot->getCoord() +2 && y1<=2 && !screenCheck)){
+  if((x1>=player->pot->getCoord() && x1<=player->pot->getCoord() +2 && y1<=1 && !screenCheck) ||
+    (x1>=player1->pot->getCoord() && x1<=player1->pot->getCoord() +2 && y1<=1 && screenCheck)){
       yz=-yz;
   }
   return screenCheck;

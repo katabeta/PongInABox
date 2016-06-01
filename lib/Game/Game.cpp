@@ -1,4 +1,6 @@
 #include <Game.h>
+#include <Ball.h>
+#include <Player.h>
 
 
 /**
@@ -25,6 +27,7 @@ Game::Game(Player* player1, Player* player2, Button* confirmButton, Ball* ball, 
   this->p2 = player2;
   this->ball = ball;
   this->confirmButton = confirmButton;
+
 
   p1->displayNumber();
   p2->displayNumber();
@@ -171,9 +174,18 @@ checks whether the condition for a win has been reached
 */
 bool Game::endGameReached(){
   if(winByLead){
-    return abs(p1->score - p2->score) == scoreConstrant;
+    return abs(p1->score - p2->score) == scoreConstraint;
   } else{
-    return (p1->score == scoreConstrant || p2->score == scoreConstrant);
+    return (p1->score == scoreConstraint || p2->score == scoreConstraint);
+  }
+}
+bool Game::gameEnd(){
+  if((p1->score==5) || (p2->score ==5)){
+    return true;
+  }
+  else
+  {
+    return false;
   }
 }
 /*private*/

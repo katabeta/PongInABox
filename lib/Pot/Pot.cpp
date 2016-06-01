@@ -62,7 +62,7 @@ Draws the paddle three pixels wide
 void Pot::drawPaddle(){
   int x0 = getCoord();
   int y0 = 0;
-  int x1 = this->getLEDNumRead() + 1;
+  int x1 = this->getCoord() +2;
   int y1 = 0;
   display->drawLine(x0,y0,x1,y1,125);
   clear(x0, y0, x1, y1);
