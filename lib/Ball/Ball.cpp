@@ -53,13 +53,13 @@ bool Ball::collisions(){
 
     x1 = random(15);
     y1 = random(6,8);
-    screenInt = random(2);
-    screenCheck = screenInt ? 0 : 1;
+    
+    screenCheck = !screenCheck;
 
 
   }
-  if((x1>=player->pot->getCoord() && x1<=player->pot->getCoord() +2 && y1<=1 && !screenCheck) ||
-    (x1>=player1->pot->getCoord() && x1<=player1->pot->getCoord() +2 && y1<=1 && screenCheck)){
+  if((x1>=player->pot->getCoord() && x1<=player->pot->getCoord() +2 && y1<=1 && screenCheck) ||
+    (x1>=player1->pot->getCoord() && x1<=player1->pot->getCoord() +2 && y1<=1 && !screenCheck)){
       yz=-yz;
   }
   return screenCheck;

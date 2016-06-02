@@ -19,6 +19,7 @@ Player player1 = Player(&button1, &pot1, &ledmatrix74, 1);
 Player player2 = Player(&button2, &pot2, &ledmatrix75, 2);
 Ball ball = Ball(0,0,&player1,&player2);
 long lastTime = 0;
+//long time = 0;
 
 
 Pot pots[] = {Pot(reference.aPin74, &ledmatrix74), Pot(reference.aPin75, &ledmatrix75)};
@@ -34,6 +35,12 @@ void setup(){
   }
   Serial.println("Display found");
   ledmatrix75.setRotation(2);
+  while(true){
+    if(game.ready()){
+      break;
+    }
+  }
+
 }
 
   //TODO create a calibration method
@@ -46,13 +53,18 @@ void setup(){
     // ledmatrix74.clear();
     // ledmatrix75.clear();
 
+    // Serial.println(String(millis() - time));
+    // time = millis();
+
+
     if(millis() - lastTime > 100) {
        lastTime = millis();
        if(!game.gameEnd()){
-      ball.drawBall();
+          ball.drawBall();
+        }
     }
 
-
+    Serial.println(String(button2.get()));
 
 
     // ledmatrix74.setLEDPWM(pot1.getLEDNumRead(), 254);
@@ -60,8 +72,9 @@ void setup(){
     player2.pot->drawPaddle();
 
     if(game.gameEnd()){
-      Serial.println(player1.score);
-      Serial.println(player2.score);
+      ledmatrix75.setRotation(0);
+      ledmatrix74.setRotation(2);
+
       if (player1.score > player2.score){
         game.drawLoseAnim(&player2);
         game.drawWinAnim(&player1);
@@ -76,4 +89,3 @@ void setup(){
     }
       //Serial.println(String(analogRead(reference.aPin75)));
   }
-}

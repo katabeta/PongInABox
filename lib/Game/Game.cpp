@@ -48,7 +48,7 @@ its meaning.
 @test
 */
 bool Game::ready(){
-  return p1->pot->test() && p2->pot->test();
+  return p1->button->get() && p2->button->get();
 }
 
 /**
@@ -150,7 +150,9 @@ draws the losing animation on the losing player's display
 @todo UNIMPLEMENTED
 */
 void Game::drawLoseAnim(Player* loser){
+
   loser->display->drawChar(0, 0, 'L', 154, 0, 1);
+  loser->display->drawChar(10, 0, String(loser->score)[0], 125, 0,1);
 }
 
 /**
@@ -162,7 +164,9 @@ draws the winning animation on the winning player's display
 @todo UNIMPLEMENTED
 */
 void Game::drawWinAnim(Player* winner){
+
   winner->display->drawChar(0, 0, 'W', 154, 0, 1);
+  winner->display->drawChar(10, 0, String(winner->score)[0] , 125, 0,1);
 }
 
 /**
