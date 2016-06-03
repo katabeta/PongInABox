@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('class_pong.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_pong-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Pong Class Reference</div>  </div>
@@ -118,15 +119,20 @@ $(document).ready(function(){initNavTree('class_pong.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acea7a68d93b5d406eda087dc45a4ae2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pong.html#acea7a68d93b5d406eda087dc45a4ae2b">Pong</a> (<a class="el" href="class_player.html">Player</a> *player1, <a class="el" href="class_player.html">Player</a> *player2, <a class="el" href="class_button.html">Button</a> *button)</td></tr>
-<tr class="separator:acea7a68d93b5d406eda087dc45a4ae2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dffb5d2125aff0c701ed1f594026f3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dffb5d2125aff0c701ed1f594026f3c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Pong</b> (<a class="el" href="class_player.html">Player</a> *player1, <a class="el" href="class_player.html">Player</a> *player2, <a class="el" href="class_button.html">Button</a> *button, bool <a class="el" href="class_game.html#ae9e45572d8ddbb3f1842f9eb05a41f68">winByLead</a>, int scoreConstraint)</td></tr>
+<tr class="separator:a0dffb5d2125aff0c701ed1f594026f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5beb40ef5119709e2bc8d21d788f4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pong.html#ac5beb40ef5119709e2bc8d21d788f4b8">start</a> (void)</td></tr>
 <tr class="separator:ac5beb40ef5119709e2bc8d21d788f4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:abf32272789abfd67bb1907039f755772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pong.html#abf32272789abfd67bb1907039f755772">drawField</a> (void)</td></tr>
-<tr class="separator:abf32272789abfd67bb1907039f755772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bff2c4076bab187e521a26db14d487"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52bff2c4076bab187e521a26db14d487"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawBall</b> (void)</td></tr>
+<tr class="separator:a52bff2c4076bab187e521a26db14d487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb521d04c5909898ee1b33487a265ae7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb521d04c5909898ee1b33487a265ae7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBallCollided</b> ()</td></tr>
+<tr class="separator:adb521d04c5909898ee1b33487a265ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_game"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="class_game.html">Game</a></td></tr>
 <tr class="memitem:adeced353f6de645e7a2a25381dec5b94 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#adeced353f6de645e7a2a25381dec5b94">chooseDifficulty</a> (void)</td></tr>
 <tr class="separator:adeced353f6de645e7a2a25381dec5b94 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,12 +146,31 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a264246ed2b530e4dcd89e423abe905bf inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb375a8e8ddf7fc0b95f136b5795946f inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#afb375a8e8ddf7fc0b95f136b5795946f">endGameReached</a> (void)</td></tr>
 <tr class="separator:afb375a8e8ddf7fc0b95f136b5795946f inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53ab285f42c9e577b896458dedc03ae3 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a53ab285f42c9e577b896458dedc03ae3">Game</a> (<a class="el" href="class_player.html">Player</a> *player1, <a class="el" href="class_player.html">Player</a> *player2, <a class="el" href="class_button.html">Button</a> *<a class="el" href="class_game.html#a3b38417e5a1d64532e4af1c5693fa169">confirmButton</a>, bool <a class="el" href="class_game.html#ae9e45572d8ddbb3f1842f9eb05a41f68">winByLead</a>, int scoreConstraint)</td></tr>
+<tr class="memitem:a53ab285f42c9e577b896458dedc03ae3 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53ab285f42c9e577b896458dedc03ae3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Game</b> (<a class="el" href="class_player.html">Player</a> *player1, <a class="el" href="class_player.html">Player</a> *player2, <a class="el" href="class_button.html">Button</a> *<a class="el" href="class_game.html#a3b38417e5a1d64532e4af1c5693fa169">confirmButton</a>, bool <a class="el" href="class_game.html#ae9e45572d8ddbb3f1842f9eb05a41f68">winByLead</a>, int scoreConstraint)</td></tr>
 <tr class="separator:a53ab285f42c9e577b896458dedc03ae3 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dda354dd033559189f920deb39ec588 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a6dda354dd033559189f920deb39ec588">playAgain</a> (void)</td></tr>
 <tr class="separator:a6dda354dd033559189f920deb39ec588 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a064eea8b5856233f5295dc3addacaa16 inherit pub_methods_class_game"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a064eea8b5856233f5295dc3addacaa16">ready</a> (void)</td></tr>
 <tr class="separator:a064eea8b5856233f5295dc3addacaa16 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adfbe898a02656bc17fc19bcc1b517a3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfbe898a02656bc17fc19bcc1b517a3e"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>ballOn74</b></td></tr>
+<tr class="separator:adfbe898a02656bc17fc19bcc1b517a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74375be7bc080ffeae0192d4c1ed99dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74375be7bc080ffeae0192d4c1ed99dc"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>ballX</b></td></tr>
+<tr class="separator:a74375be7bc080ffeae0192d4c1ed99dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6036ddc0f54e600b5d9a689cf9d51d91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6036ddc0f54e600b5d9a689cf9d51d91"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>ballY</b></td></tr>
+<tr class="separator:a6036ddc0f54e600b5d9a689cf9d51d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea28116841c2b6b63b3f559c214acfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ea28116841c2b6b63b3f559c214acfe"></a>
+<a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>p1</b></td></tr>
+<tr class="separator:a8ea28116841c2b6b63b3f559c214acfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afed3a9c49efdb27c2abab513ca2ebb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1afed3a9c49efdb27c2abab513ca2ebb"></a>
+<a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>p2</b></td></tr>
+<tr class="separator:a1afed3a9c49efdb27c2abab513ca2ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extends <a class="el" href="class_game.html" title="defines general methods for all or most games. ">Game</a>. This is the class where the bahaviour specific to the game of pong is defined.</p>
@@ -161,68 +186,7 @@ Private Member Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Irina Lavryonova (katabeta) </dd></dl>
 
 <p>Definition at line <a class="el" href="_pong_8h_source.html#l00008">8</a> of file <a class="el" href="_pong_8h_source.html">Pong.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acea7a68d93b5d406eda087dc45a4ae2b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Pong::Pong </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html">Player</a> *&#160;</td>
-          <td class="paramname"><em>player1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_player.html">Player</a> *&#160;</td>
-          <td class="paramname"><em>player2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_button.html">Button</a> *&#160;</td>
-          <td class="paramname"><em>button</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_pong_8cpp_source.html#l00021">21</a> of file <a class="el" href="_pong_8cpp_source.html">Pong.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abf32272789abfd67bb1907039f755772"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pong::drawField </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Referenced by <a class="el" href="_pong_8cpp_source.html#l00032">start()</a>.</p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac5beb40ef5119709e2bc8d21d788f4b8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -241,9 +205,9 @@ Private Member Functions</h2></td></tr>
 <p>This method defines the sequence of events to play pong. At the end of the sequence, it asks the users if they want to play again. Public.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>NOT FINISHED </dd></dl>
 
-<p>Definition at line <a class="el" href="_pong_8cpp_source.html#l00032">32</a> of file <a class="el" href="_pong_8cpp_source.html">Pong.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_pong_8cpp_source.html#l00038">38</a> of file <a class="el" href="_pong_8cpp_source.html">Pong.cpp</a>.</p>
 
-<p>References <a class="el" href="_game_8cpp_source.html#l00054">Game::chooseDifficulty()</a>, <a class="el" href="class_pong.html#abf32272789abfd67bb1907039f755772">drawField()</a>, <a class="el" href="_game_8cpp_source.html#l00088">Game::playAgain()</a>, and <a class="el" href="_game_8cpp_source.html#l00045">Game::ready()</a>.</p>
+<p>References <a class="el" href="_game_8cpp_source.html#l00054">Game::chooseDifficulty()</a>, and <a class="el" href="_game_8cpp_source.html#l00045">Game::ready()</a>.</p>
 
 </div>
 </div>

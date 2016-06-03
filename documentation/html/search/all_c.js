@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max',['max',['../class_pot.html#a2855fb4580377cb637a9369ef5997d80',1,'Pot']]],
-  ['min',['min',['../class_pot.html#a454874e3e4a20addf16a04e492e1e1de',1,'Pot']]]
+  ['test',['test',['../class_pot.html#ae86a6a686f0eda9fd01a4f9da9559d27',1,'Pot::test()'],['../test.html',1,'(Global Namespace)']]],
+  ['todo_20list',['Todo List',['../todo.html',1,'']]]
 ];

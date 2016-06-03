@@ -33,5 +33,5 @@ Recommended to use before the game and for the display of the score
 @test
 */
 void Player::displayNumber(){
-  display->printText(0, 0, "P" + number, 0, true, false, 0, 5);
+  display->printText("P" + number, 1, false, 1);
 }

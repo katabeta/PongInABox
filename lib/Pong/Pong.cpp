@@ -18,7 +18,10 @@
 @author Irina Lavryonova (katabeta)
 */
 
-Pong::Pong(Player* player1, Player* player2, Button* confirmButton) : Game(player1, player2, confirmButton){
+Pong::Pong(Player* player1, Player* player2, Button* confirmButton, bool winByLead, int scoreConstraint) : Game(player1, player2, confirmButton, winByLead, scoreConstraint), m_ball(player1, player2){
+  this->p1 = player1;
+  this->p2 = player2;
+  //this->ball = Ball(p1, p2);
 }
 
 /*public*/
@@ -35,14 +38,12 @@ void Pong::start(){
     Game::chooseDifficulty();
   }while(playAgain());
 }
-/*private*/
 
-/**
-Draws the field.
-Private.
-
-@todo UNIMPLIMENTED
-*/
-void drawField(){
-
+void Pong::update(){
+  this->m_ball.draw();
+  this->p1->pot->drawPaddle();
+  this->p2->pot->drawPaddle();
 }
+
+
+/*private*/

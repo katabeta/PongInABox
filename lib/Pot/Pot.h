@@ -7,15 +7,20 @@ class Adafruit_IS31FL3731;
 
 class Pot{
 public:
-  Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse); /**< Constructor for the class */
+  Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse, uint8_t paddleSize); /**< Constructor for the class */
   int getLEDNumRead(void);
   int getLEDNumRead(double min, double max);
   bool test(void);
+  void drawPaddle();
+  uint8_t getPaddleSize(void);
+  uint8_t getPaddlePos(void);
+  void printStats(void);
 private:
   int pin; /**< holds the pin of the pot. If you are setting this value, please use Reference */
   int max; /**< holds the maximum possible raw value of the pot. If you are setting this value, please use Reference */
   int min; /**< holds the minimum possible raw value of the pot. If you are setting this value, please use Reference */
   bool inverse; /**< holds whether this pot is reversed */
+  uint8_t paddleSize;
 
   Reference reference = Reference(); /**< Initializes the constants library */
 
@@ -23,4 +28,6 @@ private:
 
   double getNormalizedRead(void);
   double getNormalizedRead(double min, double max);
+
+  void clear(int ledNum);
 };

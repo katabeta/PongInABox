@@ -3,6 +3,7 @@ var annotated_dup =
     [ "Adafruit_GFX", "class_adafruit___g_f_x.html", "class_adafruit___g_f_x" ],
     [ "Adafruit_GFX_Button", "class_adafruit___g_f_x___button.html", "class_adafruit___g_f_x___button" ],
     [ "Adafruit_IS31FL3731", "class_adafruit___i_s31_f_l3731.html", "class_adafruit___i_s31_f_l3731" ],
+    [ "Adafruit_IS31FL3731_Wing", "class_adafruit___i_s31_f_l3731___wing.html", "class_adafruit___i_s31_f_l3731___wing" ],
     [ "Button", "class_button.html", "class_button" ],
     [ "ErrorCodes", "class_error_codes.html", "class_error_codes" ],
     [ "Game", "class_game.html", "class_game" ],

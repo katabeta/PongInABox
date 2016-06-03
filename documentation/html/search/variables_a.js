@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['number',['number',['../class_player.html#a6ab324d6fe2a2042ddd2a60c07f27e18',1,'Player']]]
+  ['winbylead',['winByLead',['../class_game.html#ae9e45572d8ddbb3f1842f9eb05a41f68',1,'Game']]]
 ];

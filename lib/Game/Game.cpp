@@ -52,8 +52,8 @@ Prompts the players to select a setting.
 @test
 */
 uint8_t Game::chooseDifficulty(){
-  p1->display->printText(0, 0, "Press confirm button when yes", 125, true, false, 0, 5);
-  p2->display->printText(0, 0, "Press confirm button when yes", 125, true, false, 0, 5);
+  p1->display->printText("Press confirm button when yes", 1, false, 2);
+  p2->display->printText("Press confirm button when yes", 1, false, 2);
 
   while(!confirmButton->get()){
     if(!p2->button->get()){
@@ -62,7 +62,7 @@ uint8_t Game::chooseDifficulty(){
       p1->display->clear();
       p2->display->drawChar(5, 0, '1', 125, 0, 1); //-1
       difficulty--;
-      p2->display->printText(0, 0, "D: " + difficulty, 125, true, false, 0, 5);
+      p2->display->printText("D: " + difficulty, 1, false, 2);
       delay(250);
     }
     if(!p1->button->get()){
@@ -71,7 +71,7 @@ uint8_t Game::chooseDifficulty(){
       p2->display->clear();
       p1->display->drawChar(5, 0, '1', 125, 0, 1); //+1
       difficulty++;
-      p1->display->printText(0, 0, "D: " + difficulty, 125, true, false, 0, 5);
+      p1->display->printText("D: " + difficulty, 1, false, 2);
       delay(250);
     }
   }
@@ -88,8 +88,8 @@ Prompts the players if they want to play again.
 bool Game::playAgain(){
   bool p1PlayAgain = false;
   bool p2PlayAgain = false;
-  p1->display->printText(0, 0, "Play again? y/n press button", 125, true, false, 0, 5);
-  p2->display->printText(0, 0, "Play again? y/n press button", 125, true, false, 0, 5);
+  p1->display->printText("Play again? y/n press button", 1, false, 2);
+  p2->display->printText("Play again? y/n press button", 1, false, 2);
   p1->display->clear();
   p2->display->clear();
   if(!p1->button->get()){
@@ -119,8 +119,8 @@ this so that the player knows which score is theirs.
 @test
 */
 void Game::displayScore(){
-  p1->display->printText(0, 0, p1->score + ":" + p2->score, 125, true, true, 1, 5);
-  p2->display->printText(0, 0, p1->score + ":" + p2->score, 125, true, true, 1, 5);
+  p1->display->printText(p1->score + ":" + p2->score, 1, false, 2);
+  p2->display->printText(p1->score + ":" + p2->score, 1, false, 2);
 }
 
 /**
@@ -130,6 +130,7 @@ and the players should be ready.
 @test
 */
 void Game::countdown(){
+  Serial.println("Countdown start");
   for(int i = 3; i >= 0; i++){
     p1->display->drawChar(0, 0, i, 125, 0, 1);
     p2->display->drawChar(0, 0, i, 125, 0, 1);

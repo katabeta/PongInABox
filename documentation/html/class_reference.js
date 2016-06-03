@@ -10,6 +10,10 @@ var class_reference =
     [ "dPin74R", "class_reference.html#ad06cb1f170bd1fe16d47579388b9531d", null ],
     [ "dPin75L", "class_reference.html#aa812a2819e97f7a8f4ab6dbc22dd1b5e", null ],
     [ "dPin75R", "class_reference.html#a96d9258c0b8b46d4bd15aaebd97a88c1", null ],
+    [ "fBright", "class_reference.html#a8d1655c79ee1277743c861e96fc64736", null ],
+    [ "hBright", "class_reference.html#ac92b3a1740dea6fd8f33f604cbd6e4c1", null ],
     [ "potMax", "class_reference.html#a1547870ee84871fefbbcbae3f60fb8b9", null ],
-    [ "potMin", "class_reference.html#ab67c28fa5a4b3239a115f71760d752cb", null ]
+    [ "potMin", "class_reference.html#ab67c28fa5a4b3239a115f71760d752cb", null ],
+    [ "qBright", "class_reference.html#af43993bb296f3b9c3f6158e4df4e82f3", null ],
+    [ "qhBright", "class_reference.html#a1902c0a75dd487ff74c5b5f8bcfbf17e", null ]
 ];

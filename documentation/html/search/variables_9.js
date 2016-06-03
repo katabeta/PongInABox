@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max',['max',['../class_pot.html#a2855fb4580377cb637a9369ef5997d80',1,'Pot']]],
-  ['min',['min',['../class_pot.html#a454874e3e4a20addf16a04e492e1e1de',1,'Pot']]]
+  ['score',['score',['../class_player.html#a8f977208d1212bf7dbd7c590017d9eb4',1,'Player']]],
+  ['scoreconstrant',['scoreConstrant',['../class_game.html#a43ad76cbb681e2c4c949036bfa00c926',1,'Game']]]
 ];

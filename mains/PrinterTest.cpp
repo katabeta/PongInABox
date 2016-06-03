@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include <string.h>
 #include <ErrorCodes.h>
-#include <Hardware.h>
+#include <Reference.h>
 
 Adafruit_IS31FL3731 ledmatrix74 = Adafruit_IS31FL3731();
 Adafruit_IS31FL3731 ledmatrix75 = Adafruit_IS31FL3731();
@@ -14,13 +14,13 @@ ErrorCodes errorCodes = ErrorCodes();
 bool print = true;
 String testString = "TESTING, testing. 123!@$";
 
-Hardware hardware = Hardware();
+Reference reference = Reference();
 
 void setup() {
   Serial.begin(9600);
   Serial.println("On/Off");
 
-  if(!ledmatrix74.begin(hardware.address74) || !ledmatrix75.begin(hardware.address75)){
+  if(!ledmatrix74.begin(reference.address74) || !ledmatrix75.begin(reference.address75)){
     errorCodes.writeErrorCode(errorCodes.DISP_NOT_FOUND);
     //Serial.println("Error! Display not found!");
     while(1);
@@ -33,6 +33,6 @@ void setup() {
 }
 
 void loop() {
-  ledmatrix74.printText(5, 0, testString, 1, false, true, 4, 5);
-  ledmatrix75.printText(5, 0, testString, 1, false, true, 1, 5);
+  ledmatrix74.printText(testString, 1, false, reference.minBright);
+  ledmatrix75.printText(testString, 1, false, reference.minBright);
 }

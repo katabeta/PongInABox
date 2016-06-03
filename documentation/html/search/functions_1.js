@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['begin',['begin',['../class_adafruit___i_s31_f_l3731.html#a05752d5a88521e05c309a30f860125ce',1,'Adafruit_IS31FL3731']]],
-  ['button',['Button',['../class_button.html#a62bf06885bb7e8e8e10320394469142e',1,'Button']]]
+  ['displaynumber',['displayNumber',['../class_player.html#ab283b42badee9241f47cc86cab9cd0cf',1,'Player']]],
+  ['displayscore',['displayScore',['../class_game.html#ab3a0f92b9c351bf67f1d1dac02afe69f',1,'Game']]],
+  ['drawloseanim',['drawLoseAnim',['../class_game.html#a666ddd4abc3d56fb6e55c3ffb4acfa91',1,'Game']]],
+  ['drawwinanim',['drawWinAnim',['../class_game.html#a264246ed2b530e4dcd89e423abe905bf',1,'Game']]]
 ];

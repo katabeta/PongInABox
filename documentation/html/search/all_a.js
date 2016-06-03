@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['justpressed',['justPressed',['../class_adafruit___g_f_x___button.html#a41bcfc81edaf30a11d171a69e7e7c679',1,'Adafruit_GFX_Button']]],
-  ['justreleased',['justReleased',['../class_adafruit___g_f_x___button.html#a8a139332b95997168ba0da37973d2887',1,'Adafruit_GFX_Button']]]
+  ['ready',['ready',['../class_game.html#a064eea8b5856233f5295dc3addacaa16',1,'Game']]],
+  ['reference',['Reference',['../class_reference.html',1,'Reference'],['../class_pot.html#aa4a9ac28ab6fa3a9a59e068c81a63c0f',1,'Pot::reference()']]]
 ];

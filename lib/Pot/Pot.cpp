@@ -20,10 +20,11 @@
 
 @author Irina Lavryonova (katabeta)
 */
-Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse){
+Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse, uint8_t paddleSize){
   this->display = display;
   this->pin = pin;
   this->inverse = inverse;
+  this->paddleSize = paddleSize;
 }
 
 /*public*/
@@ -31,10 +32,14 @@ Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse){
 returns the LED number along the bottom of the display that the current status of this pot would light up.
 
 @return the LED number (0-15) that the current status of this pot would light up.
+
+@todo update docs for inverse
 */
 int Pot::getLEDNumRead(){
   int ledNum = inverse ? 15 - 15 * getNormalizedRead() : 15 * getNormalizedRead();
-  return ledNum > 15 ? -1 : ledNum;
+  // Serial.println(String(ledNum));
+  // Serial.println();
+  return ledNum > 15 ? -1 : inverse ? 143 - ledNum : ledNum;
 }
 /**
 returns the LED number along the bottom of the display that the current status of this pot would light up.
@@ -49,31 +54,53 @@ This method exists mainly for testing and you shouldn't have to use it.
 */
 int Pot::getLEDNumRead(double min, double max){
   int ledNum = inverse ? 15 - 15 * getNormalizedRead(min, max) : 15 * getNormalizedRead(min, max);
-  return ledNum > 15 ? -1 : ledNum;
+  return ledNum > 15 ? -1 : inverse ? 143 - ledNum : ledNum;
 }
 
 /**
-allows the player to test that the pot is working as expected. When
-the player is done testing, they can press their button to stop.
-
-@test
-
-@return true when test has finished
+@todo documentation
+@todo prints upto 3 on the screen on the left, but 2 on the right
 */
-bool Pot::test(){
-  display->printText(0, 0, "Test", 10, true, false, 0, 5);
-  delay(500);
-  display->printText(0, 0, "Press button when done", 10, true, true, 2, 5);
-  delay(500);
-  bool done = false; //TODO can remove and return true
-  while(!done){
-    display->setLEDPWM(getLEDNumRead(), 254);
-    done = digitalRead(pin);
+void Pot::drawPaddle(){
+  int ledNum = getLEDNumRead();
+  // if(ledNum < 16 && ledNum > -1){
+  //   display->drawLine(ledNum - paddleSize/2, 0, ledNum + paddleSize/2, 0, reference.qBright);
+  //   clear(ledNum);
+  // }
+  if(ledNum == 0 || ledNum == 143 - 15){
+    ledNum++;
+  } else if (ledNum == 15 || ledNum == 143){
+    ledNum--;
   }
-  return done;
+  if((ledNum > 0 && ledNum < 15) || (ledNum > 143 - 15 && ledNum < 143)){
+    for(int i = -1; i < paddleSize - 1; i++){
+      display->setLEDPWM(ledNum + i, reference.qBright);
+    }
+  }
+  clear(ledNum);
+}
+
+/**
+@todo documentation
+*/
+uint8_t Pot::getPaddleSize(void){
+  return paddleSize;
+}
+
+/**
+@todo documentation
+*/
+uint8_t Pot::getPaddlePos(void){
+  return getLEDNumRead() - getPaddleSize()/2;
 }
 
 
+/**
+for testing only
+*/
+void Pot::printStats(void){
+  Serial.println("analog: " + String(analogRead(pin)) + " lednum: " + String(getLEDNumRead()) + " paddlepos: " + getPaddlePos());
+}
 
 /*private*/
 /**
@@ -85,7 +112,7 @@ Feeds the getLEDNumRead() method.
 @return normalized reading.
 */
 double Pot::getNormalizedRead(){
-  return (analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
+  return (double)(analogRead(pin)-reference.potMin)/(reference.potMax-reference.potMin);
 }
 /**
 normalizes the raw reading from the potentiometer. It ranges the output from 0 to 1,
@@ -102,5 +129,14 @@ This method exists mainly for testing and you shouldn't have to use it.
 @return normalized reading
 */
 double Pot::getNormalizedRead(double min, double max){
-  return (analogRead(pin)-min)/(max-min);
+  return (double)(analogRead(pin)-min)/(max-min);
+}
+
+/**
+@todo documentation
+*/
+void Pot::clear(int ledNum){
+  for(int i = -1; i < paddleSize - 1; i++){
+    display->setLEDPWM(ledNum + i, 0);
+  }
 }
