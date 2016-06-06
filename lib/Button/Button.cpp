@@ -29,7 +29,9 @@ See https://www.arduino.cc/en/Tutorial/Debounce to learn about how this works.
 @author modified from Limor Fried
 */
 bool Button::get(){
+
   int reading = digitalRead(pin);
+  Serial.println("r: "+String(reading) + " s: " + String(state) + " b: " +String(buttonState));
   if (reading != lastButtonState) {
     lastDebounceTime = millis();
   }

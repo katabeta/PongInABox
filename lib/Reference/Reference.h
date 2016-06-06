@@ -7,8 +7,8 @@ class Reference{
 public:
   Reference(void);
   const uint8_t dPin74R = 2; /**< pin number for the right button associated with the display with the 74 address */
-  const uint8_t dPin75R = 3; /**< pin number for the right button associated with the display with the 75 address */
-  const uint8_t dPin0 = 4; /**< pin number for the confirmation button */
+  const uint8_t dPin75R = 4; /**< pin number for the right button associated with the display with the 75 address */
+  const uint8_t dPin0 = 3; /**< pin number for the confirmation button */
   const uint8_t dPin74L = 5; /**< pin number for the left button associated with the display with the 74 address */
   const uint8_t dPin75L = 6; /**< pin number for the left button associated with the display with the 75 address */
 

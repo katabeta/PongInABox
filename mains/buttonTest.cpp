@@ -36,68 +36,19 @@ void setup(){
   }
   Serial.println("Display found");
   ledmatrix75.setRotation(2);
-  gameReady = false;
   pinMode(reference.dPin74R, INPUT);
   pinMode(reference.dPin75R, INPUT);
   digitalWrite(reference.dPin74R, HIGH);
 
   digitalWrite(reference.dPin75R, HIGH);
 
+  //gameReady = false;
+
 }
 
   //TODO create a calibration method
-void loop(){
-  Serial.println("LOOP");
-  //ledmatrix74.setLEDPWM(pots[0].getLEDNumRead(reference.potMin, reference.potMax), 254);
-  //delay(05);
-  //ledmatrix74.clear();
-  //ledmatrix75.setLEDPWM(pots[1].getLEDNumRead(reference.potMin, reference.potMax), 254);
-  //delay(05);
-  // ledmatrix74.clear();
-  // ledmatrix75.clear();
-
-  // Serial.println(String(millis() - time));
-  // time = millis();
-  bool b1 = button1.get();
-  bool b2 = button2.get();
-  bool bt = b1 && b2;
-  //Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
-  if(bt){
-      gameReady = true;
+  void loop(){
+    Serial.println(String(digitalRead(reference.dPin74R)) + " " + String(digitalRead(reference.dPin75R)) + " ");
+    //Serial.println("b1: " + String(button1.get()) + " b2: " + String(button2.get()));
+    delay(750);
   }
-
-  if (gameReady){
-
-    if(millis() - lastTime > 100) {
-       lastTime = millis();
-       if(!game.gameEnd()){
-          ball.drawBall();
-        }
-    }
-
-    Serial.println(String(button2.get()));
-
-
-    // ledmatrix74.setLEDPWM(pot1.getLEDNumRead(), 254);
-    player1.pot->drawPaddle();
-    player2.pot->drawPaddle();
-
-    if(game.gameEnd()){
-      ledmatrix75.setRotation(0);
-      ledmatrix74.setRotation(2);
-
-      if (player1.score > player2.score){
-        game.drawLoseAnim(&player2);
-        game.drawWinAnim(&player1);
-
-      }
-      if (player2.score > player1.score){
-        game.drawLoseAnim(&player1);
-        game.drawWinAnim(&player2);
-
-      }
-
-    }
-  }
-    //Serial.println(String(analogRead(reference.aPin75)));
-}

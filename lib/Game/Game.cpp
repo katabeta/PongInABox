@@ -48,7 +48,11 @@ its meaning.
 @test
 */
 bool Game::ready(){
-  return p1->button->get() && p2->button->get();
+  bool b1 = p1->button->get();
+  bool b2 = p2->button->get();
+  bool bt = b1 && b2;
+  Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
+  return bt; //p1->button->get() && p2->button->get();
 }
 
 /**
