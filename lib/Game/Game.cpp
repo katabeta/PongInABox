@@ -92,18 +92,18 @@ Prompts the players if they want to play again.
 bool Game::playAgain(){
   bool p1PlayAgain = false;
   bool p2PlayAgain = false;
-  p1->display->printText("Play again? y/n press button", 1, false, 1);
-  p2->display->printText("Play again? y/n press button", 1, false, 1);
+  p1->display->printText("Again?", 1, false, 2);
+  p2->display->printText("Again?", 1, false, 2);
   p1->display->clear();
   p2->display->clear();
-  if(!p1->button->get()){
+  if(!p1->button->isPressed()){
     p1->display->drawChar(0, 0, 'n', 125, 0, 1);
   } else{
     p1->display->clear();
     p1->display->drawChar(0, 0, 'y', 125, 0, 1);
     p2PlayAgain = true;
   }
-  if(!p2->button->get()){
+  if(!p2->button->isPressed()){
     p2->display->drawChar(0, 0, 'n', 125, 0, 1);
   } else{
     p2->display->clear();
@@ -134,10 +134,17 @@ and the players should be ready.
 @test
 */
 void Game::countdown(){
-  for(int i = 3; i >= 0; i++){
-    p1->display->drawChar(0, 0, i, 125, 0, 1);
-    p2->display->drawChar(0, 0, i, 125, 0, 1);
+  p1->display->setRotation(2);
+  p2->display->setRotation(0);
+  for(int i = 3; i >= 0; i--){
+    p1->display->drawChar(0, 0, String(i)[0], 125, 0, 1);
+    p2->display->drawChar(0, 0, String(i)[0], 125, 0, 1);
+    delay(1000);
   }
+  p1->display->clear();
+  p2->display->clear();
+  p1->display->setRotation(0);
+  p2->display->setRotation(2);
 }
 
 /**

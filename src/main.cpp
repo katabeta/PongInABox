@@ -43,6 +43,13 @@ void setup(){
 
   digitalWrite(reference.dPin75R, HIGH);
 
+  while(true){
+    if(game.ready()) {
+      game.countdown();
+      break;
+    }
+  }
+
 }
 
   //TODO create a calibration method
@@ -58,15 +65,16 @@ void loop(){
 
   // Serial.println(String(millis() - time));
   // time = millis();
-  bool b1 = button1.get();
-  bool b2 = button2.get();
-  bool bt = b1 && b2;
-  //Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
-  if(bt){
-      gameReady = true;
-  }
+  // bool b1 = button1.get();
+  // bool b2 = button2.get();
+  // bool bt = b1 && b2;
+  // //Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
+  // if(bt){
+  //     gameReady = true;
+  //     game.countdown();
+  // }
 
-  if (gameReady){
+  //if (gameReady){
 
     if(millis() - lastTime > 100) {
        lastTime = millis();
@@ -75,7 +83,7 @@ void loop(){
         }
     }
 
-    Serial.println(String(button2.get()));
+    //Serial.println(String(button2.get()));
 
 
     // ledmatrix74.setLEDPWM(pot1.getLEDNumRead(), 254);
@@ -96,8 +104,8 @@ void loop(){
         game.drawWinAnim(&player2);
 
       }
-
+      game.playAgain();
     }
-  }
+  //}
     //Serial.println(String(analogRead(reference.aPin75)));
 }
