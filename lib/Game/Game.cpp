@@ -28,11 +28,6 @@ Game::Game(Player* player1, Player* player2, Button* confirmButton, Ball* ball, 
   this->ball = ball;
   this->confirmButton = confirmButton;
 
-
-  p1->displayNumber();
-  p2->displayNumber();
-
-
   difficulty = 1;
 }
 
@@ -61,8 +56,8 @@ Prompts the players to select a setting.
 @test
 */
 uint8_t Game::chooseDifficulty(){
-  p1->display->printText(0, 0, "Press confirm button when yes", 125, true, false, 0, 5);
-  p2->display->printText(0, 0, "Press confirm button when yes", 125, true, false, 0, 5);
+  p1->display->printText("Press confirm button when yes", 1, false, 1);
+  p2->display->printText("Press confirm button when yes", 1, false, 1);
 
   while(!confirmButton->get()){
     if(!p2->button->get()){
@@ -71,7 +66,7 @@ uint8_t Game::chooseDifficulty(){
       p1->display->clear();
       p2->display->drawChar(5, 0, '1', 125, 0, 1); //-1
       difficulty--;
-      p2->display->printText(0, 0, "D: " + difficulty, 125, true, false, 0, 5);
+      p2->display->printText("D: ", 1, false, 1);
       delay(250);
     }
     if(!p1->button->get()){
@@ -80,7 +75,7 @@ uint8_t Game::chooseDifficulty(){
       p2->display->clear();
       p1->display->drawChar(5, 0, '1', 125, 0, 1); //+1
       difficulty++;
-      p1->display->printText(0, 0, "D: " + difficulty, 125, true, false, 0, 5);
+      p1->display->printText("D: ", 1, false, 1);
       delay(250);
     }
   }
@@ -97,8 +92,8 @@ Prompts the players if they want to play again.
 bool Game::playAgain(){
   bool p1PlayAgain = false;
   bool p2PlayAgain = false;
-  p1->display->printText(0, 0, "Play again? y/n press button", 125, true, false, 0, 5);
-  p2->display->printText(0, 0, "Play again? y/n press button", 125, true, false, 0, 5);
+  p1->display->printText("Play again? y/n press button", 1, false, 1);
+  p2->display->printText("Play again? y/n press button", 1, false, 1);
   p1->display->clear();
   p2->display->clear();
   if(!p1->button->get()){
@@ -128,8 +123,8 @@ this so that the player knows which score is theirs.
 @test
 */
 void Game::displayScore(){
-  p1->display->printText(0, 0, p1->score + ":" + p2->score, 125, true, true, 1, 5);
-  p2->display->printText(0, 0, p1->score + ":" + p2->score, 125, true, true, 1, 5);
+  p1->display->printText(p1->score + ":" + p2->score, 1, false, 1);
+  p2->display->printText(p1->score + ":" + p2->score, 1, false, 1);
 }
 
 /**
@@ -173,20 +168,6 @@ void Game::drawWinAnim(Player* winner){
   winner->display->drawChar(10, 0, String(winner->score)[0] , 125, 0,1);
 }
 
-/**
-checks whether the condition for a win has been reached
-
-@return true if the win condition has been reached, false otherwise
-
-@test
-*/
-bool Game::endGameReached(){
-  if(winByLead){
-    return abs(p1->score - p2->score) == scoreConstraint;
-  } else{
-    return (p1->score == scoreConstraint || p2->score == scoreConstraint);
-  }
-}
 bool Game::gameEnd(){
   if((p1->score==5) || (p2->score ==5)){
     return true;

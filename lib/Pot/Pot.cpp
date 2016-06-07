@@ -75,26 +75,7 @@ returns paddle coordinate, dumb dumb
 int Pot::getCoord(){
   return this->getLEDNumRead() - 1;
 }
-/**
-allows the player to test that the pot is working as expected. When
-the player is done testing, they can press their button to stop.
 
-@test
-
-@return true when test has finished
-*/
-bool Pot::test(){
-  display->printText(0, 0, "Test", 10, true, false, 0, 5);
-  delay(500);
-  display->printText(0, 0, "Press button when done", 10, true, true, 2, 5);
-  delay(500);
-  bool done = false; //TODO can remove and return true
-  while(!done){
-    display->setLEDPWM(getLEDNumRead(), 254);
-    done = digitalRead(pin);
-  }
-  return done;
-}
 
 void Pot::clear(int x0, int y0, int x1, int y1){
   // for(int i=0;i<2;i++){

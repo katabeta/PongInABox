@@ -34,8 +34,7 @@ class Adafruit_IS31FL3731 : public Adafruit_GFX {
   void drawPixel(int16_t x, int16_t y, uint16_t color);
   void clear(void);
 
-  void printText(uint8_t x, uint8_t y, String text, uint8_t brightness,
-    bool clearAfter, bool scroll, uint8_t scrollSpeed, uint8_t spacing);
+  void printText(String text, uint8_t textSize, bool wrap, uint8_t brightness);
 
   void setLEDPWM(uint8_t lednum, uint8_t pwm, uint8_t bank = 0);
   void audioSync(boolean sync);

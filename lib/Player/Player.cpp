@@ -25,13 +25,3 @@ Player::Player(Button* button, Pot* pot, Adafruit_IS31FL3731* display, uint8_t n
   this->number = number;
   this->score = 0;
 }
-
-/**
-Displays the number of the player to the player on their display.
-Recommended to use before the game and for the display of the score
-
-@test
-*/
-void Player::displayNumber(){
-  display->printText(0, 0, "P" + number, 0, true, false, 0, 5);
-}
