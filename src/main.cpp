@@ -54,7 +54,7 @@ void setup(){
 
   //TODO create a calibration method
 void loop(){
-  Serial.println("LOOP");
+  //Serial.println("LOOP");
   //ledmatrix74.setLEDPWM(pots[0].getLEDNumRead(reference.potMin, reference.potMax), 254);
   //delay(05);
   //ledmatrix74.clear();
@@ -89,7 +89,7 @@ void loop(){
     // ledmatrix74.setLEDPWM(pot1.getLEDNumRead(), 254);
     player1.pot->drawPaddle();
     player2.pot->drawPaddle();
-
+    //Serial.println(String(button1.isPressed()));
     if(game.gameEnd()){
       ledmatrix75.setRotation(0);
       ledmatrix74.setRotation(2);
@@ -104,6 +104,7 @@ void loop(){
         game.drawWinAnim(&player2);
 
       }
+      delay(3000);
       game.playAgain();
     }
   //}

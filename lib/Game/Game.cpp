@@ -46,7 +46,7 @@ bool Game::ready(){
   bool b1 = p1->button->get();
   bool b2 = p2->button->get();
   bool bt = b1 && b2;
-  Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
+  //Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
   return bt; //p1->button->get() && p2->button->get();
 }
 
@@ -92,26 +92,39 @@ Prompts the players if they want to play again.
 bool Game::playAgain(){
   bool p1PlayAgain = false;
   bool p2PlayAgain = false;
-  p1->display->printText("Again?", 1, false, 2);
-  p2->display->printText("Again?", 1, false, 2);
   p1->display->clear();
   p2->display->clear();
-  if(!p1->button->isPressed()){
-    p1->display->drawChar(0, 0, 'n', 125, 0, 1);
-  } else{
-    p1->display->clear();
-    p1->display->drawChar(0, 0, 'y', 125, 0, 1);
-    p2PlayAgain = true;
-  }
-  if(!p2->button->isPressed()){
-    p2->display->drawChar(0, 0, 'n', 125, 0, 1);
-  } else{
-    p2->display->clear();
-    p2->display->drawChar(0, 0, 'y', 125, 0, 1);
-    p2PlayAgain = true;
+  p1->display->printText("Again?", 1, false, 2);
+  p2->display->printText("Again?", 1, false, 2);
+
+  bool toReturn = false;
+  while(!toReturn){
+    if(!p1->button->isPressed() && !p1PlayAgain){
+      p1->display->drawChar(0, 0, 'n', 125, 0, 1);
+    }
+    if (p1->button->isPressed()){
+      p1->display->clear();
+      p1->display->drawChar(0, 0, 'y', 125, 0, 1);
+      p1PlayAgain = true;
+    }
+    if(!p2->button->isPressed() && !p2PlayAgain){
+      p2->display->drawChar(0, 0, 'n', 125, 0, 1);
+    }
+    if (p2->button->isPressed()){
+      p2->display->clear();
+      p2->display->drawChar(0, 0, 'y', 125, 0, 1);
+      p2PlayAgain = true;
+    }
+    if(confirmButton->isPressed()){
+      p1PlayAgain = false;
+      p2PlayAgain = false;
+      break;
+    }
+    toReturn = p1PlayAgain && p2PlayAgain;
+    //Serial.println("p1: " + String(p1->button->isPressed()) + " p2: "+ String(p2->button->isPressed()) + " toReturn: "+ String(toReturn));
   }
 
-  return p1PlayAgain && p2PlayAgain; //true only if both are true
+  return toReturn; //true only if both are true
 }
 
 /**
