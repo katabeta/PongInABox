@@ -1,7 +1,7 @@
 # include <Ball.h>
 
 
-Ball::Ball(int x1, int y1, Player* player, Player* player1)
+Ball::Ball(int x1, int y1, Player* player, Player* player1) : reference()
 {
   randomSeed(analogRead(2));
   this->x1 = random(15);
@@ -53,7 +53,7 @@ bool Ball::collisions(){
 
     x1 = random(15);
     y1 = random(6,8);
-    
+
     screenCheck = !screenCheck;
 
 
@@ -70,11 +70,11 @@ void Ball::drawBall(){
   move();
   if(collisions())
   {
-    display->drawPixel(x1,y1,10);
+    display->drawPixel(x1,y1,reference.qBright);
   }
   else
   {
-    display1->drawPixel(x1,y1,10);
+    display1->drawPixel(x1,y1,reference.qBright);
   }
 
 

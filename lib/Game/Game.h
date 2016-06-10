@@ -5,6 +5,7 @@
 #include <Button.h>
 
 
+
 class Game{
 private:
   Player* p1; /**< stores the *pointer* to the first player. To call methods on it, instead of examplePlayer.printText(...); use examplePlayer->printText(...);. To call methods of its members, use examplePlayer->exampleDisplay->printText(...);*/
@@ -14,6 +15,7 @@ private:
   uint8_t difficulty; /**< stores the settings difficulty*/
   bool winByLead; /**< stores whether this game is won by leading the other player by a certain amount*/
   int scoreConstraint; /**< stores the necessary relative or absolute score needed to win*/
+  Reference reference;
 
 
 public:

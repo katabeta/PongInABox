@@ -18,6 +18,7 @@ Pot pot2 = Pot(reference.aPin75,&ledmatrix75);
 Player player1 = Player(&button1, &pot1, &ledmatrix74, 1);
 Player player2 = Player(&button2, &pot2, &ledmatrix75, 2);
 Ball ball = Ball(0,0,&player1,&player2);
+bool countOnce = true;
 long lastTime = 0;
 bool gameReady;
 //long time = 0;
@@ -45,7 +46,7 @@ void setup(){
 
   while(true){
     if(game.ready()) {
-      game.countdown();
+      //game.countdown();
       break;
     }
   }
@@ -54,6 +55,11 @@ void setup(){
 
   //TODO create a calibration method
 void loop(){
+  if(player1.score == 0 && player2.score == 0 && countOnce)
+  {
+    game.countdown();
+    countOnce = false;
+  }
   //Serial.println("LOOP");
   //ledmatrix74.setLEDPWM(pots[0].getLEDNumRead(reference.potMin, reference.potMax), 254);
   //delay(05);
@@ -105,7 +111,7 @@ void loop(){
 
       }
       delay(3000);
-      game.playAgain();
+      countOnce = game.playAgain();
     }
   //}
     //Serial.println(String(analogRead(reference.aPin75)));

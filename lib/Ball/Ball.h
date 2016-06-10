@@ -5,6 +5,7 @@
 
 class Ball{
 private:
+  Reference reference;
 
 public:
   Ball(int x1, int y1, Player* player, Player* player1);

@@ -64,11 +64,11 @@ void Adafruit_IS31FL3731::printText(String text, uint8_t textSize, bool wrap, ui
   setTextSize(textSize);
   setTextWrap(wrap);  // we dont want text to wrap so it scrolls nicely
   setTextColor(brightness);
-  for (int8_t x=0; x<=text.length() * 10; x++) {
+  for (int8_t x=0; x<=text.length() * 7; x++) {
     clear();
     setCursor(-1 * x,1);
     print(text);
-    delay(200);
+    delay(100);
   }
 }
 
