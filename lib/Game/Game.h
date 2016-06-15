@@ -20,7 +20,7 @@ private:
 
 public:
   Game(Player* player1, Player* player2, Button* confirmButton, Ball* ball, bool winByLead, int scoreConstraint);
-  bool ready(void);
+  bool ready(bool readyText);
   uint8_t chooseDifficulty(void);
   void countdown(void);
   void displayScore(void); // s1 : s2

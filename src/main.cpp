@@ -43,9 +43,10 @@ void setup(){
   digitalWrite(reference.dPin74R, HIGH);
 
   digitalWrite(reference.dPin75R, HIGH);
-
+  bool readyText = true;
   while(true){
-    if(game.ready()) {
+
+    if(game.ready(readyText)) {
       //game.countdown();
       break;
     }
@@ -60,27 +61,7 @@ void loop(){
     game.countdown();
     countOnce = false;
   }
-  //Serial.println("LOOP");
-  //ledmatrix74.setLEDPWM(pots[0].getLEDNumRead(reference.potMin, reference.potMax), 254);
-  //delay(05);
-  //ledmatrix74.clear();
-  //ledmatrix75.setLEDPWM(pots[1].getLEDNumRead(reference.potMin, reference.potMax), 254);
-  //delay(05);
-  // ledmatrix74.clear();
-  // ledmatrix75.clear();
 
-  // Serial.println(String(millis() - time));
-  // time = millis();
-  // bool b1 = button1.get();
-  // bool b2 = button2.get();
-  // bool bt = b1 && b2;
-  // //Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
-  // if(bt){
-  //     gameReady = true;
-  //     game.countdown();
-  // }
-
-  //if (gameReady){
 
     if(millis() - lastTime > 100) {
        lastTime = millis();
