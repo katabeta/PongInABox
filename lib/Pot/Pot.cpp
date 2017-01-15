@@ -20,11 +20,18 @@
 
 @author Irina Lavryonova (katabeta)
 */
+<<<<<<< HEAD
 Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display, bool inverse, uint8_t paddleSize){
   this->display = display;
   this->pin = pin;
   this->inverse = inverse;
   this->paddleSize = paddleSize;
+=======
+Pot::Pot(uint8_t pin, Adafruit_IS31FL3731* display/* bool inverse*/){
+  this->display = display;
+  this->pin = pin;
+  //this->inverse = inverse;
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
 }
 
 /*public*/
@@ -37,9 +44,17 @@ returns the LED number along the bottom of the display that the current status o
 */
 int Pot::getLEDNumRead(){
   int ledNum = inverse ? 15 - 15 * getNormalizedRead() : 15 * getNormalizedRead();
+<<<<<<< HEAD
   // Serial.println(String(ledNum));
   // Serial.println();
   return ledNum > 15 ? -1 : inverse ? 143 - ledNum : ledNum;
+=======
+  //return ledNum > 15 ? -1 : ledNum;
+  int stuff = ledNum > 15 ? -2 : ledNum;
+  //Serial.println(stuff);
+  //return ledNum > 15 ? -1 : ledNum;
+  return stuff;
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
 }
 /**
 returns the LED number along the bottom of the display that the current status of this pot would light up.
@@ -58,6 +73,7 @@ int Pot::getLEDNumRead(double min, double max){
 }
 
 /**
+<<<<<<< HEAD
 @todo documentation
 @todo prints upto 3 on the screen on the left, but 2 on the right
 */
@@ -100,6 +116,34 @@ for testing only
 */
 void Pot::printStats(void){
   Serial.println("analog: " + String(analogRead(pin)) + " lednum: " + String(getLEDNumRead()) + " paddlepos: " + getPaddlePos());
+=======
+Draws the paddle three pixels wide
+*/
+void Pot::drawPaddle(){
+  int x0 = getCoord();
+  int y0 = 0;
+  int x1 = this->getCoord() +2;
+  int y1 = 0;
+  display->drawLine(x0,y0,x1,y1,reference.qBright);
+  clear(x0, y0, x1, y1);
+
+}
+
+/**
+returns paddle coordinate, dumb dumb
+*/
+int Pot::getCoord(){
+  return this->getLEDNumRead() - 1;
+}
+
+
+void Pot::clear(int x0, int y0, int x1, int y1){
+  // for(int i=0;i<2;i++){
+  //   display->setLEDPWM(getCoord() + i, 0);
+  // }
+  display->drawLine(x0,y0,x1,y1,0);
+
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
 }
 
 /*private*/
@@ -130,6 +174,7 @@ This method exists mainly for testing and you shouldn't have to use it.
 */
 double Pot::getNormalizedRead(double min, double max){
   return (double)(analogRead(pin)-min)/(max-min);
+<<<<<<< HEAD
 }
 
 /**
@@ -139,4 +184,6 @@ void Pot::clear(int ledNum){
   for(int i = -1; i < paddleSize - 1; i++){
     display->setLEDPWM(ledNum + i, 0);
   }
+=======
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
 }

@@ -45,6 +45,26 @@ boolean Adafruit_IS31FL3731::begin(uint8_t addr) {
   return true;
 }
 
+<<<<<<< HEAD
+=======
+/**
+@todo documentation
+@todo replace the delay with a timer
+*/
+void Adafruit_IS31FL3731::printText(String text, uint8_t textSize, bool wrap, uint8_t brightness){
+  setTextSize(textSize);
+  setTextWrap(wrap);  // we dont want text to wrap so it scrolls nicely
+  setTextColor(brightness);
+  for (int8_t x=0; x<=text.length() * 7; x++) {
+    clear();
+    setCursor(-1 * x,1);
+    print(text);
+    delay(100);
+  }
+}
+
+
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
 void Adafruit_IS31FL3731::clear(void) {
   // all LEDs on & 0 PWM
 

@@ -12,9 +12,10 @@
 Button::Button(uint8_t pin){
   this->pin = pin;
   this->lastDebounceTime = 0;
-  this->lastButtonState = LOW;
+  this->lastButtonState = HIGH;
   this->debounceDelay = 50;
-  this->state = false;
+  this->state = true;
+  this->initState = get();
 }
 
 
@@ -29,7 +30,9 @@ See https://www.arduino.cc/en/Tutorial/Debounce to learn about how this works.
 @author modified from Limor Fried
 */
 bool Button::get(){
+  initState = state;
   int reading = digitalRead(pin);
+  //Serial.println("r: "+ String(reading) + " s: " + String(state) + " b: " +String(buttonState));
   if (reading != lastButtonState) {
     lastDebounceTime = millis();
   }
@@ -43,4 +46,13 @@ bool Button::get(){
   }
   lastButtonState = reading;
   return state;
+}
+
+bool Button::isPressed(){
+  if(get() != initState){
+    initState = state;
+    return true;
+  } else{
+    return false;
+  }
 }

@@ -1,4 +1,6 @@
 #include <Game.h>
+#include <Ball.h>
+#include <Player.h>
 
 
 /**
@@ -20,13 +22,11 @@
 
 @author Irina Lavryonova (katabeta)
 */
-Game::Game(Player* player1, Player* player2, Button* confirmButton, bool winByLead, int scoreConstraint){
+Game::Game(Player* player1, Player* player2, Button* confirmButton, Ball* ball, bool winByLead, int scoreConstraint):reference(){
   this->p1 = player1;
   this->p2 = player2;
+  this->ball = ball;
   this->confirmButton = confirmButton;
-
-  p1->displayNumber();
-  p2->displayNumber();
 
   difficulty = 1;
 }
@@ -42,8 +42,15 @@ its meaning.
 
 @test
 */
-bool Game::ready(){
-  return p1->pot->test() && p2->pot->test();
+bool Game::ready(bool readyText){
+
+
+  bool b1 = p1->button->get();
+  bool b2 = p2->button->get();
+  bool bt = b1 && b2;
+
+  //Serial.println("b1: " + String(b1) + " b2: " + String(b2) + " bt: " + String(bt));
+  return bt; //p1->button->get() && p2->button->get();
 }
 
 /**
@@ -52,8 +59,13 @@ Prompts the players to select a setting.
 @test
 */
 uint8_t Game::chooseDifficulty(){
+<<<<<<< HEAD
   p1->display->printText("Press confirm button when yes", 1, false, 2);
   p2->display->printText("Press confirm button when yes", 1, false, 2);
+=======
+  p1->display->printText("Press confirm button when yes", 1, false, 1);
+  p2->display->printText("Press confirm button when yes", 1, false, 1);
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
 
   while(!confirmButton->get()){
     if(!p2->button->get()){
@@ -62,7 +74,11 @@ uint8_t Game::chooseDifficulty(){
       p1->display->clear();
       p2->display->drawChar(5, 0, '1', 125, 0, 1); //-1
       difficulty--;
+<<<<<<< HEAD
       p2->display->printText("D: " + difficulty, 1, false, 2);
+=======
+      p2->display->printText("D: ", 1, false, 1);
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
       delay(250);
     }
     if(!p1->button->get()){
@@ -71,7 +87,11 @@ uint8_t Game::chooseDifficulty(){
       p2->display->clear();
       p1->display->drawChar(5, 0, '1', 125, 0, 1); //+1
       difficulty++;
+<<<<<<< HEAD
       p1->display->printText("D: " + difficulty, 1, false, 2);
+=======
+      p1->display->printText("D: ", 1, false, 1);
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
       delay(250);
     }
   }
@@ -87,27 +107,60 @@ Prompts the players if they want to play again.
 */
 bool Game::playAgain(){
   bool p1PlayAgain = false;
+<<<<<<< HEAD
   bool p2PlayAgain = false;
   p1->display->printText("Play again? y/n press button", 1, false, 2);
   p2->display->printText("Play again? y/n press button", 1, false, 2);
+=======
+  //bool p2PlayAgain = false;
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
   p1->display->clear();
   p2->display->clear();
-  if(!p1->button->get()){
-    p1->display->drawChar(0, 0, 'n', 125, 0, 1);
-  } else{
-    p1->display->clear();
-    p1->display->drawChar(0, 0, 'y', 125, 0, 1);
-    p2PlayAgain = true;
-  }
-  if(!p2->button->get()){
-    p2->display->drawChar(0, 0, 'n', 125, 0, 1);
-  } else{
-    p2->display->clear();
-    p2->display->drawChar(0, 0, 'y', 125, 0, 1);
-    p2PlayAgain = true;
+  p1->display->printText("Again?", 1, false, reference.qBright);
+  p2->display->printText("Again?", 1, false, reference.qBright);
+
+  bool toReturn = false;
+  while(!toReturn){
+    if(!p1->button->isPressed() && !p1PlayAgain){
+      p1->display->drawChar(5, 0, 'N', reference.qBright, 0, 1);
+      p2->display->drawChar(5, 0, 'N', reference.qBright, 0, 1);
+    }
+    if (p1->button->isPressed() || p2->button-> isPressed()){
+      p1->display->clear();
+      p2->display->clear();
+      p1->display->drawChar(5, 0, 'Y', reference.qBright, 0, 1);
+      p2->display->drawChar(5, 0, 'Y', reference.qBright, 0, 1);
+      delay(2000);
+      p1->display->clear();
+      p2->display->clear();
+      p1->score = 0;
+      p2->score = 0;
+      toReturn = true;
+
+    }
+    // if(!p2->button->isPressed() && !p2PlayAgain){
+    //   p2->display->drawChar(0, 0, 'n', 125, 0, 1);
+    // }
+    //if (p2->button->isPressed()){
+    //  p2->display->clear();
+    //   p2->display->drawChar(0, 0, 'y', 125, 0, 1);
+    //   p2PlayAgain = true;
+    // }
+    // if(p2->button->isPressed()){
+    //   p1PlayAgain = false;
+    //   //p1->display->drawChar(0, 0, 'w', 125, 0, 1);
+    //   //p2->display->drawChar(0, 0, 'w', 125, 0, 1);
+    //   break;
+    // }
+    //toReturn = p1PlayAgain;
+    // if (p1->button->isPressed() == 1 || toReturn == 1){
+    //   Serial.println("p1: " + String(p1->button->isPressed()) + " p2: "+ String(p2->button->isPressed()) + " toReturn: "+ String(toReturn));
+    // }
+
   }
 
-  return p1PlayAgain && p2PlayAgain; //true only if both are true
+
+  return toReturn; //true only if both are true
 }
 
 /**
@@ -119,8 +172,13 @@ this so that the player knows which score is theirs.
 @test
 */
 void Game::displayScore(){
+<<<<<<< HEAD
   p1->display->printText(p1->score + ":" + p2->score, 1, false, 2);
   p2->display->printText(p1->score + ":" + p2->score, 1, false, 2);
+=======
+  p1->display->printText(p1->score + ":" + p2->score, 1, false, reference.qBright);
+  p2->display->printText(p1->score + ":" + p2->score, 1, false, reference.qBright);
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
 }
 
 /**
@@ -130,11 +188,24 @@ and the players should be ready.
 @test
 */
 void Game::countdown(){
+<<<<<<< HEAD
   Serial.println("Countdown start");
   for(int i = 3; i >= 0; i++){
     p1->display->drawChar(0, 0, i, 125, 0, 1);
     p2->display->drawChar(0, 0, i, 125, 0, 1);
+=======
+  p1->display->setRotation(2);
+  p2->display->setRotation(0);
+  for(int i = 3; i >= 0; i--){
+    p1->display->drawChar(5, 0, String(i)[0], reference.qBright, 0, 1);
+    p2->display->drawChar(5, 0, String(i)[0], reference.qBright, 0, 1);
+    delay(1000);
+>>>>>>> 0df60bc24b96fcefa4670f02c5314b11fca55191
   }
+  p1->display->clear();
+  p2->display->clear();
+  p1->display->setRotation(0);
+  p2->display->setRotation(2);
 }
 
 /**
@@ -146,7 +217,9 @@ draws the losing animation on the losing player's display
 @todo UNIMPLEMENTED
 */
 void Game::drawLoseAnim(Player* loser){
-  loser->display->drawChar(0, 0, 'L', 154, 0, 1);
+
+  loser->display->drawChar(0, 0, 'L', reference.qBright, 0, 1);
+  loser->display->drawChar(10, 0, String(loser->score)[0], reference.qBright, 0,1);
 }
 
 /**
@@ -158,21 +231,18 @@ draws the winning animation on the winning player's display
 @todo UNIMPLEMENTED
 */
 void Game::drawWinAnim(Player* winner){
-  winner->display->drawChar(0, 0, 'W', 154, 0, 1);
+
+  winner->display->drawChar(0, 0, 'W', reference.qBright, 0, 1);
+  winner->display->drawChar(10, 0, String(winner->score)[0] , reference.qBright, 0,1);
 }
 
-/**
-checks whether the condition for a win has been reached
-
-@return true if the win condition has been reached, false otherwise
-
-@test
-*/
-bool Game::endGameReached(){
-  if(winByLead){
-    return abs(p1->score - p2->score) == scoreConstrant;
-  } else{
-    return (p1->score == scoreConstrant || p2->score == scoreConstrant);
+bool Game::gameEnd(){
+  if((p1->score==5) || (p2->score ==5)){
+    return true;
+  }
+  else
+  {
+    return false;
   }
 }
 /*private*/
